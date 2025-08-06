@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+City Cruz Rental
+</name>
+</assembly>
+<members>
+<member name="T:City_Cruz_Rental.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:City_Cruz_Rental.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:City_Cruz_Rental.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:City_Cruz_Rental.My.Resources.Resources.Background_image">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:City_Cruz_Rental.My.Resources.Resources.conn">
+<summary>
+  Looks up a localized string similar to server=localhost;user=root;database=citycruze_db;port=3306;password=.
+</summary>
+</member>
+<member name="P:City_Cruz_Rental.My.Resources.Resources.eye_close">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:City_Cruz_Rental.My.Resources.Resources.eye_open">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:City_Cruz_Rental.My.Resources.Resources.profile_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:City_Cruz_Rental.DatabaseHelper.ExecuteQuery(System.String)">
+ <summary>
+ Executes an SQL command and returns the result as a DataTable.
+ </summary>
+ <param name="sqlQuery">The SQL command to execute.</param>
+ <returns>A DataTable containing the results of the query.</returns>
+</member>
+</members>
+</doc>
