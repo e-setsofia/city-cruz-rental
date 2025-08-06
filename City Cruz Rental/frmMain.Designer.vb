@@ -23,13 +23,6 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.flpMenuItems = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -194,11 +187,9 @@ Partial Class frmMain
         Me.Guna2Panel2.BorderColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2Panel2.BorderThickness = 1
         Me.Guna2Panel2.Controls.Add(Me.Guna2Panel3)
-        Me.Guna2Panel2.CustomizableEdges = CustomizableEdges4
         Me.Guna2Panel2.FillColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2Panel2.Location = New System.Drawing.Point(564, 36)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges5
         Me.Guna2Panel2.Size = New System.Drawing.Size(215, 36)
         Me.Guna2Panel2.TabIndex = 1
         '
@@ -210,12 +201,10 @@ Partial Class frmMain
         Me.Guna2Panel3.Controls.Add(Me.lblJobTItle)
         Me.Guna2Panel3.Controls.Add(Me.lblProfileName)
         Me.Guna2Panel3.Controls.Add(Me.picProfileImage)
-        Me.Guna2Panel3.CustomizableEdges = CustomizableEdges2
         Me.Guna2Panel3.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Panel3.Location = New System.Drawing.Point(8, 8)
         Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.ShadowDecoration.CustomizableEdges = CustomizableEdges3
         Me.Guna2Panel3.Size = New System.Drawing.Size(199, 19)
         Me.Guna2Panel3.TabIndex = 2
         '
@@ -226,9 +215,9 @@ Partial Class frmMain
         Me.lblJobTItle.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblJobTItle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblJobTItle.ForeColor = System.Drawing.SystemColors.ActiveCaption
-        Me.lblJobTItle.Location = New System.Drawing.Point(98, 0)
+        Me.lblJobTItle.Location = New System.Drawing.Point(97, 0)
         Me.lblJobTItle.Name = "lblJobTItle"
-        Me.lblJobTItle.Size = New System.Drawing.Size(49, 16)
+        Me.lblJobTItle.Size = New System.Drawing.Size(48, 16)
         Me.lblJobTItle.TabIndex = 2
         Me.lblJobTItle.Text = "Label1"
         '
@@ -241,7 +230,7 @@ Partial Class frmMain
         Me.lblProfileName.ForeColor = System.Drawing.Color.DarkSlateBlue
         Me.lblProfileName.Location = New System.Drawing.Point(43, 0)
         Me.lblProfileName.Name = "lblProfileName"
-        Me.lblProfileName.Size = New System.Drawing.Size(55, 16)
+        Me.lblProfileName.Size = New System.Drawing.Size(54, 16)
         Me.lblProfileName.TabIndex = 1
         Me.lblProfileName.Text = "Label1"
         '
@@ -254,7 +243,6 @@ Partial Class frmMain
         Me.picProfileImage.Location = New System.Drawing.Point(0, 0)
         Me.picProfileImage.Margin = New System.Windows.Forms.Padding(8)
         Me.picProfileImage.Name = "picProfileImage"
-        Me.picProfileImage.ShadowDecoration.CustomizableEdges = CustomizableEdges1
         Me.picProfileImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.picProfileImage.Size = New System.Drawing.Size(43, 19)
         Me.picProfileImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -265,7 +253,6 @@ Partial Class frmMain
         '
         Me.txtSearch.AutoRoundedCorners = True
         Me.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtSearch.CustomizableEdges = CustomizableEdges6
         Me.txtSearch.DefaultText = ""
         Me.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -278,7 +265,6 @@ Partial Class frmMain
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.PlaceholderText = "Search"
         Me.txtSearch.SelectedText = ""
-        Me.txtSearch.ShadowDecoration.CustomizableEdges = CustomizableEdges7
         Me.txtSearch.Size = New System.Drawing.Size(421, 36)
         Me.txtSearch.TabIndex = 0
         Me.txtSearch.TextOffset = New System.Drawing.Point(20, 0)

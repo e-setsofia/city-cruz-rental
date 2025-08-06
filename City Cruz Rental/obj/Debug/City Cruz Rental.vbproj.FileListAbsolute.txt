@@ -36,8 +36,9 @@ C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\bin\Debug\System.N
 C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City Cruz Rental.vbproj.AssemblyReference.cache
-C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.VehicleControl.resources
 C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.CustomerControl.resources
+C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.DataPair.resources
+C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.VehicleControl.resources
 C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.DashboardControl.resources
 C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.StaffControl.resources
 C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.frmMain.resources

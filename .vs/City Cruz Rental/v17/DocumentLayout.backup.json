@@ -7,36 +7,32 @@
       "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\custom controls\\customercontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\custom controls\\datapair.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\custom controls\\datapair.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\custom controls\\datapair.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\custom controls\\datapair.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\custom controls\\customercontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\custom controls\\customercontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\custom controls\\customercontrol.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\custom controls\\customercontrol.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\city cruz rental\\custom controls\\dashboardcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\custom controls\\dashboardcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\city cruz rental\\custom controls\\staffcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\custom controls\\staffcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\database\\queries.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\database\\queries.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\database\\databasehelper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\database\\databasehelper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\frmmain.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\frmmain.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\frmsplashscreen.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\frmsplashscreen.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\custom controls\\staffcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\custom controls\\staffcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|c:\\users\\evans\\source\\repos\\city cruz rental\\city cruz rental\\custom controls\\dashboardcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{79E282DA-772E-41AB-829E-20096C9D67CF}|City Cruz Rental\\City Cruz Rental.vbproj|solutionrelative:city cruz rental\\custom controls\\dashboardcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,99 +42,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerControl.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\CustomerControl.Designer.vb",
+              "RelativeDocumentMoniker": "City Cruz Rental\\Custom controls\\CustomerControl.Designer.vb",
+              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\CustomerControl.Designer.vb*",
+              "RelativeToolTip": "City Cruz Rental\\Custom controls\\CustomerControl.Designer.vb*",
+              "ViewState": "AgIAACkBAAAAAAAAAAAcwDMBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-06T11:07:45.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerControl.vb",
+              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\CustomerControl.vb",
+              "RelativeDocumentMoniker": "City Cruz Rental\\Custom controls\\CustomerControl.vb",
+              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\CustomerControl.vb*",
+              "RelativeToolTip": "City Cruz Rental\\Custom controls\\CustomerControl.vb*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-06T11:03:49.228Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CustomerControl.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\CustomerControl.vb",
               "RelativeDocumentMoniker": "City Cruz Rental\\Custom controls\\CustomerControl.vb",
-              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\CustomerControl.vb [Design]",
-              "RelativeToolTip": "City Cruz Rental\\Custom controls\\CustomerControl.vb [Design]",
+              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\CustomerControl.vb [Design]*",
+              "RelativeToolTip": "City Cruz Rental\\Custom controls\\CustomerControl.vb [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-06T09:26:20.134Z",
+              "WhenOpened": "2025-08-06T10:17:17.762Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataPair.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\DataPair.vb",
+              "RelativeDocumentMoniker": "City Cruz Rental\\Custom controls\\DataPair.vb",
+              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\DataPair.vb [Design]",
+              "RelativeToolTip": "City Cruz Rental\\Custom controls\\DataPair.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-06T10:38:25.837Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Queries.vb",
-              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Database\\Queries.vb",
-              "RelativeDocumentMoniker": "City Cruz Rental\\Database\\Queries.vb",
-              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Database\\Queries.vb",
-              "RelativeToolTip": "City Cruz Rental\\Database\\Queries.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Title": "DataPair.vb",
+              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\DataPair.vb",
+              "RelativeDocumentMoniker": "City Cruz Rental\\Custom controls\\DataPair.vb",
+              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\DataPair.vb",
+              "RelativeToolTip": "City Cruz Rental\\Custom controls\\DataPair.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-06T09:24:10.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DatabaseHelper.vb",
-              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Database\\DatabaseHelper.vb",
-              "RelativeDocumentMoniker": "City Cruz Rental\\Database\\DatabaseHelper.vb",
-              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Database\\DatabaseHelper.vb",
-              "RelativeToolTip": "City Cruz Rental\\Database\\DatabaseHelper.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-06T09:24:03.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmMain.Designer.vb",
-              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\frmMain.Designer.vb",
-              "RelativeDocumentMoniker": "City Cruz Rental\\frmMain.Designer.vb",
-              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\frmMain.Designer.vb",
-              "RelativeToolTip": "City Cruz Rental\\frmMain.Designer.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-06T09:23:21.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmMain.vb",
-              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\frmMain.vb",
-              "RelativeDocumentMoniker": "City Cruz Rental\\frmMain.vb",
-              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\frmMain.vb",
-              "RelativeToolTip": "City Cruz Rental\\frmMain.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-06T09:23:17.269Z",
+              "WhenOpened": "2025-08-06T10:39:21.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "frmSplashScreen.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\frmSplashScreen.vb",
-              "RelativeDocumentMoniker": "City Cruz Rental\\frmSplashScreen.vb",
-              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\frmSplashScreen.vb [Design]",
-              "RelativeToolTip": "City Cruz Rental\\frmSplashScreen.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-06T09:23:09.922Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StaffControl.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\StaffControl.vb",
-              "RelativeDocumentMoniker": "City Cruz Rental\\Custom controls\\StaffControl.vb",
-              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\StaffControl.vb [Design]",
-              "RelativeToolTip": "City Cruz Rental\\Custom controls\\StaffControl.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-06T09:19:37.616Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "DashboardControl.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\DashboardControl.vb",
               "RelativeDocumentMoniker": "City Cruz Rental\\Custom controls\\DashboardControl.vb",
@@ -151,14 +122,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "frmMain.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\frmMain.vb",
-              "RelativeDocumentMoniker": "City Cruz Rental\\frmMain.vb",
-              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\frmMain.vb [Design]",
-              "RelativeToolTip": "City Cruz Rental\\frmMain.vb [Design]",
+              "Title": "StaffControl.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\StaffControl.vb",
+              "RelativeDocumentMoniker": "City Cruz Rental\\Custom controls\\StaffControl.vb",
+              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Custom controls\\StaffControl.vb [Design]",
+              "RelativeToolTip": "City Cruz Rental\\Custom controls\\StaffControl.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-06T08:36:27.993Z",
+              "WhenOpened": "2025-08-06T09:19:37.616Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Queries.vb",
+              "DocumentMoniker": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Database\\Queries.vb",
+              "RelativeDocumentMoniker": "City Cruz Rental\\Database\\Queries.vb",
+              "ToolTip": "C:\\Users\\Evans\\source\\repos\\City Cruz Rental\\City Cruz Rental\\Database\\Queries.vb",
+              "RelativeToolTip": "City Cruz Rental\\Database\\Queries.vb",
+              "ViewState": "AgIAADYAAAAAAAAAAAAqwHUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-06T09:44:26.546Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -22,10 +22,6 @@ Partial Class DashboardControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblUsers = New System.Windows.Forms.Label()
@@ -44,10 +40,8 @@ Partial Class DashboardControl
         Me.Guna2Panel1.BorderThickness = 1
         Me.Guna2Panel1.Controls.Add(Me.Label2)
         Me.Guna2Panel1.Controls.Add(Me.lblUsers)
-        Me.Guna2Panel1.CustomizableEdges = CustomizableEdges1
         Me.Guna2Panel1.Location = New System.Drawing.Point(40, 24)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         Me.Guna2Panel1.Size = New System.Drawing.Size(114, 78)
         Me.Guna2Panel1.TabIndex = 0
         '
@@ -85,10 +79,8 @@ Partial Class DashboardControl
         Me.pnlVehicles.Controls.Add(Me.lblVehiclesRented)
         Me.pnlVehicles.Controls.Add(Me.Label1)
         Me.pnlVehicles.Controls.Add(Me.lblTotalVehicles)
-        Me.pnlVehicles.CustomizableEdges = CustomizableEdges3
         Me.pnlVehicles.Location = New System.Drawing.Point(269, 24)
         Me.pnlVehicles.Name = "pnlVehicles"
-        Me.pnlVehicles.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         Me.pnlVehicles.Size = New System.Drawing.Size(126, 78)
         Me.pnlVehicles.TabIndex = 2
         '

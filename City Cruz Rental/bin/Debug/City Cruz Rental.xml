@@ -54,5 +54,13 @@ City Cruz Rental
  <param name="sqlQuery">The SQL command to execute.</param>
  <returns>A DataTable containing the results of the query.</returns>
 </member>
+<member name="M:City_Cruz_Rental.DatabaseHelper.ExecuteNonQuery(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+ <summary>
+ Executes an SQL command that does not return any data (e.g., INSERT, UPDATE, DELETE).
+ </summary>
+ <param name="sqlQuery">The SQL command to execute.</param>
+ <param name="parameters">List of parameters for the command.</param>
+ <returns>Number of affected rows.</returns>
+</member>
 </members>
 </doc>

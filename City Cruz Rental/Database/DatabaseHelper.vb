@@ -33,4 +33,36 @@ Public Class DatabaseHelper
         End Using
         Return dt
     End Function
+
+
+    ''' <summary>
+    ''' Executes an SQL command that does not return any data (e.g., INSERT, UPDATE, DELETE).
+    ''' </summary>
+    ''' <param name="sqlQuery">The SQL command to execute.</param>
+    ''' <param name="parameters">List of parameters for the command.</param>
+    ''' <returns>Number of affected rows.</returns>
+    Public Function ExecuteNonQuery(sqlQuery As String, parameters As List(Of MySqlParameter)) As Integer
+        Dim rowsAffected As Integer = 0
+
+        Using connection As New MySqlConnection(connectionString)
+            Try
+                connection.Open()
+                Using cmd As New MySqlCommand(sqlQuery, connection)
+                    If parameters IsNot Nothing Then
+                        cmd.Parameters.AddRange(parameters.ToArray())
+                    End If
+
+                    rowsAffected = cmd.ExecuteNonQuery()
+                End Using
+
+            Catch ex As MySqlException
+                MessageBox.Show("MySQL Error: " & ex.Message)
+            Catch ex As Exception
+                MessageBox.Show("Error: " & ex.Message)
+            End Try
+        End Using
+
+        Return rowsAffected
+    End Function
+
 End Class

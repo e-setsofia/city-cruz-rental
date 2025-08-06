@@ -1,4 +1,6 @@
-﻿Public Class Queries
+﻿Imports MySql.Data.MySqlClient
+
+Public Class Queries
     Private Shared db As New DatabaseHelper()
     Public Shared Function CountUsers() As Integer
 
@@ -62,5 +64,74 @@
         Next
         Return result
     End Function
+
+
+    ' CUSTOMER TABLE
+
+    Public Shared Function InsertCustomer(
+    fName As String,
+    lName As String,
+    email As String,
+    phoneNumber As String,
+    driverLicenseNumber As String,
+    licenseExpiryDate As Date,
+    dateOfBirth As Date,
+    address As String,
+    city As String,
+    status As String,
+    postalCode As String,
+    country As String
+) As Boolean
+
+        Dim query As String = "
+        INSERT INTO customers (
+            fName, lName, email, phone_number, driver_license_number,
+            license_expiry_date, date_of_birth, address, city, status,
+            postal_code, country
+        )
+        VALUES (
+            @fName, @lName, @Email, @PhoneNumber, @DriverLicenseNumber,
+            @LicenseExpiryDate, @DateOfBirth, @Address, @City, @Status,
+            @PostalCode, @Country
+        )"
+
+        Dim parameters As New List(Of MySqlParameter) From {
+        New MySqlParameter("@fName", fName),
+        New MySqlParameter("@lName", lName),
+        New MySqlParameter("@Email", email),
+        New MySqlParameter("@PhoneNumber", phoneNumber),
+        New MySqlParameter("@DriverLicenseNumber", driverLicenseNumber),
+        New MySqlParameter("@LicenseExpiryDate", licenseExpiryDate),
+        New MySqlParameter("@DateOfBirth", dateOfBirth),
+        New MySqlParameter("@Address", address),
+        New MySqlParameter("@City", city),
+        New MySqlParameter("@Status", status),
+        New MySqlParameter("@PostalCode", postalCode),
+        New MySqlParameter("@Country", country)
+    }
+
+        Try
+            Dim rowsAffected As Integer = db.ExecuteNonQuery(query, parameters)
+            Return rowsAffected > 0
+        Catch ex As Exception
+            ' Optional: log error
+            Return False
+        End Try
+
+    End Function
+
+    Public Shared Function GetAllCustomers() As DataTable
+        Dim query As String = "SELECT * FROM customers ORDER BY customer_id"
+
+        Try
+            Dim result As DataTable = db.ExecuteQuery(query)
+            Return result
+        Catch ex As Exception
+            MessageBox.Show("Error retrieving customers: " & ex.Message)
+            Return Nothing
+        End Try
+    End Function
+
+
 
 End Class
