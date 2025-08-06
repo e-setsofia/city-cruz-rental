@@ -71,7 +71,7 @@ Partial Class frmMain
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(226, 694)
+        Me.Panel1.Size = New System.Drawing.Size(226, 866)
         Me.Panel1.TabIndex = 0
         '
         'flpMenuItems
@@ -121,7 +121,7 @@ Partial Class frmMain
         Me.Panel5.BackColor = System.Drawing.Color.Transparent
         Me.Panel5.Controls.Add(Me.btnLogout)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel5.Location = New System.Drawing.Point(0, 632)
+        Me.Panel5.Location = New System.Drawing.Point(0, 804)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(226, 62)
         Me.Panel5.TabIndex = 2
@@ -277,7 +277,7 @@ Partial Class frmMain
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel6.Location = New System.Drawing.Point(226, 108)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(816, 586)
+        Me.Panel6.Size = New System.Drawing.Size(816, 758)
         Me.Panel6.TabIndex = 2
         '
         'pnlMain
@@ -288,7 +288,7 @@ Partial Class frmMain
         Me.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlMain.Location = New System.Drawing.Point(0, 61)
         Me.pnlMain.Name = "pnlMain"
-        Me.pnlMain.Size = New System.Drawing.Size(816, 525)
+        Me.pnlMain.Size = New System.Drawing.Size(816, 697)
         Me.pnlMain.TabIndex = 1
         '
         'VehicleControl1
@@ -337,7 +337,7 @@ Partial Class frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1042, 694)
+        Me.ClientSize = New System.Drawing.Size(1042, 866)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)

@@ -121,15 +121,10 @@ Public Class Queries
     End Function
 
     Public Shared Function GetAllCustomers() As DataTable
-        Dim query As String = "SELECT * FROM customers ORDER BY customer_id"
-
-        Try
-            Dim result As DataTable = db.ExecuteQuery(query)
-            Return result
-        Catch ex As Exception
-            MessageBox.Show("Error retrieving customers: " & ex.Message)
-            Return Nothing
-        End Try
+        Dim query As String = "SELECT customer_id, concat(fName, ' ', lName) as fullName, fName, lName,  email, phone_number, driver_license_number, license_expiry_date, date_of_birth, address, city, status, postal_code, country, created_at, updated_at 
+            FROM customers ORDER BY customer_id"
+        Dim result As DataTable = db.ExecuteQuery(query)
+        Return result
     End Function
 
 
