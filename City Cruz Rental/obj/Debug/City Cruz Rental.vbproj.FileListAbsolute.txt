@@ -53,3 +53,58 @@ C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City Cru
 C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City Cruz Rental.xml
 C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City Cruz Rental.pdb
 C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City Cruz Rental.exe.config
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\City Cruz Rental.exe.config
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\City Cruz Rental.exe
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\City Cruz Rental.pdb
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\City Cruz Rental.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\Google.Protobuf.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\Guna.UI2.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\MySql.Data.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Buffers.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.IO.Pipelines.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Memory.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\ZstdSharp.dll
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\Google.Protobuf.pdb
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\Google.Protobuf.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\MySql.Data.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Buffers.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.IO.Pipelines.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Memory.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City Cruz Rental.vbprojAssemblyReference.cache
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.Booking.resources
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.CustomerControl.resources
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.DataPair.resources
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.VehicleControl.resources
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.DashboardControl.resources
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.StaffControl.resources
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.frmMain.resources
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.frmSplashScreen.resources
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.Login.resources
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.Resources.resources
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City Cruz Rental.vbproj.GenerateResource.cache
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City Cruz Rental.vbproj.CoreCompileInputs.cache
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City Cruz Rental.vbproj.CopyComplete
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City Cruz Rental.exe
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City Cruz Rental.xml
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City Cruz Rental.pdb
+C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.AddStaffDialog.resources

@@ -29,7 +29,7 @@ City Cruz Rental
 </member>
 <member name="P:City_Cruz_Rental.My.Resources.Resources.conn">
 <summary>
-  Looks up a localized string similar to server=localhost;user=root;database=citycruze_db;port=3306;password=.
+  Looks up a localized string similar to server=localhost;user=root;database=citycruze_db;port=3306;password=;Allow Zero Datetime=True;Convert Zero Datetime=True;.
 </summary>
 </member>
 <member name="P:City_Cruz_Rental.My.Resources.Resources.eye_close">
@@ -49,7 +49,7 @@ City Cruz Rental
 </member>
 <member name="P:City_Cruz_Rental.My.Resources.Resources.remoteConn">
 <summary>
-  Looks up a localized string similar to server=192.168.166.251;user=root;database=citycruze_db;port=3306;pwd=.
+  Looks up a localized string similar to server=192.168.166.251;user=root;database=citycruze_db;port=3306;pwd=;Allow Zero Datetime=True;Convert Zero Datetime=True;.
 </summary>
 </member>
 <member name="M:City_Cruz_Rental.DatabaseHelper.ExecuteQuery(System.String)">

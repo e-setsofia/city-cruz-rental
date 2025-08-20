@@ -22,7 +22,7 @@ Namespace My.Resources
     '''<summary>
     '''  A strongly-typed resource class, for looking up localized strings, etc.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0"),  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
      Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
@@ -71,7 +71,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to server=localhost;user=root;database=citycruze_db;port=3306;password=.
+        '''  Looks up a localized string similar to server=localhost;user=root;database=citycruze_db;port=3306;password=;Allow Zero Datetime=True;Convert Zero Datetime=True;.
         '''</summary>
         Friend ReadOnly Property conn() As String
             Get
@@ -110,7 +110,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to server=192.168.166.251;user=root;database=citycruze_db;port=3306;pwd=.
+        '''  Looks up a localized string similar to server=192.168.166.251;user=root;database=citycruze_db;port=3306;pwd=;Allow Zero Datetime=True;Convert Zero Datetime=True;.
         '''</summary>
         Friend ReadOnly Property remoteConn() As String
             Get
