@@ -47,6 +47,11 @@ City Cruz Rental
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:City_Cruz_Rental.My.Resources.Resources.remoteConn">
+<summary>
+  Looks up a localized string similar to server=192.168.166.251;user=root;database=citycruze_db;port=3306;pwd=.
+</summary>
+</member>
 <member name="M:City_Cruz_Rental.DatabaseHelper.ExecuteQuery(System.String)">
  <summary>
  Executes an SQL command and returns the result as a DataTable.

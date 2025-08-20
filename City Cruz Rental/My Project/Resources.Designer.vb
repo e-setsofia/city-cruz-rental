@@ -108,5 +108,14 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to server=192.168.166.251;user=root;database=citycruze_db;port=3306;pwd=.
+        '''</summary>
+        Friend ReadOnly Property remoteConn() As String
+            Get
+                Return ResourceManager.GetString("remoteConn", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace

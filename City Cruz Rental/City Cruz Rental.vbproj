@@ -146,6 +146,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Custom controls\Booking.Designer.vb">
+      <DependentUpon>Booking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom controls\Booking.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Custom controls\CustomerControl.Designer.vb">
       <DependentUpon>CustomerControl.vb</DependentUpon>
     </Compile>
@@ -217,6 +223,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Custom controls\Booking.resx">
+      <DependentUpon>Booking.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Custom controls\CustomerControl.resx">
       <DependentUpon>CustomerControl.vb</DependentUpon>
     </EmbeddedResource>

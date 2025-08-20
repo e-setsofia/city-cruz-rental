@@ -54,16 +54,23 @@ Namespace My
             End Get
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property settings() As String
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString)>  _
+        Public ReadOnly Property conn() As String
             Get
-                Return CType(Me("settings"),String)
+                Return CType(Me("conn"),String)
             End Get
-            Set
-                Me("settings") = value
-            End Set
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("server=192.168.166.251;user=root;database=citycruze_db;port=3306;pwd=")>  _
+        Public ReadOnly Property remoteConn() As String
+            Get
+                Return CType(Me("remoteConn"),String)
+            End Get
         End Property
     End Class
 End Namespace

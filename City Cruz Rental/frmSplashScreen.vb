@@ -1,5 +1,5 @@
 ﻿Public Class frmSplashScreen
-    Dim progress = 88
+    Dim progress = 99
     Dim activatedForm = False
     Private Sub timerProgress_Tick(sender As Object, e As EventArgs) Handles timerProgress.Tick
         progress += 1
@@ -13,7 +13,5 @@
         End If
     End Sub
 
-    Private Sub lblProgress_Click(sender As Object, e As EventArgs) Handles lblProgress.Click
 
-    End Sub
 End Class

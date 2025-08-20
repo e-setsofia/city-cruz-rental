@@ -21,7 +21,5 @@
         dtgVehicles.Columns("category_id").Visible = False
     End Sub
 
-    Private Sub dtgVehicles_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgVehicles.CellContentClick
 
-    End Sub
 End Class

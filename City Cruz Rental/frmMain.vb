@@ -7,7 +7,8 @@ Public Class frmMain
         New MenuItemData("Dashboard", 0, New DashboardControl),
         New MenuItemData("Staff", 1, New StaffControl),
         New MenuItemData("Vehicles", 2, New VehicleControl),
-        New MenuItemData("Customers", 3, New CustomerControl)
+        New MenuItemData("Customers", 3, New CustomerControl),
+         New MenuItemData("Book A Car", 4, New Booking)
     }
 
 
@@ -86,15 +87,16 @@ Public Class frmMain
         UpdateMainScreen()
     End Sub
 
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs)
 
-    End Sub
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        Me.Hide() ' Hide the current user’s form
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
-        Me.Hide()
-        Login.Show()
+        ' Open a fresh login form
+        Dim loginForm As New Login()
+        loginForm.Show()
 
-
+        ' Optionally dispose this form if you want it reset completely
+        Me.Dispose()
     End Sub
 
 End Class

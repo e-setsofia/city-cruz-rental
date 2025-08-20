@@ -37,18 +37,20 @@ Partial Class VehicleControl
         '
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(876, 30)
+        Me.Panel1.Size = New System.Drawing.Size(1168, 37)
         Me.Panel1.TabIndex = 1
         '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.dtgVehicles)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 30)
+        Me.Panel2.Location = New System.Drawing.Point(0, 37)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Padding = New System.Windows.Forms.Padding(12)
-        Me.Panel2.Size = New System.Drawing.Size(876, 606)
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(16, 15, 16, 15)
+        Me.Panel2.Size = New System.Drawing.Size(1168, 746)
         Me.Panel2.TabIndex = 2
         '
         'dtgVehicles
@@ -82,7 +84,8 @@ Partial Class VehicleControl
         Me.dtgVehicles.DefaultCellStyle = DataGridViewCellStyle3
         Me.dtgVehicles.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dtgVehicles.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dtgVehicles.Location = New System.Drawing.Point(12, 12)
+        Me.dtgVehicles.Location = New System.Drawing.Point(16, 15)
+        Me.dtgVehicles.Margin = New System.Windows.Forms.Padding(4)
         Me.dtgVehicles.Name = "dtgVehicles"
         Me.dtgVehicles.ReadOnly = True
         Me.dtgVehicles.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -95,7 +98,8 @@ Partial Class VehicleControl
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dtgVehicles.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dtgVehicles.RowHeadersVisible = False
-        Me.dtgVehicles.Size = New System.Drawing.Size(852, 582)
+        Me.dtgVehicles.RowHeadersWidth = 51
+        Me.dtgVehicles.Size = New System.Drawing.Size(1136, 716)
         Me.dtgVehicles.TabIndex = 1
         Me.dtgVehicles.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.dtgVehicles.ThemeStyle.AlternatingRowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -121,12 +125,13 @@ Partial Class VehicleControl
         '
         'VehicleControl
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "VehicleControl"
-        Me.Size = New System.Drawing.Size(876, 636)
+        Me.Size = New System.Drawing.Size(1168, 783)
         Me.Panel2.ResumeLayout(False)
         CType(Me.dtgVehicles, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

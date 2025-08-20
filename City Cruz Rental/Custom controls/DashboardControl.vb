@@ -15,7 +15,7 @@
     End Sub
 
     ' Mouse enter event handler for all panels
-    Private Sub Panel_MouseEnter(sender As Object, e As EventArgs) Handles pnlVehicles.MouseEnter
+    Private Sub Panel_MouseEnter(sender As Object, e As EventArgs)
         Dim panel As Guna.UI2.WinForms.Guna2Panel = CType(sender, Guna.UI2.WinForms.Guna2Panel)
 
 
@@ -30,7 +30,7 @@
     End Sub
 
     ' Mouse leave event handler for all panels
-    Private Sub Panel_MouseLeave(sender As Object, e As EventArgs) Handles pnlVehicles.MouseEnter, pnlVehicles.MouseLeave
+    Private Sub Panel_MouseLeave(sender As Object, e As EventArgs) Handles pnlVehicles.MouseEnter
         Dim panel As Guna.UI2.WinForms.Guna2Panel = CType(sender, Guna.UI2.WinForms.Guna2Panel)
 
         ' Change the background and foreground colors on hover
@@ -42,5 +42,6 @@
         Next
 
     End Sub
+
 
 End Class

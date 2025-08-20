@@ -72,12 +72,15 @@ Public Class Login
         Return textBox.Text.ToLower
     End Function
 
-    Private Sub Guna2GradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2GradientPanel1.Paint
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Dim conn As MySqlConnection
+        conn = New MySqlConnection(My.Settings.remoteConn)
+        Try
+            conn.Open()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+        conn.Close()
     End Sub
-
-
-
-
-
 End Class
