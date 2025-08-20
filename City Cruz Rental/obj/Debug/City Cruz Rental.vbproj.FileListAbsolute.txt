@@ -108,3 +108,4 @@ C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City Cru
 C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City Cruz Rental.xml
 C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City Cruz Rental.pdb
 C:\Users\nmawu\source\repos\city-cruz-rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.AddStaffDialog.resources
+C:\Users\Evans\source\repos\City Cruz Rental\City Cruz Rental\obj\Debug\City_Cruz_Rental.AddStaffDialog.resources

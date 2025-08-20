@@ -11,11 +11,11 @@ Public Class AddStaffDialog
             isEditMode = True
             editUserId = userId
             btnAdd.Text = "Update"
+            btnDelete.Visible = True
             PopulateUserDetails(userId)
         Else
             isEditMode = False
             editUserId = -1
-            btnDelete.Visible = False
             btnAdd.Text = "Add"
         End If
     End Sub
@@ -23,7 +23,7 @@ Public Class AddStaffDialog
     Private Sub PopulateComboboxes()
         'Setting the default values of the comboboxes
         ' Gender ComboBox with value/display
-        cmbRole.Items.Clear()
+        cmbGender.Items.Clear()
 
         Utils.AddItemToComboBox(cmbGender, "m", "Male")
         Utils.AddItemToComboBox(cmbGender, "f", "Female")
@@ -140,8 +140,20 @@ Public Class AddStaffDialog
 
     Private Sub AddStaffDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PopulateComboboxes()
-    End Sub
+        populateDateTimePicker()
 
+
+    End Sub
+    Private Sub populateDateTimePicker()
+        ' Calculate date limits
+        Dim today As Date = Date.Today
+        Dim maxDate As Date = today.AddYears(-18)  ' 18 years ago
+        Dim minDate As Date = today.AddYears(-80)  ' 80 years ago
+
+        ' Apply to DateTimePicker
+        tmpDOB.MaxDate = maxDate
+        tmpDOB.MinDate = minDate
+    End Sub
     Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         If MsgBox($"Are you sure you want to delete {txtFirstName.Text} from the system?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
             Dim query = $"UPDATE users SET status='deleted' WHERE id={editUserId}"

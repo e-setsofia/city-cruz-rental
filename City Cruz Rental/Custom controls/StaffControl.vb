@@ -38,6 +38,8 @@ Public Class StaffControl
                 lblDeletedStaff.Text = deletedCount.ToString()
                 If deletedCount = 0 Then
                     lblDeletedStaff.Visible = False
+                Else
+                    lblDeletedStaff.Visible = True
                 End If
             End Using
         End Using
