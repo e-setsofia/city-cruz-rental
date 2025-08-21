@@ -19,22 +19,26 @@ Public Class AddStaffDialog
     End Sub
 
     Private Sub PopulateComboboxes()
-        'Setting the default values of the comboboxes
-        ' Gender ComboBox with value/display
-        cmbGender.Items.Clear()
+        Try
+            'Setting the default values of the comboboxes
+            ' Gender ComboBox with value/display
+            cmbGender.Items.Clear()
 
-        Utils.AddItemToComboBox(cmbGender, "m", "Male")
-        Utils.AddItemToComboBox(cmbGender, "f", "Female")
+            Utils.AddItemToComboBox(cmbGender, "m", "Male")
+            Utils.AddItemToComboBox(cmbGender, "f", "Female")
 
-        cmbGender.SelectedIndex = 0 'This will make sure the first item is selected.
+            cmbGender.SelectedIndex = 0 'This will make sure the first item is selected.
 
-        ' Role ComboBox with value/display
-        cmbRole.Items.Clear()
-        ' Add roles dynamically
-        Utils.AddItemToComboBox(cmbRole, "admin", "Admin")
-        Utils.AddItemToComboBox(cmbRole, "recep", "Receptionist")
-        Utils.AddItemToComboBox(cmbRole, "atten", "Attendant")
-        cmbRole.SelectedIndex = 0
+            ' Role ComboBox with value/display
+            cmbRole.Items.Clear()
+            ' Add roles dynamically
+            Utils.AddItemToComboBox(cmbRole, "admin", "Admin")
+            Utils.AddItemToComboBox(cmbRole, "recep", "Receptionist")
+            Utils.AddItemToComboBox(cmbRole, "atten", "Attendant")
+            cmbRole.SelectedIndex = 0
+        Catch ex As Exception
+
+        End Try
 
     End Sub
 
