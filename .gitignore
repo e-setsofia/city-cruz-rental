@@ -1,0 +1,68 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code workspace settings
+.vscode/
+
+# Auto-generated files
+*.Generated.*
+*.g.*
+*.g.i.*
+
+# Windows image cache
+Thumbs.db
+
+# ASP.NET temp files (in case the project includes any web references)
+*~*
+*.tmp
+
+# NuGet packages
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+# VS 2019/2022+ Backup files
+*.bak
+
+# Recycle Bin for Visual Studio
+$RECYCLE.BIN/
+
+# Publish directory
+publish/
+app.publish/
+
+# DotCover, Rider, ReSharper, etc.
+.idea/
+*.DotSettings.user
+
+# .NET Core specific (if applicable)
+.vs/
+*.dbmdl
+
+# Windows specific
+ehthumbs.db
+Desktop.ini
+
+# IIS Express
+.vs/
+*.vspscc
+*.vssscc
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Others
+*.log

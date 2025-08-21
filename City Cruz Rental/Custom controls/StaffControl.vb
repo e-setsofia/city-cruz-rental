@@ -32,6 +32,9 @@ Public Class StaffControl
                 dvgStaffdetails.DataSource = dt
             End Using
 
+            ' Execute Staff count query
+            lblStaff.Text = Queries.CountUsers()
+
             ' Execute deleted count query
             Using cmd As New MySqlCommand(deletedQuery, conn)
                 Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
@@ -49,7 +52,7 @@ Public Class StaffControl
 
 
     Private Sub StaffControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblStaff.Text = Queries.CountUsers()
+
         loadStaffData()
     End Sub
 

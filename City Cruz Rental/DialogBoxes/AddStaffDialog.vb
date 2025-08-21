@@ -13,6 +13,7 @@ Public Class AddStaffDialog
             btnAdd.Text = "Update"
             btnDelete.Visible = True
             PopulateUserDetails(userId)
+            lblFormName.Text = $"Update {txtFirstName.Text}'s Details"
         Else
             isEditMode = False
             editUserId = -1
