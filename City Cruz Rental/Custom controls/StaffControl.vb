@@ -80,5 +80,6 @@ Public Class StaffControl
             loadStaffData()
         End If
     End Sub
+
 End Class
 

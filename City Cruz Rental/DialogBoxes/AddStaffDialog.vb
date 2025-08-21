@@ -136,7 +136,7 @@ Public Class AddStaffDialog
     End Sub
 
 
-    Private Sub AddStaffDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub AddStaffDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load, Panel4.Enter
         PopulateComboboxes()
         populateDateTimePicker()
 

@@ -30,4 +30,27 @@
     Private Sub CustomerControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadData()
     End Sub
+
+    Private Sub BtnAddCustomer_Click(sender As Object, e As EventArgs) Handles btnAddCustomer.Click
+        If AddCustomerDialog.ShowDialog = DialogResult.OK Then
+            LoadData()
+        End If
+    End Sub
+
+    Private Sub DtgCustomers_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgCustomers.CellClick
+        ' Ignore header clicks
+        If e.RowIndex < 0 Then Exit Sub
+
+        ' Get the ID from the selected row
+        Dim selectedRow As DataGridViewRow = dtgCustomers.Rows(e.RowIndex)
+        Dim customerId As Integer = Convert.ToInt32(selectedRow.Cells("customer_id").Value)
+
+        ' Open the dialog with the selected staff ID
+        Dim dialog As New AddCustomerDialog()
+        dialog.InitializeForm(customerId) ' Pass the selected ID
+
+        If dialog.ShowDialog() = DialogResult.OK Then
+            LoadData()
+        End If
+    End Sub
 End Class
