@@ -33,7 +33,7 @@
 
     Private Sub BtnAddCustomer_Click(sender As Object, e As EventArgs) Handles btnAddCustomer.Click
         If AddCustomerDialog.ShowDialog = DialogResult.OK Then
-
+            LoadData()
         End If
     End Sub
 
