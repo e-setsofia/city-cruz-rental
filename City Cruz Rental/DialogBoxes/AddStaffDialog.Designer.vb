@@ -23,6 +23,8 @@ Partial Class AddStaffDialog
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.lblFormName = New System.Windows.Forms.Label()
+        Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
         Me.tmpDOB = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -45,8 +47,6 @@ Partial Class AddStaffDialog
         Me.txtPassword = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtFirstName = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtPhone = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
-        Me.lblFormName = New System.Windows.Forms.Label()
         Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -83,6 +83,23 @@ Partial Class AddStaffDialog
         Me.Panel4.Size = New System.Drawing.Size(945, 564)
         Me.Panel4.TabIndex = 4
         '
+        'lblFormName
+        '
+        Me.lblFormName.AutoSize = True
+        Me.lblFormName.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFormName.Location = New System.Drawing.Point(75, 23)
+        Me.lblFormName.Name = "lblFormName"
+        Me.lblFormName.Size = New System.Drawing.Size(319, 73)
+        Me.lblFormName.TabIndex = 49
+        Me.lblFormName.Text = "New Staff"
+        '
+        'Guna2Separator1
+        '
+        Me.Guna2Separator1.Location = New System.Drawing.Point(88, 99)
+        Me.Guna2Separator1.Name = "Guna2Separator1"
+        Me.Guna2Separator1.Size = New System.Drawing.Size(766, 10)
+        Me.Guna2Separator1.TabIndex = 48
+        '
         'tmpDOB
         '
         Me.tmpDOB.Checked = True
@@ -90,7 +107,7 @@ Partial Class AddStaffDialog
         Me.tmpDOB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tmpDOB.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.tmpDOB.Location = New System.Drawing.Point(205, 273)
-        Me.tmpDOB.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tmpDOB.Margin = New System.Windows.Forms.Padding(2)
         Me.tmpDOB.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.tmpDOB.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.tmpDOB.Name = "tmpDOB"
@@ -166,7 +183,7 @@ Partial Class AddStaffDialog
         Me.cmbRole.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbRole.ItemHeight = 30
         Me.cmbRole.Location = New System.Drawing.Point(617, 175)
-        Me.cmbRole.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbRole.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbRole.Name = "cmbRole"
         Me.cmbRole.Size = New System.Drawing.Size(238, 36)
         Me.cmbRole.TabIndex = 3
@@ -262,7 +279,7 @@ Partial Class AddStaffDialog
         Me.btnDelete.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold)
         Me.btnDelete.ForeColor = System.Drawing.Color.White
         Me.btnDelete.Location = New System.Drawing.Point(520, 416)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(80, 33)
         Me.btnDelete.TabIndex = 11
@@ -279,7 +296,7 @@ Partial Class AddStaffDialog
         Me.btnAdd.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold)
         Me.btnAdd.ForeColor = System.Drawing.Color.White
         Me.btnAdd.Location = New System.Drawing.Point(333, 416)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(166, 33)
         Me.btnAdd.TabIndex = 10
@@ -353,7 +370,7 @@ Partial Class AddStaffDialog
         Me.cmbGender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbGender.ItemHeight = 30
         Me.cmbGender.Location = New System.Drawing.Point(205, 175)
-        Me.cmbGender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbGender.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbGender.Name = "cmbGender"
         Me.cmbGender.Size = New System.Drawing.Size(220, 36)
         Me.cmbGender.TabIndex = 2
@@ -418,23 +435,6 @@ Partial Class AddStaffDialog
         Me.txtPhone.SelectedText = ""
         Me.txtPhone.Size = New System.Drawing.Size(219, 32)
         Me.txtPhone.TabIndex = 4
-        '
-        'Guna2Separator1
-        '
-        Me.Guna2Separator1.Location = New System.Drawing.Point(88, 99)
-        Me.Guna2Separator1.Name = "Guna2Separator1"
-        Me.Guna2Separator1.Size = New System.Drawing.Size(766, 10)
-        Me.Guna2Separator1.TabIndex = 48
-        '
-        'lblFormName
-        '
-        Me.lblFormName.AutoSize = True
-        Me.lblFormName.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFormName.Location = New System.Drawing.Point(75, 23)
-        Me.lblFormName.Name = "lblFormName"
-        Me.lblFormName.Size = New System.Drawing.Size(319, 73)
-        Me.lblFormName.TabIndex = 49
-        Me.lblFormName.Text = "New Staff"
         '
         'AddStaffDialog
         '

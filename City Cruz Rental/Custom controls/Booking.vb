@@ -5,25 +5,29 @@ Public Class Booking
     End Sub
     Private Sub LoadData()
         Using conn As New MySqlConnection(My.Resources.conn)
-            conn.Open()
+            Try
+                conn.Open()
 
-            Dim countTotalBookings As String = "SELECT COUNT(*) FROM  rentals r WHERE  r.return_date IS NULL OR r.status != 'Returned';"
-            Using cmd As New MySqlCommand(countTotalBookings, conn)
-                Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
-                lblBookedVehicles.Text = deletedCount.ToString()
-            End Using
+                Dim countTotalBookings As String = "SELECT COUNT(*) FROM  rentals r WHERE  r.return_date IS NULL OR r.status != 'Returned';"
+                Using cmd As New MySqlCommand(countTotalBookings, conn)
+                    Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                    lblBookedVehicles.Text = deletedCount.ToString()
+                End Using
 
-            Dim countTotalReserved As String = "SELECT COUNT(*) FROM rentals r WHERE r.status = 'Reserved';"
-            Using cmd As New MySqlCommand(countTotalReserved, conn)
-                Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
-                lblReserved.Text = deletedCount.ToString()
-            End Using
+                Dim countTotalReserved As String = "SELECT COUNT(*) FROM rentals r WHERE r.status = 'Reserved';"
+                Using cmd As New MySqlCommand(countTotalReserved, conn)
+                    Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                    lblReserved.Text = deletedCount.ToString()
+                End Using
 
-            Dim countOverdueBookings As String = "SELECT COUNT(*) FROM rentals r WHERE r.return_date IS NULL AND r.end_date < CURDATE();"
-            Using cmd As New MySqlCommand(countOverdueBookings, conn)
-                Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
-                lblOverdue.Text = deletedCount.ToString()
-            End Using
+                Dim countOverdueBookings As String = "SELECT COUNT(*) FROM rentals r WHERE r.return_date IS NULL AND r.end_date < CURDATE();"
+                Using cmd As New MySqlCommand(countOverdueBookings, conn)
+                    Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                    lblOverdue.Text = deletedCount.ToString()
+                End Using
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
 
         End Using
 
@@ -50,32 +54,11 @@ Public Class Booking
     Private Sub dtgBooking_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
 
+    End Sub
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    Private Sub BtnBookVehicle_Click(sender As Object, e As EventArgs) Handles btnBookVehicle.Click
+        If BookVehicle.ShowDialog() = DialogResult.OK Then
+            LoadData()
+        End If
     End Sub
 End Class

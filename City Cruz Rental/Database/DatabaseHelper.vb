@@ -34,6 +34,20 @@ Public Class DatabaseHelper
         Return dt
     End Function
 
+    Public Function ExecuteScalar(sqlQuery As String) As String
+        Dim result As String
+        Try
+            Using conn As New MySqlConnection(My.Resources.conn)
+                Using cmd As New MySqlCommand(sqlQuery, conn)
+                    result = cmd.ExecuteScalar()
+                End Using
+            End Using
+            Return result
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        End Try
+    End Function
+
 
     ''' <summary>
     ''' Executes an SQL command that does not return any data (e.g., INSERT, UPDATE, DELETE).
@@ -51,8 +65,6 @@ Public Class DatabaseHelper
                     If parameters IsNot Nothing Then
                         cmd.Parameters.AddRange(parameters.ToArray())
                     End If
-
-                    rowsAffected = cmd.ExecuteNonQuery()
                 End Using
 
             Catch ex As MySqlException

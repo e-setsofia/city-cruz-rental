@@ -148,7 +148,7 @@ Public Class AddStaffDialog
         ' Calculate date limits
         Dim today As Date = Date.Today
         Dim maxDate As Date = today.AddYears(-18)  ' 18 years ago
-        Dim minDate As Date = today.AddYears(-80)  ' 80 years ago
+        Dim minDate As Date = today.AddYears(-80)  ' 80 `years ago
 
         ' Apply to DateTimePicker
         tmpDOB.MaxDate = maxDate

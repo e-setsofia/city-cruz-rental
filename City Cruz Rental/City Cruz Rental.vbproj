@@ -190,6 +190,12 @@
     <Compile Include="DialogBoxes\AddStaffDialog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DialogBoxes\BookVehicle.Designer.vb">
+      <DependentUpon>BookVehicle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxes\BookVehicle.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMain.Designer.vb">
       <DependentUpon>frmMain.vb</DependentUpon>
     </Compile>
@@ -250,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBoxes\AddStaffDialog.resx">
       <DependentUpon>AddStaffDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxes\BookVehicle.resx">
+      <DependentUpon>BookVehicle.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>

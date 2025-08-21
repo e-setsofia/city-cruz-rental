@@ -22,57 +22,55 @@ Partial Class Booking
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dtgBooking = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.lblDeletedStaff = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblBookedVehicles = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnAddUser = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnBookVehicle = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblReserved = New System.Windows.Forms.Label()
-        Me.lblQueryName = New System.Windows.Forms.Label()
-        Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.lblOverdue = New System.Windows.Forms.Label()
+        Me.lblQueryName = New System.Windows.Forms.Label()
+        Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblReserved = New System.Windows.Forms.Label()
         CType(Me.dtgBooking, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'dtgBooking
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.dtgBooking.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(102, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgBooking.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        Me.dtgBooking.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(102, Byte), Integer))
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgBooking.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.dtgBooking.ColumnHeadersHeight = 30
         Me.dtgBooking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dtgBooking.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dtgBooking.DefaultCellStyle = DataGridViewCellStyle9
         Me.dtgBooking.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dtgBooking.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dtgBooking.Location = New System.Drawing.Point(36, 36)
@@ -110,25 +108,12 @@ Partial Class Booking
         Me.Guna2Panel1.BorderColor = System.Drawing.SystemColors.Control
         Me.Guna2Panel1.BorderRadius = 24
         Me.Guna2Panel1.BorderThickness = 1
-        Me.Guna2Panel1.Controls.Add(Me.lblDeletedStaff)
         Me.Guna2Panel1.Controls.Add(Me.Label2)
         Me.Guna2Panel1.Controls.Add(Me.lblBookedVehicles)
         Me.Guna2Panel1.Location = New System.Drawing.Point(25, 20)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(182, 98)
         Me.Guna2Panel1.TabIndex = 10
-        '
-        'lblDeletedStaff
-        '
-        Me.lblDeletedStaff.AutoSize = True
-        Me.lblDeletedStaff.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDeletedStaff.ForeColor = System.Drawing.Color.Red
-        Me.lblDeletedStaff.Location = New System.Drawing.Point(96, 44)
-        Me.lblDeletedStaff.Name = "lblDeletedStaff"
-        Me.lblDeletedStaff.Size = New System.Drawing.Size(26, 23)
-        Me.lblDeletedStaff.TabIndex = 3
-        Me.lblDeletedStaff.Text = "25"
-        Me.lblDeletedStaff.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label2
         '
@@ -148,7 +133,7 @@ Partial Class Booking
         '
         Me.lblBookedVehicles.AutoSize = True
         Me.lblBookedVehicles.Font = New System.Drawing.Font("Bahnschrift SemiBold SemiConden", 40.0!, System.Drawing.FontStyle.Bold)
-        Me.lblBookedVehicles.Location = New System.Drawing.Point(36, 10)
+        Me.lblBookedVehicles.Location = New System.Drawing.Point(60, 10)
         Me.lblBookedVehicles.Name = "lblBookedVehicles"
         Me.lblBookedVehicles.Size = New System.Drawing.Size(79, 65)
         Me.lblBookedVehicles.TabIndex = 0
@@ -177,21 +162,21 @@ Partial Class Booking
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Book Vehicle"
         '
-        'btnAddUser
+        'btnBookVehicle
         '
-        Me.btnAddUser.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnAddUser.BorderRadius = 16
-        Me.btnAddUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnAddUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnAddUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnAddUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnAddUser.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddUser.ForeColor = System.Drawing.Color.White
-        Me.btnAddUser.Location = New System.Drawing.Point(634, 20)
-        Me.btnAddUser.Name = "btnAddUser"
-        Me.btnAddUser.Size = New System.Drawing.Size(53, 75)
-        Me.btnAddUser.TabIndex = 11
-        Me.btnAddUser.Text = "+"
+        Me.btnBookVehicle.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnBookVehicle.BorderRadius = 16
+        Me.btnBookVehicle.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnBookVehicle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnBookVehicle.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnBookVehicle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnBookVehicle.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBookVehicle.ForeColor = System.Drawing.Color.White
+        Me.btnBookVehicle.Location = New System.Drawing.Point(634, 20)
+        Me.btnBookVehicle.Name = "btnBookVehicle"
+        Me.btnBookVehicle.Size = New System.Drawing.Size(53, 75)
+        Me.btnBookVehicle.TabIndex = 11
+        Me.btnBookVehicle.Text = "+"
         '
         'Panel1
         '
@@ -200,7 +185,7 @@ Partial Class Booking
         Me.Panel1.Controls.Add(Me.Guna2Separator1)
         Me.Panel1.Controls.Add(Me.Guna2Panel2)
         Me.Panel1.Controls.Add(Me.Guna2Panel1)
-        Me.Panel1.Controls.Add(Me.btnAddUser)
+        Me.Panel1.Controls.Add(Me.btnBookVehicle)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -209,56 +194,43 @@ Partial Class Booking
         Me.Panel1.Size = New System.Drawing.Size(790, 218)
         Me.Panel1.TabIndex = 9
         '
-        'Guna2Panel2
+        'Guna2Panel3
         '
-        Me.Guna2Panel2.BorderColor = System.Drawing.SystemColors.Control
-        Me.Guna2Panel2.BorderRadius = 24
-        Me.Guna2Panel2.BorderThickness = 1
-        Me.Guna2Panel2.Controls.Add(Me.Label3)
-        Me.Guna2Panel2.Controls.Add(Me.Label4)
-        Me.Guna2Panel2.Controls.Add(Me.lblReserved)
-        Me.Guna2Panel2.Location = New System.Drawing.Point(222, 20)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(182, 98)
-        Me.Guna2Panel2.TabIndex = 11
+        Me.Guna2Panel3.BorderColor = System.Drawing.SystemColors.Control
+        Me.Guna2Panel3.BorderRadius = 24
+        Me.Guna2Panel3.BorderThickness = 1
+        Me.Guna2Panel3.Controls.Add(Me.Label6)
+        Me.Guna2Panel3.Controls.Add(Me.lblOverdue)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(420, 20)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(182, 98)
+        Me.Guna2Panel3.TabIndex = 12
         '
-        'Label3
+        'Label6
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Red
-        Me.Label3.Location = New System.Drawing.Point(96, 44)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(26, 23)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "25"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Label3.Visible = False
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Bahnschrift", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(28, 67)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(15, 0, 3, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Padding = New System.Windows.Forms.Padding(16, 0, 0, 4)
+        Me.Label6.Size = New System.Drawing.Size(139, 22)
+        Me.Label6.TabIndex = 1
+        Me.Label6.Text = "Overdue Vehicles"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label4
+        'lblOverdue
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Bahnschrift", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(1, 67)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(15, 0, 3, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Padding = New System.Windows.Forms.Padding(16, 0, 0, 4)
-        Me.Label4.Size = New System.Drawing.Size(147, 22)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "Reserved Vehicles"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblReserved
-        '
-        Me.lblReserved.AutoSize = True
-        Me.lblReserved.Font = New System.Drawing.Font("Bahnschrift SemiBold SemiConden", 40.0!, System.Drawing.FontStyle.Bold)
-        Me.lblReserved.Location = New System.Drawing.Point(36, 10)
-        Me.lblReserved.Name = "lblReserved"
-        Me.lblReserved.Size = New System.Drawing.Size(79, 65)
-        Me.lblReserved.TabIndex = 0
-        Me.lblReserved.Text = "25"
-        Me.lblReserved.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblOverdue.AutoSize = True
+        Me.lblOverdue.Font = New System.Drawing.Font("Bahnschrift SemiBold SemiConden", 40.0!, System.Drawing.FontStyle.Bold)
+        Me.lblOverdue.ForeColor = System.Drawing.Color.Tomato
+        Me.lblOverdue.Location = New System.Drawing.Point(58, 10)
+        Me.lblOverdue.Name = "lblOverdue"
+        Me.lblOverdue.Size = New System.Drawing.Size(79, 65)
+        Me.lblOverdue.TabIndex = 0
+        Me.lblOverdue.Text = "25"
+        Me.lblOverdue.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'lblQueryName
         '
@@ -278,43 +250,42 @@ Partial Class Booking
         Me.Guna2Separator1.Size = New System.Drawing.Size(790, 10)
         Me.Guna2Separator1.TabIndex = 50
         '
-        'Guna2Panel3
+        'Guna2Panel2
         '
-        Me.Guna2Panel3.BorderColor = System.Drawing.SystemColors.Control
-        Me.Guna2Panel3.BorderRadius = 24
-        Me.Guna2Panel3.BorderThickness = 1
-        Me.Guna2Panel3.Controls.Add(Me.Label6)
-        Me.Guna2Panel3.Controls.Add(Me.lblOverdue)
-        Me.Guna2Panel3.Location = New System.Drawing.Point(420, 20)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(182, 98)
-        Me.Guna2Panel3.TabIndex = 12
+        Me.Guna2Panel2.BorderColor = System.Drawing.SystemColors.Control
+        Me.Guna2Panel2.BorderRadius = 24
+        Me.Guna2Panel2.BorderThickness = 1
+        Me.Guna2Panel2.Controls.Add(Me.Label4)
+        Me.Guna2Panel2.Controls.Add(Me.lblReserved)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(222, 20)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.Size = New System.Drawing.Size(182, 98)
+        Me.Guna2Panel2.TabIndex = 11
         '
-        'Label6
+        'Label4
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Bahnschrift", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(1, 67)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(15, 0, 3, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Padding = New System.Windows.Forms.Padding(16, 0, 0, 4)
-        Me.Label6.Size = New System.Drawing.Size(139, 22)
-        Me.Label6.TabIndex = 1
-        Me.Label6.Text = "Overdue Vehicles"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Bahnschrift", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(15, 67)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(15, 0, 3, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Padding = New System.Windows.Forms.Padding(16, 0, 0, 4)
+        Me.Label4.Size = New System.Drawing.Size(147, 22)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Reserved Vehicles"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'lblOverdue
+        'lblReserved
         '
-        Me.lblOverdue.AutoSize = True
-        Me.lblOverdue.Font = New System.Drawing.Font("Bahnschrift SemiBold SemiConden", 40.0!, System.Drawing.FontStyle.Bold)
-        Me.lblOverdue.ForeColor = System.Drawing.Color.Tomato
-        Me.lblOverdue.Location = New System.Drawing.Point(36, 10)
-        Me.lblOverdue.Name = "lblOverdue"
-        Me.lblOverdue.Size = New System.Drawing.Size(79, 65)
-        Me.lblOverdue.TabIndex = 0
-        Me.lblOverdue.Text = "25"
-        Me.lblOverdue.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblReserved.AutoSize = True
+        Me.lblReserved.Font = New System.Drawing.Font("Bahnschrift SemiBold SemiConden", 40.0!, System.Drawing.FontStyle.Bold)
+        Me.lblReserved.Location = New System.Drawing.Point(62, 10)
+        Me.lblReserved.Name = "lblReserved"
+        Me.lblReserved.Size = New System.Drawing.Size(79, 65)
+        Me.lblReserved.TabIndex = 0
+        Me.lblReserved.Text = "25"
+        Me.lblReserved.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Booking
         '
@@ -330,25 +301,23 @@ Partial Class Booking
         Me.Panel2.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Guna2Panel2.ResumeLayout(False)
-        Me.Guna2Panel2.PerformLayout()
         Me.Guna2Panel3.ResumeLayout(False)
         Me.Guna2Panel3.PerformLayout()
+        Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents dtgBooking As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents lblDeletedStaff As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents lblBookedVehicles As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnAddUser As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnBookVehicle As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents lblReserved As Label
     Friend WithEvents lblQueryName As Label
