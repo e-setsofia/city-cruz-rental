@@ -267,7 +267,6 @@ Partial Class AddStaffDialog
         Me.btnDelete.Size = New System.Drawing.Size(80, 33)
         Me.btnDelete.TabIndex = 11
         Me.btnDelete.Text = "Delete"
-        Me.btnDelete.Visible = False
         '
         'btnAdd
         '

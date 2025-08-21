@@ -5,19 +5,16 @@ Public Class AddStaffDialog
     Private editUserId As Integer = -1
 
     Public Sub InitializeForm(Optional userId As Integer = -1)
-
-
         If userId <> -1 Then
             isEditMode = True
             editUserId = userId
             btnAdd.Text = "Update"
-            btnDelete.Visible = True
+            btnDelete.Text = "Delete"
             PopulateUserDetails(userId)
             lblFormName.Text = $"Update {txtFirstName.Text}'s Details"
         Else
             isEditMode = False
             editUserId = -1
-            btnAdd.Text = "Add"
         End If
     End Sub
 
@@ -143,7 +140,9 @@ Public Class AddStaffDialog
         PopulateComboboxes()
         populateDateTimePicker()
 
-
+        ' Set the default value of the buttons.
+        btnAdd.Text = "Add"
+        btnDelete.Text = "Cancel"
     End Sub
     Private Sub populateDateTimePicker()
         ' Calculate date limits
@@ -156,21 +155,30 @@ Public Class AddStaffDialog
         tmpDOB.MinDate = minDate
     End Sub
     Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        If MsgBox($"Are you sure you want to delete {txtFirstName.Text} from the system?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
-            Dim query = $"UPDATE users SET status='deleted' WHERE id={editUserId}"
-            Try
-                Using conn As New MySqlConnection(My.Resources.conn)
-                    conn.Open()
-                    Using cmd As New MySqlCommand(query, conn)
-                        cmd.ExecuteNonQuery()
-                        MessageBox.Show($"{txtFirstName.Text} deleted successfully!")
-                        Me.DialogResult = DialogResult.OK
+
+        If Not isEditMode Then
+            If MsgBox($"Are you sure you want don't want to save this new user?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+                Me.Close()
+            End If
+        Else
+            If MsgBox($"Are you sure you want to delete {txtFirstName.Text} from the system?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+                Dim query = $"UPDATE users SET status='deleted' WHERE id={editUserId}"
+                Try
+                    Using conn As New MySqlConnection(My.Resources.conn)
+                        conn.Open()
+                        Using cmd As New MySqlCommand(query, conn)
+                            cmd.ExecuteNonQuery()
+                            MessageBox.Show($"{txtFirstName.Text} deleted successfully!")
+                            Me.DialogResult = DialogResult.OK
+                        End Using
                     End Using
-                End Using
-            Catch ex As Exception
-                MessageBox.Show("Error loading user: " & ex.Message)
-            End Try
+                Catch ex As Exception
+                    MessageBox.Show("Error loading user: " & ex.Message)
+                End Try
+            End If
         End If
+
+
 
     End Sub
 

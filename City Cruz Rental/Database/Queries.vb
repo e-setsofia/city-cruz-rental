@@ -66,6 +66,46 @@ Public Class Queries
     End Function
 
 
+    Public Shared Function ListBookedVehicles() As DataTable
+        Dim db As New DatabaseHelper()
+        Dim query As String = "
+            SELECT 
+                v.id, 
+                v.name, 
+                v.brand_id, 
+                b.name AS brand_name, 
+                v.model, 
+                v.rental_price, 
+                v.state, 
+                v.rating, 
+                v.category_id, 
+                c.name AS category_name
+            FROM 
+                vehicles v
+            JOIN 
+                brands b ON v.brand_id = b.id
+            JOIN 
+                categories c ON v.category_id = c.id"
+
+        Dim result As DataTable = db.ExecuteQuery(query)
+
+        ' Example: loop through and display results
+        For Each row As DataRow In result.Rows
+            Dim vehicleInfo As String = "ID: " & row("id") &
+                ", Name: " & row("name") &
+                ", Brand: " & row("brand_name") &
+                ", Model: " & row("model") &
+                ", Price: " & row("rental_price") &
+                ", State: " & row("state") &
+                ", Rating: " & row("rating") &
+                ", Category: " & row("category_name")
+
+            Console.WriteLine(vehicleInfo) ' Or bind to DataGridView
+        Next
+        Return result
+    End Function
+
+
     ' CUSTOMER TABLE
 
     Public Shared Function InsertCustomer(

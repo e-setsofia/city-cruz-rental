@@ -20,7 +20,7 @@
         dtgBooking.Columns("category_id").Visible = False
     End Sub
 
-    Private Sub dtgBooking_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgBooking.CellContentClick
+    Private Sub dtgBooking_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
 
 
