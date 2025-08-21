@@ -65,6 +65,32 @@ Public Class DatabaseHelper
                     If parameters IsNot Nothing Then
                         cmd.Parameters.AddRange(parameters.ToArray())
                     End If
+
+                    ' Optional: Debug - Show the final query with parameters replaced
+                    Dim debugQuery As String = sqlQuery
+                    If parameters IsNot Nothing Then
+                        For Each param In parameters
+                            Dim value As String
+
+                            If TypeOf param.Value Is String OrElse TypeOf param.Value Is Date Then
+                                value = $"'{param.Value}'"
+                            ElseIf param.Value Is Nothing OrElse IsDBNull(param.Value) Then
+                                value = "NULL"
+                            Else
+                                value = param.Value.ToString()
+                            End If
+
+                            ' Make sure we replace only whole parameter names (to avoid partial replacements)
+                            debugQuery = debugQuery.Replace(param.ParameterName, value)
+                        Next
+                    End If
+
+                    ' Show or log the final interpolated SQL (for debugging only)
+                    Debug.WriteLine("Final SQL: " & debugQuery)
+                    Console.WriteLine("Final SQL: " & debugQuery)
+
+                    ' Execute
+                    rowsAffected = cmd.ExecuteNonQuery()
                 End Using
 
             Catch ex As MySqlException
@@ -76,5 +102,6 @@ Public Class DatabaseHelper
 
         Return rowsAffected
     End Function
+
 
 End Class
