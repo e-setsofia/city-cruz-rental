@@ -85,7 +85,7 @@ Public Class BookVehicle
     End Sub
 
     Private Sub BtnBook_Click(sender As Object, e As EventArgs) Handles btnBook.Click
-        If MsgBox($"Are you sure you want to book  {cmbVehicle.SelectedText} for {cmbCustomer.SelectedText} for GH¢ {txtTotalPrice.Text} ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+        If MsgBox($"Are you sure you want to book  {cmbVehicle.DisplayMember} for {cmbCustomer.DisplayMember} for GH¢ {txtTotalPrice.Text} ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
             Dim query As String = "INSERT INTO rentals (vehicle_id, customer_id, staff_user_id, booking_date, start_date, end_date, return_date, status, daily_price, total_price, payment_method, payment_status, fuel_level, odometer_reading, damage_notes) " &
                       "VALUES ( @vehicle_id, @customer_id, @staff_user_id, @booking_date, @start_date, @end_date, NULL, 'Reserved', @daily_price, @total_price, @payment_method, 'Pending', NULL, NULL, NULL);"
 
@@ -104,7 +104,7 @@ Public Class BookVehicle
             }
 
             db.ExecuteNonQuery(query, parameters)
-            MsgBox($"Successfully booked {cmbVehicle.SelectedItem} for {cmbCustomer.SelectedItem} for GH¢ {txtTotalPrice.Text}")
+            MsgBox($"Successfully booked {cmbVehicle.DisplayMember} for {cmbCustomer.DisplayMember} for GH¢ {txtTotalPrice.Text}")
             Me.DialogResult = DialogResult.OK
         End If
     End Sub
