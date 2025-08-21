@@ -3,21 +3,23 @@
         LoadData()
     End Sub
     Private Sub LoadData()
-        dtgBooking.DataSource = Queries.ListVehicles
+        dtgBooking.DataSource = Queries.ListBookedVehicles
 
-        ' Set the column headers
-        dtgBooking.Columns("name").HeaderText = "Vehicle"
-        dtgBooking.Columns("brand_name").HeaderText = "Brand"
-        dtgBooking.Columns("model").HeaderText = "Model"
-        dtgBooking.Columns("rental_price").HeaderText = "Rental Price"
-        dtgBooking.Columns("state").HeaderText = "Status"
-        dtgBooking.Columns("rating").HeaderText = "Rating"
-        dtgBooking.Columns("category_name").HeaderText = "Category"
+        ' Set column headers for rentals
+        dtgBooking.Columns("rental_id").HeaderText = "Rental ID"
+        dtgBooking.Columns("vehicle_name").HeaderText = "Vehicle"
+        dtgBooking.Columns("vehicle_model").HeaderText = "Model"
+        dtgBooking.Columns("rental_price").HeaderText = "Price/Day"
+        dtgBooking.Columns("customer_first_name").HeaderText = "Customer Name"
+        dtgBooking.Columns("customer_email").HeaderText = "Email"
+        dtgBooking.Columns("staff_first_name").HeaderText = "Staff Name"
+        dtgBooking.Columns("start_date").HeaderText = "Start Date"
+        dtgBooking.Columns("end_date").HeaderText = "End Date"
+        dtgBooking.Columns("status").HeaderText = "Rental Status"
+        dtgBooking.Columns("return_date").HeaderText = "Return Date"
 
-
-        dtgBooking.Columns("id").Visible = False
-        dtgBooking.Columns("brand_id").Visible = False
-        dtgBooking.Columns("category_id").Visible = False
+        ' Hide internal or unnecessary columns (if any)
+        dtgBooking.Columns("rental_id").Visible = False ' optional
     End Sub
 
     Private Sub dtgBooking_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)

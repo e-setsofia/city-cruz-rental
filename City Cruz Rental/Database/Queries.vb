@@ -49,19 +49,6 @@ Public Class Queries
 
         Dim result As DataTable = db.ExecuteQuery(query)
 
-        ' Example: loop through and display results
-        For Each row As DataRow In result.Rows
-            Dim vehicleInfo As String = "ID: " & row("id") &
-                ", Name: " & row("name") &
-                ", Brand: " & row("brand_name") &
-                ", Model: " & row("model") &
-                ", Price: " & row("rental_price") &
-                ", State: " & row("state") &
-                ", Rating: " & row("rating") &
-                ", Category: " & row("category_name")
-
-            Console.WriteLine(vehicleInfo) ' Or bind to DataGridView
-        Next
         Return result
     End Function
 
@@ -69,39 +56,35 @@ Public Class Queries
     Public Shared Function ListBookedVehicles() As DataTable
         Dim db As New DatabaseHelper()
         Dim query As String = "
-            SELECT 
-                v.id, 
-                v.name, 
-                v.brand_id, 
-                b.name AS brand_name, 
-                v.model, 
-                v.rental_price, 
-                v.state, 
-                v.rating, 
-                v.category_id, 
-                c.name AS category_name
+           SELECT 
+                r.id AS rental_id,
+                v.name AS vehicle_name,
+                v.model AS vehicle_model,
+                v.rental_price,
+                c.fName AS customer_first_name,
+                c.email AS customer_email,
+                u.fname AS staff_first_name,
+                r.start_date,
+                r.end_date,
+                r.status,
+                r.return_date
             FROM 
-                vehicles v
+                rentals r
             JOIN 
-                brands b ON v.brand_id = b.id
+                vehicles v ON r.vehicle_id = v.id
             JOIN 
-                categories c ON v.category_id = c.id"
+                customers c ON r.customer_id = c.customer_id
+            LEFT JOIN 
+                users u ON r.staff_user_id = u.id
+            WHERE 
+                r.return_date IS NULL
+                OR r.status != 'Returned'
+            ORDER BY 
+                r.start_date DESC;
+            "
 
         Dim result As DataTable = db.ExecuteQuery(query)
 
-        ' Example: loop through and display results
-        For Each row As DataRow In result.Rows
-            Dim vehicleInfo As String = "ID: " & row("id") &
-                ", Name: " & row("name") &
-                ", Brand: " & row("brand_name") &
-                ", Model: " & row("model") &
-                ", Price: " & row("rental_price") &
-                ", State: " & row("state") &
-                ", Rating: " & row("rating") &
-                ", Category: " & row("category_name")
-
-            Console.WriteLine(vehicleInfo) ' Or bind to DataGridView
-        Next
         Return result
     End Function
 
