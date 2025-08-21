@@ -64,7 +64,8 @@ Public Class StaffControl
         End If
     End Sub
 
-    Private Sub DvgStaffdetails_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dvgStaffdetails.CellClick
+    Private Sub DvgStaffdetails_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dvgStaffdetails.CellDoubleClick
+
         ' Ignore header clicks
         If e.RowIndex < 0 Then Exit Sub
 

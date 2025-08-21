@@ -22,16 +22,16 @@ Partial Class CustomerControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblStatus = New System.Windows.Forms.Label()
+        Me.lblFullName = New System.Windows.Forms.Label()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
@@ -42,42 +42,42 @@ Partial Class CustomerControl
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.dtgCustomers = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Guna2Separator4 = New Guna.UI2.WinForms.Guna2Separator()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Guna2Separator3 = New Guna.UI2.WinForms.Guna2Separator()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.btnBookVehicle = New Guna.UI2.WinForms.Guna2Button()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Separator5 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.btnAddCustomer = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Separator6 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.DataPair6 = New City_Cruz_Rental.DataPair()
-        Me.DataPair4 = New City_Cruz_Rental.DataPair()
-        Me.DataPair3 = New City_Cruz_Rental.DataPair()
-        Me.DataPair2 = New City_Cruz_Rental.DataPair()
-        Me.DataPair1 = New City_Cruz_Rental.DataPair()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.btnAddCustomer = New Guna.UI2.WinForms.Guna2Button()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Guna2Separator4 = New Guna.UI2.WinForms.Guna2Separator()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.btnBookVehicle = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Guna2Separator3 = New Guna.UI2.WinForms.Guna2Separator()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.dpAddress = New City_Cruz_Rental.DataPair()
+        Me.dpPostalCode = New City_Cruz_Rental.DataPair()
+        Me.dpLicence = New City_Cruz_Rental.DataPair()
+        Me.dpPhone = New City_Cruz_Rental.DataPair()
+        Me.dpEmail = New City_Cruz_Rental.DataPair()
         Me.Panel1.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -89,17 +89,17 @@ Partial Class CustomerControl
         Me.Guna2Panel5.SuspendLayout()
         CType(Me.dtgCustomers, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
-        Me.Guna2Panel3.SuspendLayout()
-        Me.TableLayoutPanel3.SuspendLayout()
-        Me.Guna2Panel2.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
-        Me.Panel7.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
+        Me.Guna2Panel3.SuspendLayout()
+        Me.TableLayoutPanel3.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -111,7 +111,7 @@ Partial Class CustomerControl
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Padding = New System.Windows.Forms.Padding(16, 16, 16, 16)
+        Me.Panel1.Padding = New System.Windows.Forms.Padding(16)
         Me.Panel1.Size = New System.Drawing.Size(316, 609)
         Me.Panel1.TabIndex = 0
         '
@@ -119,11 +119,11 @@ Partial Class CustomerControl
         '
         Me.Guna2Panel1.AutoScroll = True
         Me.Guna2Panel1.BorderRadius = 12
-        Me.Guna2Panel1.Controls.Add(Me.DataPair6)
-        Me.Guna2Panel1.Controls.Add(Me.DataPair4)
-        Me.Guna2Panel1.Controls.Add(Me.DataPair3)
-        Me.Guna2Panel1.Controls.Add(Me.DataPair2)
-        Me.Guna2Panel1.Controls.Add(Me.DataPair1)
+        Me.Guna2Panel1.Controls.Add(Me.dpAddress)
+        Me.Guna2Panel1.Controls.Add(Me.dpPostalCode)
+        Me.Guna2Panel1.Controls.Add(Me.dpLicence)
+        Me.Guna2Panel1.Controls.Add(Me.dpPhone)
+        Me.Guna2Panel1.Controls.Add(Me.dpEmail)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Separator1)
         Me.Guna2Panel1.Controls.Add(Me.Panel4)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -131,7 +131,7 @@ Partial Class CustomerControl
         Me.Guna2Panel1.Location = New System.Drawing.Point(16, 16)
         Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(3, 3, 3, 16)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Padding = New System.Windows.Forms.Padding(8, 8, 8, 8)
+        Me.Guna2Panel1.Padding = New System.Windows.Forms.Padding(8)
         Me.Guna2Panel1.Size = New System.Drawing.Size(284, 351)
         Me.Guna2Panel1.TabIndex = 0
         '
@@ -147,36 +147,36 @@ Partial Class CustomerControl
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Transparent
-        Me.Panel4.Controls.Add(Me.Label2)
-        Me.Panel4.Controls.Add(Me.Label1)
+        Me.Panel4.Controls.Add(Me.lblStatus)
+        Me.Panel4.Controls.Add(Me.lblFullName)
         Me.Panel4.Controls.Add(Me.Guna2CirclePictureBox1)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(8, 8)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Padding = New System.Windows.Forms.Padding(8, 8, 8, 8)
+        Me.Panel4.Padding = New System.Windows.Forms.Padding(8)
         Me.Panel4.Size = New System.Drawing.Size(268, 63)
         Me.Panel4.TabIndex = 1
         '
-        'Label2
+        'lblStatus
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label2.Location = New System.Drawing.Point(74, 32)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 15)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Stephen Bimpong"
+        Me.lblStatus.AutoSize = True
+        Me.lblStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStatus.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.lblStatus.Location = New System.Drawing.Point(74, 32)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(106, 15)
+        Me.lblStatus.TabIndex = 2
+        Me.lblStatus.Text = "Stephen Bimpong"
         '
-        'Label1
+        'lblFullName
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(74, 17)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(121, 15)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Stephen Bimpong"
+        Me.lblFullName.AutoSize = True
+        Me.lblFullName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFullName.Location = New System.Drawing.Point(74, 17)
+        Me.lblFullName.Name = "lblFullName"
+        Me.lblFullName.Size = New System.Drawing.Size(121, 15)
+        Me.lblFullName.TabIndex = 1
+        Me.lblFullName.Text = "Stephen Bimpong"
         '
         'Guna2CirclePictureBox1
         '
@@ -272,7 +272,7 @@ Partial Class CustomerControl
         Me.Guna2Panel5.FillColor = System.Drawing.Color.White
         Me.Guna2Panel5.Location = New System.Drawing.Point(0, 16)
         Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Padding = New System.Windows.Forms.Padding(16, 16, 16, 16)
+        Me.Guna2Panel5.Padding = New System.Windows.Forms.Padding(16)
         Me.Guna2Panel5.Size = New System.Drawing.Size(733, 422)
         Me.Guna2Panel5.TabIndex = 0
         '
@@ -281,43 +281,43 @@ Partial Class CustomerControl
         Me.dtgCustomers.AllowUserToAddRows = False
         Me.dtgCustomers.AllowUserToDeleteRows = False
         Me.dtgCustomers.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(179, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
-        Me.dtgCustomers.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgCustomers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(179, Byte), Integer))
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
+        Me.dtgCustomers.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgCustomers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.dtgCustomers.ColumnHeadersHeight = 20
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(179, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dtgCustomers.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(179, Byte), Integer))
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dtgCustomers.DefaultCellStyle = DataGridViewCellStyle7
         Me.dtgCustomers.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dtgCustomers.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dtgCustomers.Location = New System.Drawing.Point(16, 16)
         Me.dtgCustomers.Name = "dtgCustomers"
         Me.dtgCustomers.ReadOnly = True
         Me.dtgCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgCustomers.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgCustomers.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.dtgCustomers.RowHeadersVisible = False
         Me.dtgCustomers.RowHeadersWidth = 51
         Me.dtgCustomers.Size = New System.Drawing.Size(701, 390)
@@ -355,216 +355,6 @@ Partial Class CustomerControl
         Me.Panel3.Size = New System.Drawing.Size(749, 155)
         Me.Panel3.TabIndex = 0
         '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.ColumnCount = 3
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel1.Controls.Add(Me.Label7, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel3, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.btnBookVehicle, 2, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel2, 0, 0)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.Padding = New System.Windows.Forms.Padding(0, 16, 16, 0)
-        Me.TableLayoutPanel1.RowCount = 2
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(749, 155)
-        Me.TableLayoutPanel1.TabIndex = 0
-        '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel3.BorderRadius = 12
-        Me.Guna2Panel3.Controls.Add(Me.TableLayoutPanel3)
-        Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel3.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel3.Location = New System.Drawing.Point(247, 19)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(238, 133)
-        Me.Guna2Panel3.TabIndex = 1
-        '
-        'TableLayoutPanel3
-        '
-        Me.TableLayoutPanel3.ColumnCount = 3
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.Guna2Separator4, 0, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.Panel6, 0, 2)
-        Me.TableLayoutPanel3.Controls.Add(Me.Label5, 1, 0)
-        Me.TableLayoutPanel3.Controls.Add(Me.Label6, 2, 0)
-        Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(16, 0, 16, 0)
-        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
-        Me.TableLayoutPanel3.Padding = New System.Windows.Forms.Padding(16, 0, 16, 0)
-        Me.TableLayoutPanel3.RowCount = 3
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.09677!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.90323!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(238, 133)
-        Me.TableLayoutPanel3.TabIndex = 0
-        '
-        'Guna2Separator4
-        '
-        Me.TableLayoutPanel3.SetColumnSpan(Me.Guna2Separator4, 3)
-        Me.Guna2Separator4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Separator4.Location = New System.Drawing.Point(19, 62)
-        Me.Guna2Separator4.Name = "Guna2Separator4"
-        Me.Guna2Separator4.Size = New System.Drawing.Size(200, 2)
-        Me.Guna2Separator4.TabIndex = 0
-        '
-        'Panel6
-        '
-        Me.TableLayoutPanel3.SetColumnSpan(Me.Panel6, 3)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(19, 70)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(200, 60)
-        Me.Panel6.TabIndex = 1
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(69, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(85, 59)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Total Customers"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(160, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(59, 59)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "300"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Guna2Panel2
-        '
-        Me.Guna2Panel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel2.BorderRadius = 12
-        Me.Guna2Panel2.Controls.Add(Me.TableLayoutPanel2)
-        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel2.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel2.Location = New System.Drawing.Point(3, 19)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(238, 133)
-        Me.Guna2Panel2.TabIndex = 0
-        '
-        'TableLayoutPanel2
-        '
-        Me.TableLayoutPanel2.ColumnCount = 3
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Separator3, 0, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Panel5, 0, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label3, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label4, 2, 0)
-        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.Padding = New System.Windows.Forms.Padding(16, 0, 16, 0)
-        Me.TableLayoutPanel2.RowCount = 3
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.09677!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.90323!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(238, 133)
-        Me.TableLayoutPanel2.TabIndex = 0
-        '
-        'Guna2Separator3
-        '
-        Me.TableLayoutPanel2.SetColumnSpan(Me.Guna2Separator3, 3)
-        Me.Guna2Separator3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Separator3.Location = New System.Drawing.Point(19, 62)
-        Me.Guna2Separator3.Name = "Guna2Separator3"
-        Me.Guna2Separator3.Size = New System.Drawing.Size(200, 2)
-        Me.Guna2Separator3.TabIndex = 0
-        '
-        'Panel5
-        '
-        Me.TableLayoutPanel2.SetColumnSpan(Me.Panel5, 3)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel5.Location = New System.Drawing.Point(19, 70)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(200, 60)
-        Me.Panel5.TabIndex = 1
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(69, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(85, 59)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Total Customers"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(160, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 59)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "300"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'btnBookVehicle
-        '
-        Me.btnBookVehicle.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnBookVehicle.BorderRadius = 16
-        Me.btnBookVehicle.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnBookVehicle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnBookVehicle.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnBookVehicle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnBookVehicle.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBookVehicle.ForeColor = System.Drawing.Color.White
-        Me.btnBookVehicle.Location = New System.Drawing.Point(677, 19)
-        Me.btnBookVehicle.Name = "btnBookVehicle"
-        Me.btnBookVehicle.Size = New System.Drawing.Size(53, 75)
-        Me.btnBookVehicle.TabIndex = 13
-        Me.btnBookVehicle.Text = "+"
-        '
-        'Label7
-        '
-        Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(648, 155)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(82, 13)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Book Vehicle"
-        '
-        'Panel7
-        '
-        Me.Panel7.Controls.Add(Me.btnAddCustomer)
-        Me.Panel7.Controls.Add(Me.Label8)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel7.Location = New System.Drawing.Point(628, 0)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(121, 155)
-        Me.Panel7.TabIndex = 1
-        '
         'TableLayoutPanel4
         '
         Me.TableLayoutPanel4.ColumnCount = 3
@@ -582,17 +372,6 @@ Partial Class CustomerControl
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel4.Size = New System.Drawing.Size(628, 155)
         Me.TableLayoutPanel4.TabIndex = 0
-        '
-        'Label8
-        '
-        Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(7, 107)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(85, 13)
-        Me.Label8.TabIndex = 14
-        Me.Label8.Text = "Add Customer"
         '
         'Guna2Panel4
         '
@@ -671,22 +450,6 @@ Partial Class CustomerControl
         Me.Label10.Text = "300"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'btnAddCustomer
-        '
-        Me.btnAddCustomer.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnAddCustomer.BorderRadius = 16
-        Me.btnAddCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnAddCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnAddCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnAddCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnAddCustomer.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddCustomer.ForeColor = System.Drawing.Color.White
-        Me.btnAddCustomer.Location = New System.Drawing.Point(23, 24)
-        Me.btnAddCustomer.Name = "btnAddCustomer"
-        Me.btnAddCustomer.Size = New System.Drawing.Size(53, 75)
-        Me.btnAddCustomer.TabIndex = 13
-        Me.btnAddCustomer.Text = "+"
-        '
         'Guna2Panel6
         '
         Me.Guna2Panel6.BackColor = System.Drawing.Color.Transparent
@@ -763,65 +526,302 @@ Partial Class CustomerControl
         Me.Label12.Text = "300"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'DataPair6
+        'Panel7
         '
-        Me.DataPair6.BackColor = System.Drawing.Color.Transparent
-        Me.DataPair6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.DataPair6.LabelText = "Address"
-        Me.DataPair6.Location = New System.Drawing.Point(8, 283)
-        Me.DataPair6.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataPair6.Name = "DataPair6"
-        Me.DataPair6.Size = New System.Drawing.Size(268, 48)
-        Me.DataPair6.TabIndex = 8
-        Me.DataPair6.ValueText = "Trasaco Estate"
+        Me.Panel7.Controls.Add(Me.btnAddCustomer)
+        Me.Panel7.Controls.Add(Me.Label8)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel7.Location = New System.Drawing.Point(628, 0)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(121, 155)
+        Me.Panel7.TabIndex = 1
         '
-        'DataPair4
+        'btnAddCustomer
         '
-        Me.DataPair4.BackColor = System.Drawing.Color.Transparent
-        Me.DataPair4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.DataPair4.LabelText = "Phone:"
-        Me.DataPair4.Location = New System.Drawing.Point(8, 235)
-        Me.DataPair4.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataPair4.Name = "DataPair4"
-        Me.DataPair4.Size = New System.Drawing.Size(268, 48)
-        Me.DataPair4.TabIndex = 6
-        Me.DataPair4.ValueText = "+233 0550 495 601"
+        Me.btnAddCustomer.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnAddCustomer.BorderRadius = 16
+        Me.btnAddCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnAddCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnAddCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnAddCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnAddCustomer.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddCustomer.ForeColor = System.Drawing.Color.White
+        Me.btnAddCustomer.Location = New System.Drawing.Point(23, 24)
+        Me.btnAddCustomer.Name = "btnAddCustomer"
+        Me.btnAddCustomer.Size = New System.Drawing.Size(53, 75)
+        Me.btnAddCustomer.TabIndex = 13
+        Me.btnAddCustomer.Text = "+"
         '
-        'DataPair3
+        'Label8
         '
-        Me.DataPair3.BackColor = System.Drawing.Color.Transparent
-        Me.DataPair3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.DataPair3.LabelText = "Drivers license:"
-        Me.DataPair3.Location = New System.Drawing.Point(8, 187)
-        Me.DataPair3.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataPair3.Name = "DataPair3"
-        Me.DataPair3.Size = New System.Drawing.Size(268, 48)
-        Me.DataPair3.TabIndex = 5
-        Me.DataPair3.ValueText = "Something"
+        Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(7, 107)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(85, 13)
+        Me.Label8.TabIndex = 14
+        Me.Label8.Text = "Add Customer"
         '
-        'DataPair2
+        'TableLayoutPanel1
         '
-        Me.DataPair2.BackColor = System.Drawing.Color.Transparent
-        Me.DataPair2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.DataPair2.LabelText = "Phone:"
-        Me.DataPair2.Location = New System.Drawing.Point(8, 139)
-        Me.DataPair2.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataPair2.Name = "DataPair2"
-        Me.DataPair2.Size = New System.Drawing.Size(268, 48)
-        Me.DataPair2.TabIndex = 4
-        Me.DataPair2.ValueText = "+233 0550 495 601"
+        Me.TableLayoutPanel1.ColumnCount = 3
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.Controls.Add(Me.Label7, 2, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel3, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnBookVehicle, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel2, 0, 0)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.Padding = New System.Windows.Forms.Padding(0, 16, 16, 0)
+        Me.TableLayoutPanel1.RowCount = 2
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(749, 155)
+        Me.TableLayoutPanel1.TabIndex = 0
         '
-        'DataPair1
+        'Label7
         '
-        Me.DataPair1.BackColor = System.Drawing.Color.Transparent
-        Me.DataPair1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.DataPair1.LabelText = "Email:"
-        Me.DataPair1.Location = New System.Drawing.Point(8, 91)
-        Me.DataPair1.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataPair1.Name = "DataPair1"
-        Me.DataPair1.Size = New System.Drawing.Size(268, 48)
-        Me.DataPair1.TabIndex = 3
-        Me.DataPair1.ValueText = "stephen@uew.edu"
+        Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(648, 155)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(82, 13)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Book Vehicle"
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel3.BorderRadius = 12
+        Me.Guna2Panel3.Controls.Add(Me.TableLayoutPanel3)
+        Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel3.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel3.Location = New System.Drawing.Point(247, 19)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(238, 133)
+        Me.Guna2Panel3.TabIndex = 1
+        '
+        'TableLayoutPanel3
+        '
+        Me.TableLayoutPanel3.ColumnCount = 3
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.Guna2Separator4, 0, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.Panel6, 0, 2)
+        Me.TableLayoutPanel3.Controls.Add(Me.Label5, 1, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.Label6, 2, 0)
+        Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(16, 0, 16, 0)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.Padding = New System.Windows.Forms.Padding(16, 0, 16, 0)
+        Me.TableLayoutPanel3.RowCount = 3
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.09677!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.90323!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(238, 133)
+        Me.TableLayoutPanel3.TabIndex = 0
+        '
+        'Guna2Separator4
+        '
+        Me.TableLayoutPanel3.SetColumnSpan(Me.Guna2Separator4, 3)
+        Me.Guna2Separator4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Separator4.Location = New System.Drawing.Point(19, 62)
+        Me.Guna2Separator4.Name = "Guna2Separator4"
+        Me.Guna2Separator4.Size = New System.Drawing.Size(200, 2)
+        Me.Guna2Separator4.TabIndex = 0
+        '
+        'Panel6
+        '
+        Me.TableLayoutPanel3.SetColumnSpan(Me.Panel6, 3)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel6.Location = New System.Drawing.Point(19, 70)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(200, 60)
+        Me.Panel6.TabIndex = 1
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(69, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(85, 59)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Total Customers"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(160, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(59, 59)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = "300"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'btnBookVehicle
+        '
+        Me.btnBookVehicle.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnBookVehicle.BorderRadius = 16
+        Me.btnBookVehicle.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnBookVehicle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnBookVehicle.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnBookVehicle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnBookVehicle.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBookVehicle.ForeColor = System.Drawing.Color.White
+        Me.btnBookVehicle.Location = New System.Drawing.Point(677, 19)
+        Me.btnBookVehicle.Name = "btnBookVehicle"
+        Me.btnBookVehicle.Size = New System.Drawing.Size(53, 75)
+        Me.btnBookVehicle.TabIndex = 13
+        Me.btnBookVehicle.Text = "+"
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel2.BorderRadius = 12
+        Me.Guna2Panel2.Controls.Add(Me.TableLayoutPanel2)
+        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel2.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel2.Location = New System.Drawing.Point(3, 19)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.Size = New System.Drawing.Size(238, 133)
+        Me.Guna2Panel2.TabIndex = 0
+        '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Separator3, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Panel5, 0, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label3, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label4, 2, 0)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.Padding = New System.Windows.Forms.Padding(16, 0, 16, 0)
+        Me.TableLayoutPanel2.RowCount = 3
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.09677!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.90323!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(238, 133)
+        Me.TableLayoutPanel2.TabIndex = 0
+        '
+        'Guna2Separator3
+        '
+        Me.TableLayoutPanel2.SetColumnSpan(Me.Guna2Separator3, 3)
+        Me.Guna2Separator3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Separator3.Location = New System.Drawing.Point(19, 62)
+        Me.Guna2Separator3.Name = "Guna2Separator3"
+        Me.Guna2Separator3.Size = New System.Drawing.Size(200, 2)
+        Me.Guna2Separator3.TabIndex = 0
+        '
+        'Panel5
+        '
+        Me.TableLayoutPanel2.SetColumnSpan(Me.Panel5, 3)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel5.Location = New System.Drawing.Point(19, 70)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(200, 60)
+        Me.Panel5.TabIndex = 1
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(69, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(85, 59)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Total Customers"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(160, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(59, 59)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "300"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'dpAddress
+        '
+        Me.dpAddress.BackColor = System.Drawing.Color.Transparent
+        Me.dpAddress.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpAddress.LabelText = "Address"
+        Me.dpAddress.Location = New System.Drawing.Point(8, 283)
+        Me.dpAddress.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpAddress.Name = "dpAddress"
+        Me.dpAddress.Size = New System.Drawing.Size(268, 48)
+        Me.dpAddress.TabIndex = 8
+        Me.dpAddress.ValueText = "Trasaco Estate"
+        '
+        'dpPostalCode
+        '
+        Me.dpPostalCode.BackColor = System.Drawing.Color.Transparent
+        Me.dpPostalCode.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpPostalCode.LabelText = "Postal Code:"
+        Me.dpPostalCode.Location = New System.Drawing.Point(8, 235)
+        Me.dpPostalCode.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpPostalCode.Name = "dpPostalCode"
+        Me.dpPostalCode.Size = New System.Drawing.Size(268, 48)
+        Me.dpPostalCode.TabIndex = 6
+        Me.dpPostalCode.ValueText = "+233 0550 495 601"
+        '
+        'dpLicence
+        '
+        Me.dpLicence.BackColor = System.Drawing.Color.Transparent
+        Me.dpLicence.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpLicence.LabelText = "Drivers license:"
+        Me.dpLicence.Location = New System.Drawing.Point(8, 187)
+        Me.dpLicence.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpLicence.Name = "dpLicence"
+        Me.dpLicence.Size = New System.Drawing.Size(268, 48)
+        Me.dpLicence.TabIndex = 5
+        Me.dpLicence.ValueText = "Something"
+        '
+        'dpPhone
+        '
+        Me.dpPhone.BackColor = System.Drawing.Color.Transparent
+        Me.dpPhone.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpPhone.LabelText = "Phone:"
+        Me.dpPhone.Location = New System.Drawing.Point(8, 139)
+        Me.dpPhone.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpPhone.Name = "dpPhone"
+        Me.dpPhone.Size = New System.Drawing.Size(268, 48)
+        Me.dpPhone.TabIndex = 4
+        Me.dpPhone.ValueText = "+233 0550 495 601"
+        '
+        'dpEmail
+        '
+        Me.dpEmail.BackColor = System.Drawing.Color.Transparent
+        Me.dpEmail.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpEmail.LabelText = "Email:"
+        Me.dpEmail.Location = New System.Drawing.Point(8, 91)
+        Me.dpEmail.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpEmail.Name = "dpEmail"
+        Me.dpEmail.Size = New System.Drawing.Size(268, 48)
+        Me.dpEmail.TabIndex = 3
+        Me.dpEmail.ValueText = "stephen@uew.edu"
         '
         'CustomerControl
         '
@@ -843,6 +843,15 @@ Partial Class CustomerControl
         Me.Guna2Panel5.ResumeLayout(False)
         CType(Me.dtgCustomers, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
+        Me.TableLayoutPanel4.ResumeLayout(False)
+        Me.Guna2Panel4.ResumeLayout(False)
+        Me.TableLayoutPanel5.ResumeLayout(False)
+        Me.TableLayoutPanel5.PerformLayout()
+        Me.Guna2Panel6.ResumeLayout(False)
+        Me.TableLayoutPanel6.ResumeLayout(False)
+        Me.TableLayoutPanel6.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         Me.Guna2Panel3.ResumeLayout(False)
@@ -851,15 +860,6 @@ Partial Class CustomerControl
         Me.Guna2Panel2.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel7.PerformLayout()
-        Me.TableLayoutPanel4.ResumeLayout(False)
-        Me.Guna2Panel4.ResumeLayout(False)
-        Me.TableLayoutPanel5.ResumeLayout(False)
-        Me.TableLayoutPanel5.PerformLayout()
-        Me.Guna2Panel6.ResumeLayout(False)
-        Me.TableLayoutPanel6.ResumeLayout(False)
-        Me.TableLayoutPanel6.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -869,15 +869,15 @@ Partial Class CustomerControl
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblStatus As Label
+    Friend WithEvents lblFullName As Label
     Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents Guna2Separator1 As Guna.UI2.WinForms.Guna2Separator
-    Friend WithEvents DataPair6 As DataPair
-    Friend WithEvents DataPair4 As DataPair
-    Friend WithEvents DataPair3 As DataPair
-    Friend WithEvents DataPair2 As DataPair
-    Friend WithEvents DataPair1 As DataPair
+    Friend WithEvents dpAddress As DataPair
+    Friend WithEvents dpPostalCode As DataPair
+    Friend WithEvents dpLicence As DataPair
+    Friend WithEvents dpPhone As DataPair
+    Friend WithEvents dpEmail As DataPair
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
