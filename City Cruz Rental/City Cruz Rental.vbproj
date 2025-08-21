@@ -184,6 +184,12 @@
     </Compile>
     <Compile Include="Database\DatabaseHelper.vb" />
     <Compile Include="Database\Queries.vb" />
+    <Compile Include="DialogBoxes\AddCustomerDialog.Designer.vb">
+      <DependentUpon>AddCustomerDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxes\AddCustomerDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DialogBoxes\AddStaffDialog.Designer.vb">
       <DependentUpon>AddStaffDialog.vb</DependentUpon>
     </Compile>
@@ -253,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom controls\StaffControl.resx">
       <DependentUpon>StaffControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxes\AddCustomerDialog.resx">
+      <DependentUpon>AddCustomerDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBoxes\AddStaffDialog.resx">
       <DependentUpon>AddStaffDialog.vb</DependentUpon>
