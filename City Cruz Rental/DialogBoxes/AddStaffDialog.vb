@@ -196,4 +196,38 @@ Public Class AddStaffDialog
         Next
     End Sub
 
+    Private Sub txtFirstName_TextChanged(sender As Object, e As EventArgs) Handles txtFirstName.TextChanged
+        Dim originalText As String = txtFirstName.Text
+        Dim filteredText As String = ""
+
+        For Each ch As Char In originalText
+            If Char.IsLetter(ch) Then
+                filteredText &= ch
+            End If
+        Next
+
+        If txtFirstName.Text <> filteredText Then
+            Dim cursorPos As Integer = txtFirstName.SelectionStart
+            txtFirstName.Text = filteredText
+            txtFirstName.SelectionStart = Math.Min(cursorPos, filteredText.Length)
+        End If
+    End Sub
+
+    Private Sub txtLastName_TextChanged(sender As Object, e As EventArgs) Handles txtLastName.TextChanged
+        Dim originalText As String = txtLastName.Text
+        Dim filteredText As String = ""
+
+        For Each ch As Char In originalText
+            If Char.IsLetter(ch) Then
+                filteredText &= ch
+            End If
+        Next
+
+        If txtLastName.Text <> filteredText Then
+            Dim cursorPos As Integer = txtLastName.SelectionStart
+            txtLastName.Text = filteredText
+            txtLastName.SelectionStart = Math.Min(cursorPos, filteredText.Length)
+        End If
+    End Sub
+
 End Class

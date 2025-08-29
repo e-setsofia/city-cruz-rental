@@ -20,6 +20,7 @@ Public Class AddCustomerDialog
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+
         Try
             Dim query As String
 
@@ -45,7 +46,7 @@ Public Class AddCustomerDialog
                     cmd.Parameters.AddWithValue("@LicenseExpiry", dtpLicenseExpiry.Value.Date)
                     cmd.Parameters.AddWithValue("@DOB", dtpDOB.Value.Date)
                     cmd.Parameters.AddWithValue("@Address", txtAddress.Text)
-                    cmd.Parameters.AddWithValue("@City", cmbCity.selectedValue)
+                    cmd.Parameters.AddWithValue("@City", cmbCity.SelectedValue)
                     cmd.Parameters.AddWithValue("@Status", "Active")
                     cmd.Parameters.AddWithValue("@Postal", txtPostalCode.Text)
                     cmd.Parameters.AddWithValue("@Country", "Ghana")
@@ -179,4 +180,38 @@ Public Class AddCustomerDialog
         End If
     End Sub
 
+    Private Sub txtFirstName_TextChanged(sender As Object, e As EventArgs) Handles txtFirstName.TextChanged
+
+        Dim originalText As String = txtFirstName.Text
+        Dim filteredText As String = ""
+
+        For Each ch As Char In originalText
+            If Char.IsLetter(ch) Then
+                filteredText &= ch
+            End If
+        Next
+
+        If txtFirstName.Text <> filteredText Then
+            Dim cursorPos As Integer = txtFirstName.SelectionStart
+            txtFirstName.Text = filteredText
+            txtFirstName.SelectionStart = Math.Min(cursorPos, filteredText.Length)
+        End If
+    End Sub
+
+    Private Sub txtLastName_TextChanged(sender As Object, e As EventArgs) Handles txtLastName.TextChanged
+        Dim originalText As String = txtLastName.Text
+        Dim filteredText As String = ""
+
+        For Each ch As Char In originalText
+            If Char.IsLetter(ch) Then
+                filteredText &= ch
+            End If
+        Next
+
+        If txtLastName.Text <> filteredText Then
+            Dim cursorPos As Integer = txtLastName.SelectionStart
+            txtLastName.Text = filteredText
+            txtLastName.SelectionStart = Math.Min(cursorPos, filteredText.Length)
+        End If
+    End Sub
 End Class
