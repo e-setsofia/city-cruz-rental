@@ -22,4 +22,17 @@
     End Sub
 
 
+    Private Sub VehicleControl_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+
+        ' Ensure the PictureBox uses manual painting
+        imgCar.SizeMode = PictureBoxSizeMode.Normal
+
+        ' Remove old handler (to prevent duplicates if function is called again)
+        RemoveHandler imgCar.Paint, AddressOf ImageResizer.PictureBoxCropFill_Paint
+        ' Add handler
+        AddHandler imgCar.Paint, AddressOf ImageResizer.PictureBoxCropFill_Paint
+
+        ' Force redraw
+        imgCar.Invalidate()
+    End Sub
 End Class
