@@ -47,10 +47,10 @@ Public Class AddStaffDialog
         validator.ClearEntries()
         validator.AddEntry(txtFirstName, lblFirstName, FieldValidator.FieldType.NAME)
         validator.AddEntry(txtLastName, lblLastName, FieldValidator.FieldType.NAME)
-        validator.AddEntry(txtPhone, lblPhone, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtPhone, lblPhone, FieldValidator.FieldType.PHONE)
         validator.AddEntry(txtJobTitle, lblJob, FieldValidator.FieldType.NAME)
-        validator.AddEntry(txtEmail, lblEmail, FieldValidator.FieldType.NAME)
-        validator.AddEntry(txtPassword, lblPassword, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtEmail, lblEmail, FieldValidator.FieldType.EMAIL)
+        validator.AddEntry(txtPassword, lblPassword, FieldValidator.FieldType.PASSWORD)
         validator.AddEntry(txtUsername, lblUsername, FieldValidator.FieldType.NAME)
     End Sub
 
