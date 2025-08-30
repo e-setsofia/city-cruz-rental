@@ -24,9 +24,6 @@ Public Class FieldValidator
         Public Field As FieldType
     End Structure
 
-    ' The collection of validation entries
-    Private ValidationEntries As New List(Of ValidationEntry)
-
     ' Add a new entry
     Public Sub AddEntry(txt As TextBox, lbl As Label, field As FieldType)
         Dim entry As New ValidationEntry With {
@@ -36,8 +33,6 @@ Public Class FieldValidator
         }
         ValidationEntries.Add(entry)
     End Sub
-
-
 
     Public Sub AddEntry(txt As Guna.UI2.WinForms.Guna2TextBox, lbl As Label, field As FieldType)
         Dim textBox = New TextBox
@@ -49,6 +44,30 @@ Public Class FieldValidator
         }
         ValidationEntries.Add(entry)
     End Sub
+    'Set years or days from today to DateTimePicker
+    Public Sub AddEntry(dtp As Guna.UI2.WinForms.Guna2DateTimePicker, StartValue As Integer?, EndValue As Integer?, Optional CalculateInDays As Boolean = False)
+        If StartValue IsNot Nothing Then
+            If CalculateInDays Then
+                dtp.MinDate = Today.AddDays(StartValue.Value)
+            Else
+                dtp.MinDate = Today.AddYears(StartValue.Value)
+            End If
+        End If
+
+        If EndValue IsNot Nothing Then
+            If CalculateInDays Then
+                dtp.MaxDate = Today.AddDays(EndValue.Value)
+            Else
+                dtp.MaxDate = Today.AddYears(EndValue.Value)
+            End If
+        End If
+    End Sub
+
+
+    ' The collection of validation entries
+    Private ValidationEntries As New List(Of ValidationEntry)
+
+
     ' Clear all entries
     Public Sub ClearEntries()
         ValidationEntries.Clear()
@@ -129,6 +148,8 @@ Public Class FieldValidator
 
         Return errorMessage
     End Function
+
+
 
     Public Function EstimateStrengthScore(password As String) As Integer
         If String.IsNullOrEmpty(password) Then Return 0

@@ -214,4 +214,5 @@ Public Class AddCustomerDialog
             txtLastName.SelectionStart = Math.Min(cursorPos, filteredText.Length)
         End If
     End Sub
+
 End Class

@@ -4,6 +4,8 @@ Public Class AddStaffDialog
     Private isEditMode As Boolean = False
     Private editUserId As Integer = -1
     Private validator As New FieldValidator()
+    Private oldPassword = ""
+
 
     Public Sub InitializeForm(Optional userId As Integer = -1)
         If userId <> -1 Then
@@ -16,6 +18,7 @@ Public Class AddStaffDialog
         Else
             isEditMode = False
             editUserId = -1
+            lblFormName.Text = $"Add"
         End If
     End Sub
 
@@ -49,13 +52,13 @@ Public Class AddStaffDialog
         validator.AddEntry(txtLastName, lblLastName, FieldValidator.FieldType.NAME)
         validator.AddEntry(txtPhone, lblPhone, FieldValidator.FieldType.PHONE)
         validator.AddEntry(txtJobTitle, lblJob, FieldValidator.FieldType.NAME)
+        validator.AddEntry(tmpDOB, -80, -18) ' Make sure your start date is lesser or equal to your end date
         validator.AddEntry(txtEmail, lblEmail, FieldValidator.FieldType.EMAIL)
         validator.AddEntry(txtPassword, lblPassword, FieldValidator.FieldType.PASSWORD)
         validator.AddEntry(txtUsername, lblUsername, FieldValidator.FieldType.NAME)
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        Validation()
 
         If validator.ValidateAll() Then
             AddStaff()
@@ -93,7 +96,11 @@ Public Class AddStaffDialog
                     cmd.Parameters.AddWithValue("@email", txtEmail.Text)
                     cmd.Parameters.AddWithValue("@dob", tmpDOB.Value.Date)
                     cmd.Parameters.AddWithValue("@job_title", txtJobTitle.Text)
-                    cmd.Parameters.AddWithValue("@password", txtPassword.Text)
+                    If isEditMode And txtPassword.Text = "" Then
+                        cmd.Parameters.AddWithValue("@password", oldPassword)
+                    Else
+                        cmd.Parameters.AddWithValue("@password", txtPassword.Text)
+                    End If
 
                     If isEditMode Then
                         cmd.Parameters.AddWithValue("@id", editUserId)
@@ -150,7 +157,7 @@ Public Class AddStaffDialog
                             txtJobTitle.Text = reader("job_title").ToString()
 
                             ' Passwords typically shouldn't be displayed for security, but here it is:
-                            txtPassword.Text = reader("password").ToString()
+                            oldPassword = reader("password").ToString()
                         Else
                             MessageBox.Show("User not found.")
                         End If
@@ -165,22 +172,10 @@ Public Class AddStaffDialog
 
     Private Sub AddStaffDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load, Panel4.Enter
         PopulateComboboxes()
-        populateDateTimePicker()
+        Validation()
 
-        ' Set the default value of the buttons.
-        btnAdd.Text = "Add"
-        btnDelete.Text = "Cancel"
     End Sub
-    Private Sub populateDateTimePicker()
-        ' Calculate date limits
-        Dim today As Date = Date.Today
-        Dim maxDate As Date = today.AddYears(-18)  ' 18 years ago
-        Dim minDate As Date = today.AddYears(-80)  ' 80 `years ago
 
-        ' Apply to DateTimePicker
-        tmpDOB.MaxDate = maxDate
-        tmpDOB.MinDate = minDate
-    End Sub
     Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
 
         If Not isEditMode Then
