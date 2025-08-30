@@ -3,6 +3,7 @@ Public Class AddStaffDialog
 
     Private isEditMode As Boolean = False
     Private editUserId As Integer = -1
+    Private validator As New FieldValidator()
 
     Public Sub InitializeForm(Optional userId As Integer = -1)
         If userId <> -1 Then
@@ -42,7 +43,29 @@ Public Class AddStaffDialog
 
     End Sub
 
+    Private Sub Validation()
+        validator.ClearEntries()
+        validator.AddEntry(txtFirstName, lblFirstName, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtLastName, lblLastName, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtPhone, lblPhone, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtJobTitle, lblJob, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtEmail, lblEmail, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtPassword, lblPassword, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtUsername, lblUsername, FieldValidator.FieldType.NAME)
+    End Sub
+
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        Validation()
+
+        If validator.ValidateAll() Then
+            AddStaff()
+        End If
+
+    End Sub
+
+
+
+    Private Sub AddStaff()
         Try
             Dim query As String
 
