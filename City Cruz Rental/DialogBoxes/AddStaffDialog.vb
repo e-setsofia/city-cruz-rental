@@ -39,7 +39,7 @@ Public Class AddStaffDialog
             Utils.AddItemToComboBox(cmbRole, "admin", "Admin")
             Utils.AddItemToComboBox(cmbRole, "recep", "Receptionist")
             Utils.AddItemToComboBox(cmbRole, "atten", "Attendant")
-            cmbRole.SelectedIndex = 0
+            cmbRole.SelectedIndex = 2
         Catch ex As Exception
 
         End Try

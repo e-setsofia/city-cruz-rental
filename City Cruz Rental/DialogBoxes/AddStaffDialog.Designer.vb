@@ -107,7 +107,7 @@ Partial Class AddStaffDialog
         Me.tmpDOB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tmpDOB.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.tmpDOB.Location = New System.Drawing.Point(205, 273)
-        Me.tmpDOB.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tmpDOB.Margin = New System.Windows.Forms.Padding(2)
         Me.tmpDOB.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.tmpDOB.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.tmpDOB.Name = "tmpDOB"
@@ -183,7 +183,7 @@ Partial Class AddStaffDialog
         Me.cmbRole.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbRole.ItemHeight = 30
         Me.cmbRole.Location = New System.Drawing.Point(617, 175)
-        Me.cmbRole.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbRole.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbRole.Name = "cmbRole"
         Me.cmbRole.Size = New System.Drawing.Size(238, 36)
         Me.cmbRole.TabIndex = 3
@@ -279,7 +279,7 @@ Partial Class AddStaffDialog
         Me.btnDelete.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold)
         Me.btnDelete.ForeColor = System.Drawing.Color.White
         Me.btnDelete.Location = New System.Drawing.Point(520, 416)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(80, 33)
         Me.btnDelete.TabIndex = 11
@@ -296,7 +296,7 @@ Partial Class AddStaffDialog
         Me.btnAdd.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold)
         Me.btnAdd.ForeColor = System.Drawing.Color.White
         Me.btnAdd.Location = New System.Drawing.Point(333, 416)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(166, 33)
         Me.btnAdd.TabIndex = 10
@@ -370,7 +370,7 @@ Partial Class AddStaffDialog
         Me.cmbGender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbGender.ItemHeight = 30
         Me.cmbGender.Location = New System.Drawing.Point(205, 175)
-        Me.cmbGender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbGender.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbGender.Name = "cmbGender"
         Me.cmbGender.Size = New System.Drawing.Size(220, 36)
         Me.cmbGender.TabIndex = 2
@@ -395,6 +395,7 @@ Partial Class AddStaffDialog
         Me.txtPassword.SelectedText = ""
         Me.txtPassword.Size = New System.Drawing.Size(219, 32)
         Me.txtPassword.TabIndex = 8
+        Me.txtPassword.UseSystemPasswordChar = True
         '
         'txtFirstName
         '
