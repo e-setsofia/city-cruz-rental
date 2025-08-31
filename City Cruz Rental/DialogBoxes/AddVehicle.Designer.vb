@@ -24,20 +24,20 @@ Partial Class AddVehicle
     Private Sub InitializeComponent()
         Me.lblFormName = New System.Windows.Forms.Label()
         Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lblStatus = New System.Windows.Forms.Label()
+        Me.lblBrand = New System.Windows.Forms.Label()
         Me.cmbBrand = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.btnDelete = New Guna.UI2.WinForms.Guna2Button()
         Me.btnAdd = New Guna.UI2.WinForms.Guna2Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblNumberPlate = New System.Windows.Forms.Label()
+        Me.lblPrice = New System.Windows.Forms.Label()
+        Me.lblName = New System.Windows.Forms.Label()
         Me.txtName = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtPrice = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnBrand = New Guna.UI2.WinForms.Guna2Button()
         Me.cmbStatus = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.cmbCategory = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblCategory = New System.Windows.Forms.Label()
         Me.btnCategory = New Guna.UI2.WinForms.Guna2Button()
         Me.txtNumberPlate = New Guna.UI2.WinForms.Guna2TextBox()
         Me.imgVehicle = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -61,27 +61,27 @@ Partial Class AddVehicle
         Me.Guna2Separator1.Size = New System.Drawing.Size(766, 10)
         Me.Guna2Separator1.TabIndex = 72
         '
-        'Label9
+        'lblStatus
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(486, 334)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(55, 21)
-        Me.Label9.TabIndex = 69
-        Me.Label9.Text = "Status:"
+        Me.lblStatus.AutoSize = True
+        Me.lblStatus.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStatus.Location = New System.Drawing.Point(486, 334)
+        Me.lblStatus.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(55, 21)
+        Me.lblStatus.TabIndex = 69
+        Me.lblStatus.Text = "Status:"
         '
-        'Label8
+        'lblBrand
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(486, 285)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(54, 21)
-        Me.Label8.TabIndex = 70
-        Me.Label8.Text = "Brand:"
+        Me.lblBrand.AutoSize = True
+        Me.lblBrand.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBrand.Location = New System.Drawing.Point(486, 285)
+        Me.lblBrand.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblBrand.Name = "lblBrand"
+        Me.lblBrand.Size = New System.Drawing.Size(54, 21)
+        Me.lblBrand.TabIndex = 70
+        Me.lblBrand.Text = "Brand:"
         '
         'cmbBrand
         '
@@ -134,38 +134,38 @@ Partial Class AddVehicle
         Me.btnAdd.TabIndex = 60
         Me.btnAdd.Text = "Add"
         '
-        'Label4
+        'lblNumberPlate
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(54, 386)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(85, 21)
-        Me.Label4.TabIndex = 66
-        Me.Label4.Text = "Phone No.:"
+        Me.lblNumberPlate.AutoSize = True
+        Me.lblNumberPlate.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumberPlate.Location = New System.Drawing.Point(54, 386)
+        Me.lblNumberPlate.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblNumberPlate.Name = "lblNumberPlate"
+        Me.lblNumberPlate.Size = New System.Drawing.Size(124, 21)
+        Me.lblNumberPlate.TabIndex = 66
+        Me.lblNumberPlate.Text = "Vehicle Number:"
         '
-        'Label3
+        'lblPrice
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(54, 334)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(47, 21)
-        Me.Label3.TabIndex = 63
-        Me.Label3.Text = "Price:"
+        Me.lblPrice.AutoSize = True
+        Me.lblPrice.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrice.Location = New System.Drawing.Point(54, 334)
+        Me.lblPrice.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPrice.Name = "lblPrice"
+        Me.lblPrice.Size = New System.Drawing.Size(47, 21)
+        Me.lblPrice.TabIndex = 63
+        Me.lblPrice.Text = "Price:"
         '
-        'Label1
+        'lblName
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(54, 285)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 21)
-        Me.Label1.TabIndex = 64
-        Me.Label1.Text = "Name:"
+        Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.Location = New System.Drawing.Point(54, 285)
+        Me.lblName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(55, 21)
+        Me.lblName.TabIndex = 64
+        Me.lblName.Text = "Name:"
         '
         'txtName
         '
@@ -258,16 +258,16 @@ Partial Class AddVehicle
         Me.cmbCategory.Size = New System.Drawing.Size(189, 36)
         Me.cmbCategory.TabIndex = 77
         '
-        'Label2
+        'lblCategory
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(486, 386)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 21)
-        Me.Label2.TabIndex = 76
-        Me.Label2.Text = "Category:"
+        Me.lblCategory.AutoSize = True
+        Me.lblCategory.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCategory.Location = New System.Drawing.Point(486, 386)
+        Me.lblCategory.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCategory.Name = "lblCategory"
+        Me.lblCategory.Size = New System.Drawing.Size(76, 21)
+        Me.lblCategory.TabIndex = 76
+        Me.lblCategory.Text = "Category:"
         '
         'btnCategory
         '
@@ -325,19 +325,19 @@ Partial Class AddVehicle
         Me.Controls.Add(Me.txtNumberPlate)
         Me.Controls.Add(Me.btnCategory)
         Me.Controls.Add(Me.cmbCategory)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblCategory)
         Me.Controls.Add(Me.cmbStatus)
         Me.Controls.Add(Me.btnBrand)
         Me.Controls.Add(Me.lblFormName)
         Me.Controls.Add(Me.Guna2Separator1)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.lblStatus)
+        Me.Controls.Add(Me.lblBrand)
         Me.Controls.Add(Me.cmbBrand)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblNumberPlate)
+        Me.Controls.Add(Me.lblPrice)
+        Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.txtPrice)
         Me.Name = "AddVehicle"
@@ -351,20 +351,20 @@ Partial Class AddVehicle
 
     Friend WithEvents lblFormName As Label
     Friend WithEvents Guna2Separator1 As Guna.UI2.WinForms.Guna2Separator
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
+    Friend WithEvents lblStatus As Label
+    Friend WithEvents lblBrand As Label
     Friend WithEvents cmbBrand As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents btnDelete As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnAdd As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblNumberPlate As Label
+    Friend WithEvents lblPrice As Label
+    Friend WithEvents lblName As Label
     Friend WithEvents txtName As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents txtPrice As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btnBrand As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents cmbStatus As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents cmbCategory As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblCategory As Label
     Friend WithEvents btnCategory As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtNumberPlate As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents imgVehicle As Guna.UI2.WinForms.Guna2PictureBox
