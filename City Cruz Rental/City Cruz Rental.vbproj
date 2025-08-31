@@ -208,6 +208,12 @@
     <Compile Include="DialogBoxes\BookVehicle.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DialogBoxes\MiniDialog.Designer.vb">
+      <DependentUpon>MiniDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxes\MiniDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMain.Designer.vb">
       <DependentUpon>frmMain.vb</DependentUpon>
     </Compile>
@@ -279,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBoxes\BookVehicle.resx">
       <DependentUpon>BookVehicle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxes\MiniDialog.resx">
+      <DependentUpon>MiniDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>

@@ -59,8 +59,6 @@
 
 
     Private Sub DtgCustomers_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgCustomers.CellClick
-
-
         ' Ignore header clicks
         If e.RowIndex < 0 Then Exit Sub
 
@@ -80,4 +78,6 @@
         dpPostalCode.ValueText = selectedRow.Cells("postal_code").Value
         dpAddress.ValueText = selectedRow.Cells("address").Value
     End Sub
+
+
 End Class

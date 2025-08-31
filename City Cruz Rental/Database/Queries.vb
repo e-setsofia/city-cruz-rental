@@ -35,6 +35,7 @@ Public Class Queries
                 v.brand_id, 
                 b.name AS brand_name, 
                 v.model, 
+                v.number_plate,
                 v.rental_price, 
                 v.state, 
                 v.rating, 
