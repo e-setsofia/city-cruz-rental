@@ -234,6 +234,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Models\MenuItemData.vb" />
+    <Compile Include="Models\Search.vb" />
     <Compile Include="Models\UserSession.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

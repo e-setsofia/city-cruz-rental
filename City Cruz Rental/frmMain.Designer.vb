@@ -71,20 +71,18 @@ Partial Class frmMain
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(301, 1040)
+        Me.Panel1.Size = New System.Drawing.Size(226, 845)
         Me.Panel1.TabIndex = 0
         '
         'flpMenuItems
         '
         Me.flpMenuItems.BackColor = System.Drawing.Color.Transparent
         Me.flpMenuItems.Dock = System.Windows.Forms.DockStyle.Top
-        Me.flpMenuItems.Location = New System.Drawing.Point(0, 208)
-        Me.flpMenuItems.Margin = New System.Windows.Forms.Padding(4)
+        Me.flpMenuItems.Location = New System.Drawing.Point(0, 169)
         Me.flpMenuItems.Name = "flpMenuItems"
-        Me.flpMenuItems.Padding = New System.Windows.Forms.Padding(11, 10, 11, 10)
-        Me.flpMenuItems.Size = New System.Drawing.Size(301, 468)
+        Me.flpMenuItems.Padding = New System.Windows.Forms.Padding(8, 8, 8, 8)
+        Me.flpMenuItems.Size = New System.Drawing.Size(226, 380)
         Me.flpMenuItems.TabIndex = 9
         '
         'Panel4
@@ -92,20 +90,18 @@ Partial Class frmMain
         Me.Panel4.Controls.Add(Me.Guna2Separator2)
         Me.Panel4.Controls.Add(Me.lblMenu)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel4.Location = New System.Drawing.Point(0, 133)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel4.Location = New System.Drawing.Point(0, 108)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Padding = New System.Windows.Forms.Padding(21, 20, 21, 20)
-        Me.Panel4.Size = New System.Drawing.Size(301, 75)
+        Me.Panel4.Padding = New System.Windows.Forms.Padding(16, 16, 16, 16)
+        Me.Panel4.Size = New System.Drawing.Size(226, 61)
         Me.Panel4.TabIndex = 8
         '
         'Guna2Separator2
         '
         Me.Guna2Separator2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Separator2.Location = New System.Drawing.Point(21, 55)
-        Me.Guna2Separator2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Separator2.Location = New System.Drawing.Point(16, 44)
         Me.Guna2Separator2.Name = "Guna2Separator2"
-        Me.Guna2Separator2.Size = New System.Drawing.Size(259, 0)
+        Me.Guna2Separator2.Size = New System.Drawing.Size(194, 1)
         Me.Guna2Separator2.TabIndex = 6
         '
         'lblMenu
@@ -114,11 +110,10 @@ Partial Class frmMain
         Me.lblMenu.Dock = System.Windows.Forms.DockStyle.Top
         Me.lblMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMenu.ForeColor = System.Drawing.SystemColors.ActiveCaption
-        Me.lblMenu.Location = New System.Drawing.Point(21, 20)
-        Me.lblMenu.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMenu.Location = New System.Drawing.Point(16, 16)
         Me.lblMenu.Name = "lblMenu"
-        Me.lblMenu.Padding = New System.Windows.Forms.Padding(0, 0, 0, 18)
-        Me.lblMenu.Size = New System.Drawing.Size(47, 35)
+        Me.lblMenu.Padding = New System.Windows.Forms.Padding(0, 0, 0, 15)
+        Me.lblMenu.Size = New System.Drawing.Size(38, 28)
         Me.lblMenu.TabIndex = 5
         Me.lblMenu.Text = "Menu"
         '
@@ -127,10 +122,9 @@ Partial Class frmMain
         Me.Panel5.BackColor = System.Drawing.Color.Transparent
         Me.Panel5.Controls.Add(Me.btnLogout)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel5.Location = New System.Drawing.Point(0, 964)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel5.Location = New System.Drawing.Point(0, 783)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(301, 76)
+        Me.Panel5.Size = New System.Drawing.Size(226, 62)
         Me.Panel5.TabIndex = 2
         '
         'btnLogout
@@ -139,10 +133,9 @@ Partial Class frmMain
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnLogout.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.Location = New System.Drawing.Point(25, 25)
-        Me.btnLogout.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnLogout.Location = New System.Drawing.Point(19, 20)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(124, 37)
+        Me.btnLogout.Size = New System.Drawing.Size(93, 30)
         Me.btnLogout.TabIndex = 0
         Me.btnLogout.Text = "Logout"
         Me.btnLogout.UseVisualStyleBackColor = True
@@ -153,9 +146,8 @@ Partial Class frmMain
         Me.Panel3.Controls.Add(Me.PictureBox1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(301, 133)
+        Me.Panel3.Size = New System.Drawing.Size(226, 108)
         Me.Panel3.TabIndex = 0
         '
         'PictureBox1
@@ -163,9 +155,8 @@ Partial Class frmMain
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(301, 133)
+        Me.PictureBox1.Size = New System.Drawing.Size(226, 108)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -177,19 +168,17 @@ Partial Class frmMain
         Me.Panel2.Controls.Add(Me.Guna2Panel2)
         Me.Panel2.Controls.Add(Me.txtSearch)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(301, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel2.Location = New System.Drawing.Point(226, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1223, 133)
+        Me.Panel2.Size = New System.Drawing.Size(917, 108)
         Me.Panel2.TabIndex = 1
         '
         'Guna2Separator1
         '
         Me.Guna2Separator1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Guna2Separator1.Location = New System.Drawing.Point(0, 123)
-        Me.Guna2Separator1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Separator1.Location = New System.Drawing.Point(0, 100)
         Me.Guna2Separator1.Name = "Guna2Separator1"
-        Me.Guna2Separator1.Size = New System.Drawing.Size(1223, 10)
+        Me.Guna2Separator1.Size = New System.Drawing.Size(917, 8)
         Me.Guna2Separator1.TabIndex = 2
         '
         'Guna2Panel2
@@ -200,10 +189,9 @@ Partial Class frmMain
         Me.Guna2Panel2.BorderThickness = 1
         Me.Guna2Panel2.Controls.Add(Me.Guna2Panel3)
         Me.Guna2Panel2.FillColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2Panel2.Location = New System.Drawing.Point(887, 44)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(665, 36)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(287, 44)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(215, 36)
         Me.Guna2Panel2.TabIndex = 1
         '
         'Guna2Panel3
@@ -215,10 +203,10 @@ Partial Class frmMain
         Me.Guna2Panel3.Controls.Add(Me.lblProfileName)
         Me.Guna2Panel3.Controls.Add(Me.picProfileImage)
         Me.Guna2Panel3.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel3.Location = New System.Drawing.Point(11, 10)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(8, 8)
         Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(265, 23)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(199, 19)
         Me.Guna2Panel3.TabIndex = 2
         '
         'lblJobTItle
@@ -228,10 +216,9 @@ Partial Class frmMain
         Me.lblJobTItle.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblJobTItle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblJobTItle.ForeColor = System.Drawing.SystemColors.ActiveCaption
-        Me.lblJobTItle.Location = New System.Drawing.Point(122, 0)
-        Me.lblJobTItle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblJobTItle.Location = New System.Drawing.Point(98, 0)
         Me.lblJobTItle.Name = "lblJobTItle"
-        Me.lblJobTItle.Size = New System.Drawing.Size(59, 20)
+        Me.lblJobTItle.Size = New System.Drawing.Size(49, 16)
         Me.lblJobTItle.TabIndex = 2
         Me.lblJobTItle.Text = "Label1"
         '
@@ -242,10 +229,9 @@ Partial Class frmMain
         Me.lblProfileName.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblProfileName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblProfileName.ForeColor = System.Drawing.Color.DarkSlateBlue
-        Me.lblProfileName.Location = New System.Drawing.Point(57, 0)
-        Me.lblProfileName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblProfileName.Location = New System.Drawing.Point(43, 0)
         Me.lblProfileName.Name = "lblProfileName"
-        Me.lblProfileName.Size = New System.Drawing.Size(65, 20)
+        Me.lblProfileName.Size = New System.Drawing.Size(55, 16)
         Me.lblProfileName.TabIndex = 1
         Me.lblProfileName.Text = "Label1"
         '
@@ -256,10 +242,10 @@ Partial Class frmMain
         Me.picProfileImage.Image = Global.City_Cruz_Rental.My.Resources.Resources.profile_icon
         Me.picProfileImage.ImageRotate = 0!
         Me.picProfileImage.Location = New System.Drawing.Point(0, 0)
-        Me.picProfileImage.Margin = New System.Windows.Forms.Padding(11, 10, 11, 10)
+        Me.picProfileImage.Margin = New System.Windows.Forms.Padding(8, 8, 8, 8)
         Me.picProfileImage.Name = "picProfileImage"
         Me.picProfileImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.picProfileImage.Size = New System.Drawing.Size(57, 23)
+        Me.picProfileImage.Size = New System.Drawing.Size(43, 19)
         Me.picProfileImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picProfileImage.TabIndex = 0
         Me.picProfileImage.TabStop = False
@@ -276,12 +262,12 @@ Partial Class frmMain
         Me.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtSearch.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtSearch.Location = New System.Drawing.Point(72, 44)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtSearch.Location = New System.Drawing.Point(54, 36)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.PlaceholderText = "Search"
         Me.txtSearch.SelectedText = ""
-        Me.txtSearch.Size = New System.Drawing.Size(561, 44)
+        Me.txtSearch.Size = New System.Drawing.Size(421, 36)
         Me.txtSearch.TabIndex = 0
         Me.txtSearch.TextOffset = New System.Drawing.Point(20, 0)
         '
@@ -291,10 +277,9 @@ Partial Class frmMain
         Me.Panel6.Controls.Add(Me.pnlMain)
         Me.Panel6.Controls.Add(Me.Panel7)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(301, 133)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel6.Location = New System.Drawing.Point(226, 108)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1223, 907)
+        Me.Panel6.Size = New System.Drawing.Size(917, 737)
         Me.Panel6.TabIndex = 2
         '
         'pnlMain
@@ -304,44 +289,43 @@ Partial Class frmMain
         Me.pnlMain.Controls.Add(Me.DashboardControl1)
         Me.pnlMain.Controls.Add(Me.StaffControl1)
         Me.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlMain.Location = New System.Drawing.Point(0, 75)
-        Me.pnlMain.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlMain.Location = New System.Drawing.Point(0, 61)
         Me.pnlMain.Name = "pnlMain"
-        Me.pnlMain.Size = New System.Drawing.Size(1223, 832)
+        Me.pnlMain.Size = New System.Drawing.Size(917, 676)
         Me.pnlMain.TabIndex = 1
         '
         'CustomerControl1
         '
         Me.CustomerControl1.Location = New System.Drawing.Point(0, 0)
-        Me.CustomerControl1.Margin = New System.Windows.Forms.Padding(5)
+        Me.CustomerControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CustomerControl1.Name = "CustomerControl1"
-        Me.CustomerControl1.Size = New System.Drawing.Size(1420, 750)
+        Me.CustomerControl1.Size = New System.Drawing.Size(1065, 609)
         Me.CustomerControl1.TabIndex = 3
         '
         'VehicleControl1
         '
         Me.VehicleControl1.Location = New System.Drawing.Point(0, 0)
-        Me.VehicleControl1.Margin = New System.Windows.Forms.Padding(5)
+        Me.VehicleControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VehicleControl1.Name = "VehicleControl1"
-        Me.VehicleControl1.Size = New System.Drawing.Size(1168, 783)
+        Me.VehicleControl1.Size = New System.Drawing.Size(876, 636)
         Me.VehicleControl1.TabIndex = 2
         '
         'DashboardControl1
         '
         Me.DashboardControl1.BackColor = System.Drawing.Color.White
         Me.DashboardControl1.Location = New System.Drawing.Point(0, 0)
-        Me.DashboardControl1.Margin = New System.Windows.Forms.Padding(5)
+        Me.DashboardControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DashboardControl1.Name = "DashboardControl1"
-        Me.DashboardControl1.Size = New System.Drawing.Size(1075, 745)
+        Me.DashboardControl1.Size = New System.Drawing.Size(806, 605)
         Me.DashboardControl1.TabIndex = 1
         '
         'StaffControl1
         '
         Me.StaffControl1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.StaffControl1.Location = New System.Drawing.Point(0, 0)
-        Me.StaffControl1.Margin = New System.Windows.Forms.Padding(5)
+        Me.StaffControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.StaffControl1.Name = "StaffControl1"
-        Me.StaffControl1.Size = New System.Drawing.Size(1028, 705)
+        Me.StaffControl1.Size = New System.Drawing.Size(771, 573)
         Me.StaffControl1.TabIndex = 0
         '
         'Panel7
@@ -349,31 +333,29 @@ Partial Class frmMain
         Me.Panel7.Controls.Add(Me.lblTitle)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1223, 75)
+        Me.Panel7.Size = New System.Drawing.Size(917, 61)
         Me.Panel7.TabIndex = 0
         '
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(31, 12)
-        Me.lblTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTitle.Location = New System.Drawing.Point(23, 10)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(158, 52)
+        Me.lblTitle.Size = New System.Drawing.Size(126, 39)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Label1"
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1524, 1040)
+        Me.ClientSize = New System.Drawing.Size(1143, 845)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main"
