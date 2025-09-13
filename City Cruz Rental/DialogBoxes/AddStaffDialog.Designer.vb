@@ -78,26 +78,29 @@ Partial Class AddStaffDialog
         Me.Panel4.Controls.Add(Me.txtPhone)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Padding = New System.Windows.Forms.Padding(0, 16, 16, 16)
-        Me.Panel4.Size = New System.Drawing.Size(945, 564)
+        Me.Panel4.Padding = New System.Windows.Forms.Padding(0, 20, 21, 20)
+        Me.Panel4.Size = New System.Drawing.Size(1260, 694)
         Me.Panel4.TabIndex = 4
         '
         'lblFormName
         '
         Me.lblFormName.AutoSize = True
         Me.lblFormName.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFormName.Location = New System.Drawing.Point(75, 23)
+        Me.lblFormName.Location = New System.Drawing.Point(100, 28)
+        Me.lblFormName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFormName.Name = "lblFormName"
-        Me.lblFormName.Size = New System.Drawing.Size(319, 73)
+        Me.lblFormName.Size = New System.Drawing.Size(392, 91)
         Me.lblFormName.TabIndex = 49
         Me.lblFormName.Text = "New Staff"
         '
         'Guna2Separator1
         '
-        Me.Guna2Separator1.Location = New System.Drawing.Point(88, 99)
+        Me.Guna2Separator1.Location = New System.Drawing.Point(117, 122)
+        Me.Guna2Separator1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Separator1.Name = "Guna2Separator1"
-        Me.Guna2Separator1.Size = New System.Drawing.Size(766, 10)
+        Me.Guna2Separator1.Size = New System.Drawing.Size(1021, 12)
         Me.Guna2Separator1.TabIndex = 48
         '
         'tmpDOB
@@ -106,12 +109,12 @@ Partial Class AddStaffDialog
         Me.tmpDOB.FillColor = System.Drawing.Color.White
         Me.tmpDOB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tmpDOB.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.tmpDOB.Location = New System.Drawing.Point(205, 273)
-        Me.tmpDOB.Margin = New System.Windows.Forms.Padding(2)
+        Me.tmpDOB.Location = New System.Drawing.Point(273, 336)
+        Me.tmpDOB.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tmpDOB.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.tmpDOB.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.tmpDOB.Name = "tmpDOB"
-        Me.tmpDOB.Size = New System.Drawing.Size(219, 32)
+        Me.tmpDOB.Size = New System.Drawing.Size(292, 39)
         Me.tmpDOB.TabIndex = 6
         Me.tmpDOB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.tmpDOB.Value = New Date(2025, 8, 20, 0, 0, 0, 0)
@@ -120,10 +123,9 @@ Partial Class AddStaffDialog
         '
         Me.lblUsername.AutoSize = True
         Me.lblUsername.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUsername.Location = New System.Drawing.Point(520, 328)
-        Me.lblUsername.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblUsername.Location = New System.Drawing.Point(693, 404)
         Me.lblUsername.Name = "lblUsername"
-        Me.lblUsername.Size = New System.Drawing.Size(84, 21)
+        Me.lblUsername.Size = New System.Drawing.Size(103, 28)
         Me.lblUsername.TabIndex = 43
         Me.lblUsername.Text = "Username:"
         '
@@ -131,10 +133,9 @@ Partial Class AddStaffDialog
         '
         Me.lblEmail.AutoSize = True
         Me.lblEmail.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEmail.Location = New System.Drawing.Point(520, 279)
-        Me.lblEmail.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblEmail.Location = New System.Drawing.Point(693, 343)
         Me.lblEmail.Name = "lblEmail"
-        Me.lblEmail.Size = New System.Drawing.Size(51, 21)
+        Me.lblEmail.Size = New System.Drawing.Size(63, 28)
         Me.lblEmail.TabIndex = 44
         Me.lblEmail.Text = "Email:"
         '
@@ -142,10 +143,9 @@ Partial Class AddStaffDialog
         '
         Me.lblJob.AutoSize = True
         Me.lblJob.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblJob.Location = New System.Drawing.Point(520, 227)
-        Me.lblJob.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblJob.Location = New System.Drawing.Point(693, 279)
         Me.lblJob.Name = "lblJob"
-        Me.lblJob.Size = New System.Drawing.Size(67, 21)
+        Me.lblJob.Size = New System.Drawing.Size(85, 28)
         Me.lblJob.TabIndex = 45
         Me.lblJob.Text = "Job Title"
         '
@@ -153,10 +153,9 @@ Partial Class AddStaffDialog
         '
         Me.lblRole.AutoSize = True
         Me.lblRole.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRole.Location = New System.Drawing.Point(520, 175)
-        Me.lblRole.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblRole.Location = New System.Drawing.Point(693, 215)
         Me.lblRole.Name = "lblRole"
-        Me.lblRole.Size = New System.Drawing.Size(44, 21)
+        Me.lblRole.Size = New System.Drawing.Size(54, 28)
         Me.lblRole.TabIndex = 46
         Me.lblRole.Text = "Role:"
         '
@@ -164,10 +163,9 @@ Partial Class AddStaffDialog
         '
         Me.lblLastName.AutoSize = True
         Me.lblLastName.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLastName.Location = New System.Drawing.Point(516, 135)
-        Me.lblLastName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLastName.Location = New System.Drawing.Point(688, 166)
         Me.lblLastName.Name = "lblLastName"
-        Me.lblLastName.Size = New System.Drawing.Size(87, 21)
+        Me.lblLastName.Size = New System.Drawing.Size(107, 28)
         Me.lblLastName.TabIndex = 47
         Me.lblLastName.Text = "Last Name:"
         '
@@ -182,10 +180,10 @@ Partial Class AddStaffDialog
         Me.cmbRole.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.cmbRole.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbRole.ItemHeight = 30
-        Me.cmbRole.Location = New System.Drawing.Point(617, 175)
-        Me.cmbRole.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmbRole.Location = New System.Drawing.Point(823, 215)
+        Me.cmbRole.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbRole.Name = "cmbRole"
-        Me.cmbRole.Size = New System.Drawing.Size(238, 36)
+        Me.cmbRole.Size = New System.Drawing.Size(316, 36)
         Me.cmbRole.TabIndex = 3
         '
         'txtUsername
@@ -200,12 +198,12 @@ Partial Class AddStaffDialog
         Me.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtUsername.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtUsername.Location = New System.Drawing.Point(617, 328)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtUsername.Location = New System.Drawing.Point(823, 404)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.PlaceholderText = ""
         Me.txtUsername.SelectedText = ""
-        Me.txtUsername.Size = New System.Drawing.Size(237, 32)
+        Me.txtUsername.Size = New System.Drawing.Size(316, 39)
         Me.txtUsername.TabIndex = 9
         '
         'txtEmail
@@ -220,12 +218,12 @@ Partial Class AddStaffDialog
         Me.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtEmail.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtEmail.Location = New System.Drawing.Point(617, 279)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtEmail.Location = New System.Drawing.Point(823, 343)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.PlaceholderText = ""
         Me.txtEmail.SelectedText = ""
-        Me.txtEmail.Size = New System.Drawing.Size(237, 32)
+        Me.txtEmail.Size = New System.Drawing.Size(316, 39)
         Me.txtEmail.TabIndex = 7
         '
         'txtJobTitle
@@ -240,12 +238,12 @@ Partial Class AddStaffDialog
         Me.txtJobTitle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtJobTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtJobTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtJobTitle.Location = New System.Drawing.Point(617, 227)
-        Me.txtJobTitle.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtJobTitle.Location = New System.Drawing.Point(823, 279)
+        Me.txtJobTitle.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtJobTitle.Name = "txtJobTitle"
         Me.txtJobTitle.PlaceholderText = ""
         Me.txtJobTitle.SelectedText = ""
-        Me.txtJobTitle.Size = New System.Drawing.Size(237, 32)
+        Me.txtJobTitle.Size = New System.Drawing.Size(316, 39)
         Me.txtJobTitle.TabIndex = 5
         '
         'txtLastName
@@ -260,12 +258,12 @@ Partial Class AddStaffDialog
         Me.txtLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtLastName.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtLastName.Location = New System.Drawing.Point(617, 126)
-        Me.txtLastName.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtLastName.Location = New System.Drawing.Point(823, 155)
+        Me.txtLastName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.PlaceholderText = ""
         Me.txtLastName.SelectedText = ""
-        Me.txtLastName.Size = New System.Drawing.Size(237, 32)
+        Me.txtLastName.Size = New System.Drawing.Size(316, 39)
         Me.txtLastName.TabIndex = 1
         '
         'btnDelete
@@ -278,12 +276,12 @@ Partial Class AddStaffDialog
         Me.btnDelete.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnDelete.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold)
         Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.Location = New System.Drawing.Point(520, 416)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnDelete.Location = New System.Drawing.Point(693, 512)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(80, 33)
+        Me.btnDelete.Size = New System.Drawing.Size(107, 41)
         Me.btnDelete.TabIndex = 11
-        Me.btnDelete.Text = "Cancel"
+        Me.btnDelete.Text = "Delete"
         '
         'btnAdd
         '
@@ -295,10 +293,10 @@ Partial Class AddStaffDialog
         Me.btnAdd.FillColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.btnAdd.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold)
         Me.btnAdd.ForeColor = System.Drawing.Color.White
-        Me.btnAdd.Location = New System.Drawing.Point(333, 416)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAdd.Location = New System.Drawing.Point(444, 512)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(166, 33)
+        Me.btnAdd.Size = New System.Drawing.Size(221, 41)
         Me.btnAdd.TabIndex = 10
         Me.btnAdd.Text = "Add"
         '
@@ -306,10 +304,9 @@ Partial Class AddStaffDialog
         '
         Me.lblPassword.AutoSize = True
         Me.lblPassword.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPassword.Location = New System.Drawing.Point(84, 321)
-        Me.lblPassword.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPassword.Location = New System.Drawing.Point(112, 395)
         Me.lblPassword.Name = "lblPassword"
-        Me.lblPassword.Size = New System.Drawing.Size(79, 21)
+        Me.lblPassword.Size = New System.Drawing.Size(97, 28)
         Me.lblPassword.TabIndex = 32
         Me.lblPassword.Text = "Password:"
         '
@@ -317,10 +314,9 @@ Partial Class AddStaffDialog
         '
         Me.lblDOB.AutoSize = True
         Me.lblDOB.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDOB.Location = New System.Drawing.Point(84, 273)
-        Me.lblDOB.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblDOB.Location = New System.Drawing.Point(112, 336)
         Me.lblDOB.Name = "lblDOB"
-        Me.lblDOB.Size = New System.Drawing.Size(100, 21)
+        Me.lblDOB.Size = New System.Drawing.Size(126, 28)
         Me.lblDOB.TabIndex = 29
         Me.lblDOB.Text = "Date of Birth:"
         '
@@ -328,10 +324,9 @@ Partial Class AddStaffDialog
         '
         Me.lblPhone.AutoSize = True
         Me.lblPhone.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPhone.Location = New System.Drawing.Point(84, 227)
-        Me.lblPhone.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPhone.Location = New System.Drawing.Point(112, 279)
         Me.lblPhone.Name = "lblPhone"
-        Me.lblPhone.Size = New System.Drawing.Size(85, 21)
+        Me.lblPhone.Size = New System.Drawing.Size(107, 28)
         Me.lblPhone.TabIndex = 33
         Me.lblPhone.Text = "Phone No.:"
         '
@@ -339,10 +334,9 @@ Partial Class AddStaffDialog
         '
         Me.lblGender.AutoSize = True
         Me.lblGender.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGender.Location = New System.Drawing.Point(84, 175)
-        Me.lblGender.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblGender.Location = New System.Drawing.Point(112, 215)
         Me.lblGender.Name = "lblGender"
-        Me.lblGender.Size = New System.Drawing.Size(64, 21)
+        Me.lblGender.Size = New System.Drawing.Size(80, 28)
         Me.lblGender.TabIndex = 30
         Me.lblGender.Text = "Gender:"
         '
@@ -350,10 +344,9 @@ Partial Class AddStaffDialog
         '
         Me.lblFirstName.AutoSize = True
         Me.lblFirstName.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFirstName.Location = New System.Drawing.Point(84, 126)
-        Me.lblFirstName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblFirstName.Location = New System.Drawing.Point(112, 155)
         Me.lblFirstName.Name = "lblFirstName"
-        Me.lblFirstName.Size = New System.Drawing.Size(89, 21)
+        Me.lblFirstName.Size = New System.Drawing.Size(110, 28)
         Me.lblFirstName.TabIndex = 31
         Me.lblFirstName.Text = "First Name:"
         '
@@ -369,10 +362,10 @@ Partial Class AddStaffDialog
         Me.cmbGender.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.cmbGender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbGender.ItemHeight = 30
-        Me.cmbGender.Location = New System.Drawing.Point(205, 175)
-        Me.cmbGender.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmbGender.Location = New System.Drawing.Point(273, 215)
+        Me.cmbGender.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbGender.Name = "cmbGender"
-        Me.cmbGender.Size = New System.Drawing.Size(220, 36)
+        Me.cmbGender.Size = New System.Drawing.Size(292, 36)
         Me.cmbGender.TabIndex = 2
         Me.cmbGender.ValueMember = "sfdm, dsjdifs"
         '
@@ -388,12 +381,12 @@ Partial Class AddStaffDialog
         Me.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtPassword.Location = New System.Drawing.Point(205, 319)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtPassword.Location = New System.Drawing.Point(273, 393)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PlaceholderText = ""
         Me.txtPassword.SelectedText = ""
-        Me.txtPassword.Size = New System.Drawing.Size(219, 32)
+        Me.txtPassword.Size = New System.Drawing.Size(292, 39)
         Me.txtPassword.TabIndex = 8
         Me.txtPassword.UseSystemPasswordChar = True
         '
@@ -409,12 +402,12 @@ Partial Class AddStaffDialog
         Me.txtFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtFirstName.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtFirstName.Location = New System.Drawing.Point(205, 126)
-        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtFirstName.Location = New System.Drawing.Point(273, 155)
+        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.PlaceholderText = ""
         Me.txtFirstName.SelectedText = ""
-        Me.txtFirstName.Size = New System.Drawing.Size(219, 32)
+        Me.txtFirstName.Size = New System.Drawing.Size(292, 39)
         Me.txtFirstName.TabIndex = 0
         '
         'txtPhone
@@ -429,20 +422,21 @@ Partial Class AddStaffDialog
         Me.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtPhone.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtPhone.Location = New System.Drawing.Point(205, 227)
-        Me.txtPhone.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtPhone.Location = New System.Drawing.Point(273, 279)
+        Me.txtPhone.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtPhone.Name = "txtPhone"
         Me.txtPhone.PlaceholderText = ""
         Me.txtPhone.SelectedText = ""
-        Me.txtPhone.Size = New System.Drawing.Size(219, 32)
+        Me.txtPhone.Size = New System.Drawing.Size(292, 39)
         Me.txtPhone.TabIndex = 4
         '
         'AddStaffDialog
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(945, 564)
+        Me.ClientSize = New System.Drawing.Size(1260, 694)
         Me.Controls.Add(Me.Panel4)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "AddStaffDialog"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "AddStaff"

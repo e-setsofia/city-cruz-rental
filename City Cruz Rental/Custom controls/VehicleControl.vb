@@ -15,6 +15,7 @@
         dtgVehicles.Columns("state").HeaderText = "Status"
         dtgVehicles.Columns("rating").HeaderText = "Rating"
         dtgVehicles.Columns("category_name").HeaderText = "Category"
+        dtgVehicles.Columns("number_plate").HeaderText = "number_plate"
 
 
         dtgVehicles.Columns("id").Visible = False

@@ -71,7 +71,7 @@ Partial Class frmMain
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(301, 1040)
         Me.Panel1.TabIndex = 0
@@ -81,7 +81,7 @@ Partial Class frmMain
         Me.flpMenuItems.BackColor = System.Drawing.Color.Transparent
         Me.flpMenuItems.Dock = System.Windows.Forms.DockStyle.Top
         Me.flpMenuItems.Location = New System.Drawing.Point(0, 208)
-        Me.flpMenuItems.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.flpMenuItems.Margin = New System.Windows.Forms.Padding(4)
         Me.flpMenuItems.Name = "flpMenuItems"
         Me.flpMenuItems.Padding = New System.Windows.Forms.Padding(11, 10, 11, 10)
         Me.flpMenuItems.Size = New System.Drawing.Size(301, 468)
@@ -93,7 +93,7 @@ Partial Class frmMain
         Me.Panel4.Controls.Add(Me.lblMenu)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(0, 133)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Padding = New System.Windows.Forms.Padding(21, 20, 21, 20)
         Me.Panel4.Size = New System.Drawing.Size(301, 75)
@@ -103,7 +103,7 @@ Partial Class frmMain
         '
         Me.Guna2Separator2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Separator2.Location = New System.Drawing.Point(21, 55)
-        Me.Guna2Separator2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2Separator2.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Separator2.Name = "Guna2Separator2"
         Me.Guna2Separator2.Size = New System.Drawing.Size(259, 0)
         Me.Guna2Separator2.TabIndex = 6
@@ -128,7 +128,7 @@ Partial Class frmMain
         Me.Panel5.Controls.Add(Me.btnLogout)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel5.Location = New System.Drawing.Point(0, 964)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(301, 76)
         Me.Panel5.TabIndex = 2
@@ -140,7 +140,7 @@ Partial Class frmMain
         Me.btnLogout.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
         Me.btnLogout.Location = New System.Drawing.Point(25, 25)
-        Me.btnLogout.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnLogout.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(124, 37)
         Me.btnLogout.TabIndex = 0
@@ -153,7 +153,7 @@ Partial Class frmMain
         Me.Panel3.Controls.Add(Me.PictureBox1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(301, 133)
         Me.Panel3.TabIndex = 0
@@ -163,7 +163,7 @@ Partial Class frmMain
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(301, 133)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -178,7 +178,7 @@ Partial Class frmMain
         Me.Panel2.Controls.Add(Me.txtSearch)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(301, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1223, 133)
         Me.Panel2.TabIndex = 1
@@ -187,7 +187,7 @@ Partial Class frmMain
         '
         Me.Guna2Separator1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Guna2Separator1.Location = New System.Drawing.Point(0, 123)
-        Me.Guna2Separator1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2Separator1.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Separator1.Name = "Guna2Separator1"
         Me.Guna2Separator1.Size = New System.Drawing.Size(1223, 10)
         Me.Guna2Separator1.TabIndex = 2
@@ -201,7 +201,7 @@ Partial Class frmMain
         Me.Guna2Panel2.Controls.Add(Me.Guna2Panel3)
         Me.Guna2Panel2.FillColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2Panel2.Location = New System.Drawing.Point(887, 44)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(287, 44)
         Me.Guna2Panel2.TabIndex = 1
@@ -292,7 +292,7 @@ Partial Class frmMain
         Me.Panel6.Controls.Add(Me.Panel7)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel6.Location = New System.Drawing.Point(301, 133)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(1223, 907)
         Me.Panel6.TabIndex = 2
@@ -305,7 +305,7 @@ Partial Class frmMain
         Me.pnlMain.Controls.Add(Me.StaffControl1)
         Me.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlMain.Location = New System.Drawing.Point(0, 75)
-        Me.pnlMain.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlMain.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlMain.Name = "pnlMain"
         Me.pnlMain.Size = New System.Drawing.Size(1223, 832)
         Me.pnlMain.TabIndex = 1
@@ -313,7 +313,7 @@ Partial Class frmMain
         'CustomerControl1
         '
         Me.CustomerControl1.Location = New System.Drawing.Point(0, 0)
-        Me.CustomerControl1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.CustomerControl1.Margin = New System.Windows.Forms.Padding(5)
         Me.CustomerControl1.Name = "CustomerControl1"
         Me.CustomerControl1.Size = New System.Drawing.Size(1420, 750)
         Me.CustomerControl1.TabIndex = 3
@@ -321,7 +321,7 @@ Partial Class frmMain
         'VehicleControl1
         '
         Me.VehicleControl1.Location = New System.Drawing.Point(0, 0)
-        Me.VehicleControl1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.VehicleControl1.Margin = New System.Windows.Forms.Padding(5)
         Me.VehicleControl1.Name = "VehicleControl1"
         Me.VehicleControl1.Size = New System.Drawing.Size(1168, 783)
         Me.VehicleControl1.TabIndex = 2
@@ -330,7 +330,7 @@ Partial Class frmMain
         '
         Me.DashboardControl1.BackColor = System.Drawing.Color.White
         Me.DashboardControl1.Location = New System.Drawing.Point(0, 0)
-        Me.DashboardControl1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.DashboardControl1.Margin = New System.Windows.Forms.Padding(5)
         Me.DashboardControl1.Name = "DashboardControl1"
         Me.DashboardControl1.Size = New System.Drawing.Size(1075, 745)
         Me.DashboardControl1.TabIndex = 1
@@ -339,7 +339,7 @@ Partial Class frmMain
         '
         Me.StaffControl1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.StaffControl1.Location = New System.Drawing.Point(0, 0)
-        Me.StaffControl1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.StaffControl1.Margin = New System.Windows.Forms.Padding(5)
         Me.StaffControl1.Name = "StaffControl1"
         Me.StaffControl1.Size = New System.Drawing.Size(1028, 705)
         Me.StaffControl1.TabIndex = 0
@@ -349,7 +349,7 @@ Partial Class frmMain
         Me.Panel7.Controls.Add(Me.lblTitle)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(1223, 75)
         Me.Panel7.TabIndex = 0
