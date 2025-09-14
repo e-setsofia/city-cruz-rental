@@ -3,7 +3,11 @@
 
 
     Private Sub LoadData()
-        dtgCustomers.DataSource = Queries.GetAllCustomers
+
+        Dim dt = Queries.GetAllCustomers
+        ' Bind a DataView instead of DataTable
+        Dim dv As New DataView(dt)
+        dtgCustomers.DataSource = dv
 
         ' Set the column headers
         dtgCustomers.Columns("fullName").HeaderText = "Full name"
@@ -12,7 +16,6 @@
         dtgCustomers.Columns("address").HeaderText = "Address"
         dtgCustomers.Columns("city").HeaderText = "City"
         dtgCustomers.Columns("created_at").HeaderText = "Date joined"
-
 
         ' Hidden data
         dtgCustomers.Columns("customer_id").Visible = False
@@ -27,10 +30,17 @@
         dtgCustomers.Columns("updated_at").Visible = False
     End Sub
 
+    Private Sub OnSearchResultChanged(newValue As String)
+        Search.FilterDataGridView(newValue, dtgCustomers, "fullName", "email", "phone_number", "city")
+    End Sub
+
     Private Sub CustomerControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadData()
         Dim selectedRow As DataGridViewRow = dtgCustomers.Rows(0)
         Preview(selectedRow)
+
+        ' Subscribe to the event
+        AddHandler Search.SearchResultChanged, AddressOf OnSearchResultChanged
     End Sub
 
     Private Sub BtnAddCustomer_Click(sender As Object, e As EventArgs) Handles btnAddCustomer.Click

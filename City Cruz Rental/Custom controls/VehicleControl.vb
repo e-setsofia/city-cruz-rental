@@ -31,7 +31,7 @@
 
     ' Event handler that displays the new search result
     Private Sub OnSearchResultChanged(newValue As String)
-        Search.FilterVehicles(newValue, dtgVehicles, "name", "brand_name", "model", "number_plate")
+        Search.FilterDataGridView(newValue, dtgVehicles, "name", "brand_name", "model", "number_plate")
     End Sub
 
     Private Sub VehicleControl_Resize(sender As Object, e As EventArgs) Handles Me.Resize

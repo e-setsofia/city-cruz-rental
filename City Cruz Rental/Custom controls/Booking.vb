@@ -2,6 +2,9 @@
 Public Class Booking
     Private Sub Booking_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadData()
+
+        ' Subscribe to the event
+        AddHandler Search.SearchResultChanged, AddressOf OnSearchResultChanged
     End Sub
     Private Sub LoadData()
         Using conn As New MySqlConnection(My.Resources.conn)
@@ -32,7 +35,11 @@ Public Class Booking
         End Using
 
 
-        dtgBooking.DataSource = Queries.ListBookedVehicles
+        Dim dt = Queries.ListBookedVehicles
+        ' Bind a DataView instead of DataTable
+        Dim dv As New DataView(dt)
+
+        dtgBooking.DataSource = dv
 
         ' Set column headers for rentals
         dtgBooking.Columns("rental_id").HeaderText = "Rental ID"
@@ -53,7 +60,10 @@ Public Class Booking
 
     Private Sub dtgBooking_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
+    End Sub
 
+    Private Sub OnSearchResultChanged(newValue As String)
+        Search.FilterDataGridView(newValue, dtgBooking, "vehicle_name", "vehicle_model", "customer_first_name", "customer_email", "staff_first_name", "status")
     End Sub
 
     Private Sub BtnBookVehicle_Click(sender As Object, e As EventArgs) Handles btnBookVehicle.Click
