@@ -4,15 +4,15 @@
     Private entered = False
 
     Private Sub DashboardControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadDashboardItems()
+        'LoadDashboardItems()
     End Sub
 
-    Private Sub LoadDashboardItems()
-        lblUsers.Text = Queries.CountUsers()
-        lblTotalVehicles.Text = Queries.CountVehicles
-        lblVehiclesRented.Text = Queries.CountVehiclesRented
+    ' Private Sub LoadDashboardItems()
+    '    lblUsers.Text = Queries.CountUsers()
+    '   lblTotalVehicles.Text = Queries.CountVehicles
+    '  lblVehiclesRented.Text = Queries.CountVehiclesRented
 
-    End Sub
+    ' End Sub
 
     ' Mouse enter event handler for all panels
     Private Sub Panel_MouseEnter(sender As Object, e As EventArgs)
@@ -30,7 +30,7 @@
     End Sub
 
     ' Mouse leave event handler for all panels
-    Private Sub Panel_MouseLeave(sender As Object, e As EventArgs) Handles pnlVehicles.MouseEnter
+    Private Sub Panel_MouseLeave(sender As Object, e As EventArgs)
         Dim panel As Guna.UI2.WinForms.Guna2Panel = CType(sender, Guna.UI2.WinForms.Guna2Panel)
 
         ' Change the background and foreground colors on hover
