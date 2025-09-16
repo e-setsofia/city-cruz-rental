@@ -28,6 +28,11 @@ Partial Class CustomerControl
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.dpAddress = New City_Cruz_Rental.DataPair()
+        Me.dpPostalCode = New City_Cruz_Rental.DataPair()
+        Me.dpLicence = New City_Cruz_Rental.DataPair()
+        Me.dpPhone = New City_Cruz_Rental.DataPair()
+        Me.dpEmail = New City_Cruz_Rental.DataPair()
         Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.lblStatus = New System.Windows.Forms.Label()
@@ -73,11 +78,6 @@ Partial Class CustomerControl
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.dpAddress = New City_Cruz_Rental.DataPair()
-        Me.dpPostalCode = New City_Cruz_Rental.DataPair()
-        Me.dpLicence = New City_Cruz_Rental.DataPair()
-        Me.dpPhone = New City_Cruz_Rental.DataPair()
-        Me.dpEmail = New City_Cruz_Rental.DataPair()
         Me.Panel1.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -134,6 +134,66 @@ Partial Class CustomerControl
         Me.Guna2Panel1.Padding = New System.Windows.Forms.Padding(8)
         Me.Guna2Panel1.Size = New System.Drawing.Size(284, 351)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'dpAddress
+        '
+        Me.dpAddress.BackColor = System.Drawing.Color.Transparent
+        Me.dpAddress.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpAddress.LabelText = "Address"
+        Me.dpAddress.Location = New System.Drawing.Point(8, 283)
+        Me.dpAddress.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpAddress.Name = "dpAddress"
+        Me.dpAddress.Size = New System.Drawing.Size(268, 48)
+        Me.dpAddress.TabIndex = 8
+        Me.dpAddress.ValueText = "Trasaco Estate"
+        '
+        'dpPostalCode
+        '
+        Me.dpPostalCode.BackColor = System.Drawing.Color.Transparent
+        Me.dpPostalCode.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpPostalCode.LabelText = "Postal Code:"
+        Me.dpPostalCode.Location = New System.Drawing.Point(8, 235)
+        Me.dpPostalCode.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpPostalCode.Name = "dpPostalCode"
+        Me.dpPostalCode.Size = New System.Drawing.Size(268, 48)
+        Me.dpPostalCode.TabIndex = 6
+        Me.dpPostalCode.ValueText = "+233 0550 495 601"
+        '
+        'dpLicence
+        '
+        Me.dpLicence.BackColor = System.Drawing.Color.Transparent
+        Me.dpLicence.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpLicence.LabelText = "Drivers license:"
+        Me.dpLicence.Location = New System.Drawing.Point(8, 187)
+        Me.dpLicence.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpLicence.Name = "dpLicence"
+        Me.dpLicence.Size = New System.Drawing.Size(268, 48)
+        Me.dpLicence.TabIndex = 5
+        Me.dpLicence.ValueText = "Something"
+        '
+        'dpPhone
+        '
+        Me.dpPhone.BackColor = System.Drawing.Color.Transparent
+        Me.dpPhone.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpPhone.LabelText = "Phone:"
+        Me.dpPhone.Location = New System.Drawing.Point(8, 139)
+        Me.dpPhone.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpPhone.Name = "dpPhone"
+        Me.dpPhone.Size = New System.Drawing.Size(268, 48)
+        Me.dpPhone.TabIndex = 4
+        Me.dpPhone.ValueText = "+233 0550 495 601"
+        '
+        'dpEmail
+        '
+        Me.dpEmail.BackColor = System.Drawing.Color.Transparent
+        Me.dpEmail.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpEmail.LabelText = "Email:"
+        Me.dpEmail.Location = New System.Drawing.Point(8, 91)
+        Me.dpEmail.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpEmail.Name = "dpEmail"
+        Me.dpEmail.Size = New System.Drawing.Size(268, 48)
+        Me.dpEmail.TabIndex = 3
+        Me.dpEmail.ValueText = "stephen@uew.edu"
         '
         'Guna2Separator1
         '
@@ -762,66 +822,6 @@ Partial Class CustomerControl
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "300"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'dpAddress
-        '
-        Me.dpAddress.BackColor = System.Drawing.Color.Transparent
-        Me.dpAddress.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dpAddress.LabelText = "Address"
-        Me.dpAddress.Location = New System.Drawing.Point(8, 283)
-        Me.dpAddress.Margin = New System.Windows.Forms.Padding(4)
-        Me.dpAddress.Name = "dpAddress"
-        Me.dpAddress.Size = New System.Drawing.Size(268, 48)
-        Me.dpAddress.TabIndex = 8
-        Me.dpAddress.ValueText = "Trasaco Estate"
-        '
-        'dpPostalCode
-        '
-        Me.dpPostalCode.BackColor = System.Drawing.Color.Transparent
-        Me.dpPostalCode.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dpPostalCode.LabelText = "Postal Code:"
-        Me.dpPostalCode.Location = New System.Drawing.Point(8, 235)
-        Me.dpPostalCode.Margin = New System.Windows.Forms.Padding(4)
-        Me.dpPostalCode.Name = "dpPostalCode"
-        Me.dpPostalCode.Size = New System.Drawing.Size(268, 48)
-        Me.dpPostalCode.TabIndex = 6
-        Me.dpPostalCode.ValueText = "+233 0550 495 601"
-        '
-        'dpLicence
-        '
-        Me.dpLicence.BackColor = System.Drawing.Color.Transparent
-        Me.dpLicence.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dpLicence.LabelText = "Drivers license:"
-        Me.dpLicence.Location = New System.Drawing.Point(8, 187)
-        Me.dpLicence.Margin = New System.Windows.Forms.Padding(4)
-        Me.dpLicence.Name = "dpLicence"
-        Me.dpLicence.Size = New System.Drawing.Size(268, 48)
-        Me.dpLicence.TabIndex = 5
-        Me.dpLicence.ValueText = "Something"
-        '
-        'dpPhone
-        '
-        Me.dpPhone.BackColor = System.Drawing.Color.Transparent
-        Me.dpPhone.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dpPhone.LabelText = "Phone:"
-        Me.dpPhone.Location = New System.Drawing.Point(8, 139)
-        Me.dpPhone.Margin = New System.Windows.Forms.Padding(4)
-        Me.dpPhone.Name = "dpPhone"
-        Me.dpPhone.Size = New System.Drawing.Size(268, 48)
-        Me.dpPhone.TabIndex = 4
-        Me.dpPhone.ValueText = "+233 0550 495 601"
-        '
-        'dpEmail
-        '
-        Me.dpEmail.BackColor = System.Drawing.Color.Transparent
-        Me.dpEmail.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dpEmail.LabelText = "Email:"
-        Me.dpEmail.Location = New System.Drawing.Point(8, 91)
-        Me.dpEmail.Margin = New System.Windows.Forms.Padding(4)
-        Me.dpEmail.Name = "dpEmail"
-        Me.dpEmail.Size = New System.Drawing.Size(268, 48)
-        Me.dpEmail.TabIndex = 3
-        Me.dpEmail.ValueText = "stephen@uew.edu"
         '
         'CustomerControl
         '

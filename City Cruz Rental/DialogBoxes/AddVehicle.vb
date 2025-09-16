@@ -44,6 +44,8 @@ Public Class AddVehicle
 
     Private Sub ImgVehicle_Click(sender As Object, e As EventArgs) Handles imgVehicle.Click
         imageByte = ImageUtils.SelectImageAndConvertToBytes(imgVehicle)
+
+        ' Crop aspect ration
         AddHandler imgVehicle.Paint, AddressOf ImageUtils.PictureBoxCropFill_Paint
         imgVehicle.BorderRadius = 16
     End Sub
@@ -115,7 +117,7 @@ Public Class AddVehicle
         }
 
         If isEditMode Then
-            query = "UPDATE vehicles SET name=@name, brand_id=@brand_id, model=@model, rental_price=@rental_price, category_id=@category_id, image=@image, number_plate=@number_plate WHERE vehicle_id=@id;"
+            query = "UPDATE vehicles SET name=@name, brand_id=@brand_id, model=@model, rental_price=@rental_price, category_id=@category_id, image=@image, number_plate=@number_plate WHERE id=@id;"
             parameters.Add(New MySqlParameter("@id", editVehicleId))
         Else
             query = "INSERT INTO vehicles(name, brand_id, model, rental_price, category_id, image, number_plate) VALUES (@name, @brand_id, @model, @rental_price, @category_id, @image, @number_plate);"
@@ -130,7 +132,7 @@ Public Class AddVehicle
 
     Private Sub PopulateVehicleDetails(vehicleId As Integer)
         Try
-            Dim query = $"SELECT * FROM vehicles WHERE vehicle_id = '{vehicleId}'"
+            Dim query = $"SELECT * FROM vehicles WHERE id = '{vehicleId}'"
 
 
             Dim dt = db.ExecuteQuery(query)
@@ -147,6 +149,9 @@ Public Class AddVehicle
                 If Not IsDBNull(row("image")) Then
                     imageByte = CType(row("image"), Byte())
                     imgVehicle.Image = ImageUtils.ByteArrayToImage(imageByte)
+
+                    ' Crop aspect ration
+                    AddHandler imgVehicle.Paint, AddressOf ImageUtils.PictureBoxCropFill_Paint
                 End If
             Else
                 MessageBox.Show("Vehicle not found.")
@@ -165,7 +170,7 @@ Public Class AddVehicle
         Else
             If MsgBox("Are you sure you want to delete this vehicle?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
                 Try
-                    Dim query = "UPDATE vehicles SET status='deleted' WHERE vehicle_id = @id"
+                    Dim query = "UPDATE vehicles SET state='deleted' WHERE id = @id"
                     Dim parameters As New List(Of MySqlParameter) From {
                         New MySqlParameter("@id", editVehicleId)
                     }

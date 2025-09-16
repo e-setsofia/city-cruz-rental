@@ -85,5 +85,24 @@
         End If
     End Sub
 
+    Private Sub dtgVehicles_DoubleClick(sender As Object, e As EventArgs) Handles dtgVehicles.DoubleClick
+        If dtgVehicles.CurrentRow Is Nothing Then Exit Sub
+
+        ' Get the ID from the selected row
+        Dim selectedRow As DataGridViewRow = dtgVehicles.CurrentRow
+        Dim vehicleId As Integer = Convert.ToInt32(selectedRow.Cells("id").Value)
+
+        ' Open the dialog with the selected vehicle ID
+        Dim dialog As New AddVehicle()
+        dialog.InitializeForm(vehicleId) ' Pass the selected ID
+
+        Try
+            If dialog.ShowDialog() = DialogResult.OK Then
+                LoadData()
+            End If
+        Catch ex As Exception
+
+        End Try
+    End Sub
 
 End Class

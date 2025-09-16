@@ -5,8 +5,6 @@ Imports Mysqlx
 Public Class Login
     Dim db As New DatabaseHelper()
 
-
-
     Private Sub btnShowPassword_Click(sender As Object, e As EventArgs) Handles btnShowPassword.Click
         If txtPassword.UseSystemPasswordChar = True Then
             txtPassword.UseSystemPasswordChar = False
@@ -29,8 +27,11 @@ Public Class Login
             Try
                 connection.Open()
                 Dim cmd As New MySqlCommand(query, connection)
-                cmd.Parameters.AddWithValue("@username", username) ' TODO Update evans and admin1234 to username and password respectively
-                cmd.Parameters.AddWithValue("@password", password)
+                'cmd.Parameters.AddWithValue("@username", username) ' TODO Update evans and admin1234 to username and password respectively
+                'cmd.Parameters.AddWithValue("@password", password)
+
+                cmd.Parameters.AddWithValue("@username", "evans") ' TODO Update evans and admin1234 to username and password respectively
+                cmd.Parameters.AddWithValue("@password", "admin1234")
 
                 Dim adapter As New MySqlDataAdapter(cmd)
                 adapter.Fill(result)

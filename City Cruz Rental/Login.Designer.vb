@@ -49,9 +49,9 @@ Partial Class Login
         Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.Guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2GradientPanel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Guna2GradientPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
-        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(935, 807)
+        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(701, 656)
         Me.Guna2GradientPanel1.TabIndex = 0
         '
         'btnSignUp
@@ -60,9 +60,10 @@ Partial Class Login
         Me.btnSignUp.BackColor = System.Drawing.Color.Transparent
         Me.btnSignUp.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSignUp.LinkColor = System.Drawing.Color.White
-        Me.btnSignUp.Location = New System.Drawing.Point(544, 571)
+        Me.btnSignUp.Location = New System.Drawing.Point(408, 464)
+        Me.btnSignUp.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.btnSignUp.Name = "btnSignUp"
-        Me.btnSignUp.Size = New System.Drawing.Size(86, 25)
+        Me.btnSignUp.Size = New System.Drawing.Size(70, 20)
         Me.btnSignUp.TabIndex = 7
         Me.btnSignUp.TabStop = True
         Me.btnSignUp.Text = "Sign up"
@@ -73,9 +74,10 @@ Partial Class Login
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(309, 571)
+        Me.Label3.Location = New System.Drawing.Point(232, 464)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(222, 25)
+        Me.Label3.Size = New System.Drawing.Size(181, 20)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Don't have an account? "
         '
@@ -89,10 +91,10 @@ Partial Class Login
         Me.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnLogin.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.btnLogin.ForeColor = System.Drawing.Color.White
-        Me.btnLogin.Location = New System.Drawing.Point(305, 471)
-        Me.btnLogin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnLogin.Location = New System.Drawing.Point(229, 383)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(305, 68)
+        Me.btnLogin.Size = New System.Drawing.Size(229, 55)
         Me.btnLogin.TabIndex = 6
         Me.btnLogin.Text = "Sign in"
         '
@@ -104,11 +106,11 @@ Partial Class Login
         Me.btnShowPassword.Image = Global.City_Cruz_Rental.My.Resources.Resources.eye_open
         Me.btnShowPassword.ImageOffset = New System.Drawing.Point(0, 0)
         Me.btnShowPassword.ImageRotate = 0!
-        Me.btnShowPassword.Location = New System.Drawing.Point(691, 359)
-        Me.btnShowPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnShowPassword.Location = New System.Drawing.Point(518, 292)
+        Me.btnShowPassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnShowPassword.Name = "btnShowPassword"
         Me.btnShowPassword.PressedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.btnShowPassword.Size = New System.Drawing.Size(79, 79)
+        Me.btnShowPassword.Size = New System.Drawing.Size(59, 64)
         Me.btnShowPassword.TabIndex = 5
         '
         'txtPassword
@@ -127,13 +129,13 @@ Partial Class Login
         Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.txtPassword.ForeColor = System.Drawing.Color.White
         Me.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtPassword.Location = New System.Drawing.Point(159, 368)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(73, 94, 73, 94)
+        Me.txtPassword.Location = New System.Drawing.Point(119, 299)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(55, 76, 55, 76)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.txtPassword.PlaceholderText = "Password"
         Me.txtPassword.SelectedText = ""
-        Me.txtPassword.Size = New System.Drawing.Size(525, 70)
+        Me.txtPassword.Size = New System.Drawing.Size(394, 57)
         Me.txtPassword.TabIndex = 3
         Me.txtPassword.TextOffset = New System.Drawing.Point(10, 0)
         Me.txtPassword.UseSystemPasswordChar = True
@@ -154,13 +156,13 @@ Partial Class Login
         Me.txtUsername.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.txtUsername.ForeColor = System.Drawing.Color.White
         Me.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtUsername.Location = New System.Drawing.Point(159, 257)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(73, 94, 73, 94)
+        Me.txtUsername.Location = New System.Drawing.Point(119, 209)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(55, 76, 55, 76)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.txtUsername.PlaceholderText = "Username"
         Me.txtUsername.SelectedText = ""
-        Me.txtUsername.Size = New System.Drawing.Size(600, 70)
+        Me.txtUsername.Size = New System.Drawing.Size(450, 57)
         Me.txtUsername.TabIndex = 2
         Me.txtUsername.TextOffset = New System.Drawing.Point(10, 0)
         '
@@ -170,9 +172,10 @@ Partial Class Login
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label2.Location = New System.Drawing.Point(168, 162)
+        Me.Label2.Location = New System.Drawing.Point(126, 132)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(365, 27)
+        Me.Label2.Size = New System.Drawing.Size(295, 21)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Please enter your account credentials"
         '
@@ -182,19 +185,21 @@ Partial Class Login
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(168, 113)
+        Me.Label1.Location = New System.Drawing.Point(126, 92)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(237, 40)
+        Me.Label1.Size = New System.Drawing.Size(190, 31)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Welcome back"
         '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AcceptButton = Me.btnLogin
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(935, 807)
+        Me.ClientSize = New System.Drawing.Size(701, 656)
         Me.Controls.Add(Me.Guna2GradientPanel1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
