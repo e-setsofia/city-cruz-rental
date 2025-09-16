@@ -29,8 +29,8 @@ Public Class Login
             Try
                 connection.Open()
                 Dim cmd As New MySqlCommand(query, connection)
-                cmd.Parameters.AddWithValue("@username", "evans") ' TODO Update evans and admin1234 to username and password respectively
-                cmd.Parameters.AddWithValue("@password", "admin1234")
+                cmd.Parameters.AddWithValue("@username", username) ' TODO Update evans and admin1234 to username and password respectively
+                cmd.Parameters.AddWithValue("@password", password)
 
                 Dim adapter As New MySqlDataAdapter(cmd)
                 adapter.Fill(result)

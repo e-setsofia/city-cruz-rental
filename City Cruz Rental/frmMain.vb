@@ -99,4 +99,7 @@ Public Class frmMain
         Me.Dispose()
     End Sub
 
+    Private Sub TxtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+        Search.SearchResult = txtSearch.Text
+    End Sub
 End Class

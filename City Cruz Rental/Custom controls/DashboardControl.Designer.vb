@@ -22,18 +22,22 @@ Partial Class DashboardControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.pnlVehicles = New Guna.UI2.WinForms.Guna2Panel()
@@ -46,23 +50,19 @@ Partial Class DashboardControl
         Me.lblTotalVehicles = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel8.SuspendLayout()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel6.SuspendLayout()
+        Me.Guna2Panel3.SuspendLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel2.SuspendLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlVehicles.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Guna2Panel2.SuspendLayout()
-        Me.Guna2Panel3.SuspendLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -105,6 +105,26 @@ Partial Class DashboardControl
         Me.Panel8.Size = New System.Drawing.Size(429, 534)
         Me.Panel8.TabIndex = 1
         '
+        'Chart1
+        '
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend1)
+        Me.Chart1.Location = New System.Drawing.Point(19, 19)
+        Me.Chart1.Name = "Chart1"
+        Me.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel
+        Series1.ChartArea = "ChartArea1"
+        Series1.Color = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Series1.Legend = "Legend1"
+        Series1.Name = "Sales"
+        Series1.YValuesPerPoint = 4
+        Me.Chart1.Series.Add(Series1)
+        Me.Chart1.Size = New System.Drawing.Size(396, 290)
+        Me.Chart1.TabIndex = 0
+        Me.Chart1.Text = "Chart1"
+        Me.Chart1.TextAntiAliasingQuality = System.Windows.Forms.DataVisualization.Charting.TextAntiAliasingQuality.Normal
+        '
         'Panel7
         '
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
@@ -136,6 +156,52 @@ Partial Class DashboardControl
         Me.Panel6.Size = New System.Drawing.Size(632, 393)
         Me.Panel6.TabIndex = 9
         '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.BorderRadius = 24
+        Me.Guna2Panel3.BorderThickness = 5
+        Me.Guna2Panel3.Controls.Add(Me.Guna2PictureBox2)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(319, 21)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(284, 311)
+        Me.Guna2Panel3.TabIndex = 0
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2PictureBox2.FillColor = System.Drawing.Color.Cyan
+        Me.Guna2PictureBox2.Image = Global.City_Cruz_Rental.My.Resources.Resources.benz
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(284, 311)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox2.TabIndex = 0
+        Me.Guna2PictureBox2.TabStop = False
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BorderRadius = 24
+        Me.Guna2Panel2.BorderThickness = 5
+        Me.Guna2Panel2.Controls.Add(Me.Guna2PictureBox1)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(15, 21)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.Size = New System.Drawing.Size(284, 311)
+        Me.Guna2Panel2.TabIndex = 0
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Cyan
+        Me.Guna2PictureBox1.Image = Global.City_Cruz_Rental.My.Resources.Resources.benz
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(284, 311)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox1.TabIndex = 0
+        Me.Guna2PictureBox1.TabStop = False
+        '
         'Guna2Panel1
         '
         Me.Guna2Panel1.BorderColor = System.Drawing.SystemColors.Control
@@ -148,26 +214,6 @@ Partial Class DashboardControl
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(290, 236)
         Me.Guna2Panel1.TabIndex = 8
-        '
-        'Chart1
-        '
-        ChartArea7.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea7)
-        Legend7.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend7)
-        Me.Chart1.Location = New System.Drawing.Point(19, 19)
-        Me.Chart1.Name = "Chart1"
-        Me.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel
-        Series7.ChartArea = "ChartArea1"
-        Series7.Color = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Series7.Legend = "Legend1"
-        Series7.Name = "Sales"
-        Series7.YValuesPerPoint = 4
-        Me.Chart1.Series.Add(Series7)
-        Me.Chart1.Size = New System.Drawing.Size(396, 290)
-        Me.Chart1.TabIndex = 0
-        Me.Chart1.Text = "Chart1"
-        Me.Chart1.TextAntiAliasingQuality = System.Windows.Forms.DataVisualization.Charting.TextAntiAliasingQuality.Normal
         '
         'Label3
         '
@@ -298,55 +344,9 @@ Partial Class DashboardControl
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 25.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(44, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(216, 60)
+        Me.Label7.Size = New System.Drawing.Size(212, 59)
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "Analytics"
-        '
-        'Guna2Panel2
-        '
-        Me.Guna2Panel2.BorderRadius = 24
-        Me.Guna2Panel2.BorderThickness = 5
-        Me.Guna2Panel2.Controls.Add(Me.Guna2PictureBox1)
-        Me.Guna2Panel2.Location = New System.Drawing.Point(15, 21)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(284, 311)
-        Me.Guna2Panel2.TabIndex = 0
-        '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.BorderRadius = 24
-        Me.Guna2Panel3.BorderThickness = 5
-        Me.Guna2Panel3.Controls.Add(Me.Guna2PictureBox2)
-        Me.Guna2Panel3.Location = New System.Drawing.Point(319, 21)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(284, 311)
-        Me.Guna2Panel3.TabIndex = 0
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Cyan
-        Me.Guna2PictureBox1.Image = Global.City_Cruz_Rental.My.Resources.Resources.benz
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(284, 311)
-        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Guna2PictureBox1.TabIndex = 0
-        Me.Guna2PictureBox1.TabStop = False
-        '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2PictureBox2.FillColor = System.Drawing.Color.Cyan
-        Me.Guna2PictureBox2.Image = Global.City_Cruz_Rental.My.Resources.Resources.benz
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(284, 311)
-        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Guna2PictureBox2.TabIndex = 0
-        Me.Guna2PictureBox2.TabStop = False
         '
         'DashboardControl
         '
@@ -360,19 +360,19 @@ Partial Class DashboardControl
         Me.Panel1.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
+        Me.Guna2Panel3.ResumeLayout(False)
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2Panel2.ResumeLayout(False)
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlVehicles.ResumeLayout(False)
         Me.pnlVehicles.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.Guna2Panel2.ResumeLayout(False)
-        Me.Guna2Panel3.ResumeLayout(False)
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

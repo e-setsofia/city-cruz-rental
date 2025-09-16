@@ -1,10 +1,17 @@
 ﻿Public Class VehicleControl
     Private Sub VehicleControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadData()
+        ' Subscribe to the event
+        AddHandler Search.SearchResultChanged, AddressOf OnSearchResultChanged
     End Sub
 
     Private Sub LoadData()
-        dtgVehicles.DataSource = Queries.ListVehicles
+        ' Get data from your query
+        Dim dt As DataTable = Queries.ListVehicles
+
+        ' Bind a DataView instead of DataTable
+        Dim dv As New DataView(dt)
+        dtgVehicles.DataSource = dv
 
         ' Set the column headers
         dtgVehicles.Columns("name").HeaderText = "Vehicle"
@@ -15,14 +22,17 @@
         dtgVehicles.Columns("state").HeaderText = "Status"
         dtgVehicles.Columns("rating").HeaderText = "Rating"
         dtgVehicles.Columns("category_name").HeaderText = "Category"
-        dtgVehicles.Columns("number_plate").HeaderText = "number_plate"
 
-
+        ' Hide unnecessary columns
         dtgVehicles.Columns("id").Visible = False
         dtgVehicles.Columns("brand_id").Visible = False
         dtgVehicles.Columns("category_id").Visible = False
     End Sub
 
+    ' Event handler that displays the new search result
+    Private Sub OnSearchResultChanged(newValue As String)
+        Search.FilterVehicles(newValue, dtgVehicles, "name", "brand_name", "model", "number_plate")
+    End Sub
 
     Private Sub VehicleControl_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         ' Ensure the PictureBox uses manual painting
@@ -74,4 +84,6 @@
             Preview(dtgVehicles.Rows(lastRowIndex))
         End If
     End Sub
+
+
 End Class
