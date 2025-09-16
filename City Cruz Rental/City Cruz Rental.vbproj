@@ -254,6 +254,7 @@
     </Compile>
     <Compile Include="Utils\FieldValidator.vb" />
     <Compile Include="Utils\ImageResizer.vb" />
+    <Compile Include="Utils\Permissions.vb" />
     <Compile Include="Utils\Utils.vb" />
   </ItemGroup>
   <ItemGroup>

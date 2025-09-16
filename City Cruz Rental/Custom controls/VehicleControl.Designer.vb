@@ -32,7 +32,7 @@ Partial Class VehicleControl
         Me.dpRentalPrice = New City_Cruz_Rental.DataPair()
         Me.dpNumberPlate = New City_Cruz_Rental.DataPair()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.pnlAddVehicle = New System.Windows.Forms.Panel()
         Me.btnAddVehicle = New Guna.UI2.WinForms.Guna2Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
@@ -51,7 +51,7 @@ Partial Class VehicleControl
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel9.SuspendLayout()
-        Me.Panel4.SuspendLayout()
+        Me.pnlAddVehicle.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         CType(Me.imgCar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,7 +78,7 @@ Partial Class VehicleControl
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Panel9, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Panel4, 3, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.pnlAddVehicle, 3, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel1, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel2, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Panel6, 1, 1)
@@ -133,16 +133,17 @@ Partial Class VehicleControl
         Me.Panel8.Size = New System.Drawing.Size(24, 86)
         Me.Panel8.TabIndex = 13
         '
-        'Panel4
+        'pnlAddVehicle
         '
-        Me.Panel4.Controls.Add(Me.btnAddVehicle)
-        Me.Panel4.Controls.Add(Me.Label8)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(715, 3)
-        Me.Panel4.Name = "Panel4"
-        Me.TableLayoutPanel1.SetRowSpan(Me.Panel4, 2)
-        Me.Panel4.Size = New System.Drawing.Size(94, 178)
-        Me.Panel4.TabIndex = 6
+        Me.pnlAddVehicle.Controls.Add(Me.btnAddVehicle)
+        Me.pnlAddVehicle.Controls.Add(Me.Label8)
+        Me.pnlAddVehicle.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlAddVehicle.Location = New System.Drawing.Point(715, 3)
+        Me.pnlAddVehicle.Name = "pnlAddVehicle"
+        Me.TableLayoutPanel1.SetRowSpan(Me.pnlAddVehicle, 2)
+        Me.pnlAddVehicle.Size = New System.Drawing.Size(94, 178)
+        Me.pnlAddVehicle.TabIndex = 6
+        Me.pnlAddVehicle.Visible = False
         '
         'btnAddVehicle
         '
@@ -374,8 +375,8 @@ Partial Class VehicleControl
         Me.Panel1.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
+        Me.pnlAddVehicle.ResumeLayout(False)
+        Me.pnlAddVehicle.PerformLayout()
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
         Me.Guna2Panel2.ResumeLayout(False)
@@ -390,7 +391,7 @@ Partial Class VehicleControl
     Friend WithEvents Panel2 As Panel
     Friend WithEvents dtgVehicles As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents Panel4 As Panel
+    Friend WithEvents pnlAddVehicle As Panel
     Friend WithEvents btnAddVehicle As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label8 As Label
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel

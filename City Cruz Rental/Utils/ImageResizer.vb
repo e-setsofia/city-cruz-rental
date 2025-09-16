@@ -34,34 +34,42 @@ Public Class ImageUtils
     End Sub
 
     Public Shared Function SelectImageAndConvertToBytes(pictureBox As Guna.UI2.WinForms.Guna2PictureBox) As Byte()
-        Using ofd As New OpenFileDialog()
-            ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp"
-            ofd.Title = "Select Vehicle Image"
+        Try
+            Using ofd As New OpenFileDialog()
+                ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp"
+                ofd.Title = "Select Vehicle Image"
 
-            If ofd.ShowDialog() = DialogResult.OK Then
-                ' Load image into PictureBox
-                pictureBox.Image = Image.FromFile(ofd.FileName)
+                If ofd.ShowDialog() = DialogResult.OK Then
+                    ' Load image into PictureBox
+                    pictureBox.Image = Image.FromFile(ofd.FileName)
 
-                ' Convert to byte array
-                Using ms As New MemoryStream()
-                    pictureBox.Image.Save(ms, pictureBox.Image.RawFormat)
-                    Return ms.ToArray()
-                End Using
-            End If
-        End Using
+                    ' Convert to byte array
+                    Using ms As New MemoryStream()
+                        pictureBox.Image.Save(ms, pictureBox.Image.RawFormat)
+                        Return ms.ToArray()
+                    End Using
+                End If
+            End Using
 
-        ' Return Nothing if user cancels or no image selected
-        Return Nothing
+            ' Return Nothing if user cancels or no image selected
+            Return Nothing
+        Catch ex As Exception
+            Return Nothing
+        End Try
     End Function
 
     Public Shared Function ByteArrayToImage(imageBytes As Byte()) As Image
-        If imageBytes Is Nothing OrElse imageBytes.Length = 0 Then
-            Return Nothing
-        End If
+        Try
+            If imageBytes Is Nothing OrElse imageBytes.Length = 0 Then
+                Return Nothing
+            End If
 
-        Using ms As New MemoryStream(imageBytes)
-            Return Image.FromStream(ms)
-        End Using
+            Using ms As New MemoryStream(imageBytes)
+                Return Image.FromStream(ms)
+            End Using
+        Catch ex As Exception
+            Return Nothing
+        End Try
     End Function
 
 End Class

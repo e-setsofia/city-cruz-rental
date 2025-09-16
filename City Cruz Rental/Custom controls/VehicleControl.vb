@@ -5,6 +5,11 @@ Public Class VehicleControl
         LoadData()
         ' Subscribe to the event
         AddHandler Search.SearchResultChanged, AddressOf OnSearchResultChanged
+
+        ' Show add vehichle if is admin
+        If Permissions.IsAdmin Then
+            pnlAddVehicle.Visible = True
+        End If
     End Sub
 
     Private Sub LoadData()
@@ -102,7 +107,7 @@ Public Class VehicleControl
     End Sub
 
     Private Sub dtgVehicles_DoubleClick(sender As Object, e As EventArgs) Handles dtgVehicles.DoubleClick
-        If dtgVehicles.CurrentRow Is Nothing Then Exit Sub
+        If dtgVehicles.CurrentRow Is Nothing Or Not Permissions.IsAdmin Then Exit Sub
 
         ' Get the ID from the selected row
         Dim selectedRow As DataGridViewRow = dtgVehicles.CurrentRow
