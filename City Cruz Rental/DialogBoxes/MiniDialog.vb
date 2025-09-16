@@ -10,6 +10,7 @@
     End Sub
 
     Private Sub BtnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        Validation()
         Dim validated = validator.ValidateAll()
 
         If validated Then
