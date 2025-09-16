@@ -1,4 +1,6 @@
-﻿Public Class MiniDialog
+﻿Imports MySql.Data.MySqlClient
+
+Public Class MiniDialog
 
     Public Query = ""
     Private validator As New FieldValidator()
@@ -14,7 +16,8 @@
         Dim validated = validator.ValidateAll()
 
         If validated Then
-            MsgBox("Implement inserting.")
+            Dim db = New DatabaseHelper
+            db.ExecuteNonQuery(Query, Nothing)
         End If
     End Sub
 

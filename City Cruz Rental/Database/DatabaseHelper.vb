@@ -34,6 +34,7 @@ Public Class DatabaseHelper
         Return dt
     End Function
 
+    //Returns a single value.
     Public Function ExecuteScalar(sqlQuery As String) As String
         Dim result As String
         Try
@@ -45,6 +46,7 @@ Public Class DatabaseHelper
             Return result
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message)
+            Return Nothing
         End Try
     End Function
 
