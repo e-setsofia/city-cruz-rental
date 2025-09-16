@@ -81,7 +81,7 @@ Partial Class frmMain
         Me.flpMenuItems.Dock = System.Windows.Forms.DockStyle.Top
         Me.flpMenuItems.Location = New System.Drawing.Point(0, 169)
         Me.flpMenuItems.Name = "flpMenuItems"
-        Me.flpMenuItems.Padding = New System.Windows.Forms.Padding(8, 8, 8, 8)
+        Me.flpMenuItems.Padding = New System.Windows.Forms.Padding(8)
         Me.flpMenuItems.Size = New System.Drawing.Size(226, 380)
         Me.flpMenuItems.TabIndex = 9
         '
@@ -92,7 +92,7 @@ Partial Class frmMain
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(0, 108)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Padding = New System.Windows.Forms.Padding(16, 16, 16, 16)
+        Me.Panel4.Padding = New System.Windows.Forms.Padding(16)
         Me.Panel4.Size = New System.Drawing.Size(226, 61)
         Me.Panel4.TabIndex = 8
         '
@@ -242,7 +242,7 @@ Partial Class frmMain
         Me.picProfileImage.Image = Global.City_Cruz_Rental.My.Resources.Resources.profile_icon
         Me.picProfileImage.ImageRotate = 0!
         Me.picProfileImage.Location = New System.Drawing.Point(0, 0)
-        Me.picProfileImage.Margin = New System.Windows.Forms.Padding(8, 8, 8, 8)
+        Me.picProfileImage.Margin = New System.Windows.Forms.Padding(8)
         Me.picProfileImage.Name = "picProfileImage"
         Me.picProfileImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.picProfileImage.Size = New System.Drawing.Size(43, 19)
@@ -297,7 +297,7 @@ Partial Class frmMain
         'CustomerControl1
         '
         Me.CustomerControl1.Location = New System.Drawing.Point(0, 0)
-        Me.CustomerControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CustomerControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.CustomerControl1.Name = "CustomerControl1"
         Me.CustomerControl1.Size = New System.Drawing.Size(1065, 609)
         Me.CustomerControl1.TabIndex = 3
@@ -305,7 +305,7 @@ Partial Class frmMain
         'VehicleControl1
         '
         Me.VehicleControl1.Location = New System.Drawing.Point(0, 0)
-        Me.VehicleControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.VehicleControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.VehicleControl1.Name = "VehicleControl1"
         Me.VehicleControl1.Size = New System.Drawing.Size(876, 636)
         Me.VehicleControl1.TabIndex = 2
@@ -314,7 +314,7 @@ Partial Class frmMain
         '
         Me.DashboardControl1.BackColor = System.Drawing.Color.White
         Me.DashboardControl1.Location = New System.Drawing.Point(0, 0)
-        Me.DashboardControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DashboardControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.DashboardControl1.Name = "DashboardControl1"
         Me.DashboardControl1.Size = New System.Drawing.Size(806, 605)
         Me.DashboardControl1.TabIndex = 1
@@ -323,7 +323,7 @@ Partial Class frmMain
         '
         Me.StaffControl1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.StaffControl1.Location = New System.Drawing.Point(0, 0)
-        Me.StaffControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.StaffControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.StaffControl1.Name = "StaffControl1"
         Me.StaffControl1.Size = New System.Drawing.Size(771, 573)
         Me.StaffControl1.TabIndex = 0
@@ -355,7 +355,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main"

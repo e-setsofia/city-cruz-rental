@@ -39,9 +39,9 @@
         imgCar.SizeMode = PictureBoxSizeMode.Normal
 
         ' Remove old handler (to prevent duplicates if function is called again)
-        RemoveHandler imgCar.Paint, AddressOf ImageResizer.PictureBoxCropFill_Paint
+        RemoveHandler imgCar.Paint, AddressOf ImageUtils.PictureBoxCropFill_Paint
         ' Add handler
-        AddHandler imgCar.Paint, AddressOf ImageResizer.PictureBoxCropFill_Paint
+        AddHandler imgCar.Paint, AddressOf ImageUtils.PictureBoxCropFill_Paint
 
         ' Force redraw
         imgCar.Invalidate()

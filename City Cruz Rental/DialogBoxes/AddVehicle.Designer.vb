@@ -24,7 +24,6 @@ Partial Class AddVehicle
     Private Sub InitializeComponent()
         Me.lblFormName = New System.Windows.Forms.Label()
         Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
-        Me.lblStatus = New System.Windows.Forms.Label()
         Me.lblBrand = New System.Windows.Forms.Label()
         Me.cmbBrand = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.btnDelete = New Guna.UI2.WinForms.Guna2Button()
@@ -35,12 +34,13 @@ Partial Class AddVehicle
         Me.txtName = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtPrice = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnBrand = New Guna.UI2.WinForms.Guna2Button()
-        Me.cmbStatus = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.cmbCategory = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.lblCategory = New System.Windows.Forms.Label()
         Me.btnCategory = New Guna.UI2.WinForms.Guna2Button()
         Me.txtNumberPlate = New Guna.UI2.WinForms.Guna2TextBox()
         Me.imgVehicle = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.lblModel = New System.Windows.Forms.Label()
+        Me.txtModel = New Guna.UI2.WinForms.Guna2TextBox()
         CType(Me.imgVehicle, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -60,17 +60,6 @@ Partial Class AddVehicle
         Me.Guna2Separator1.Name = "Guna2Separator1"
         Me.Guna2Separator1.Size = New System.Drawing.Size(766, 10)
         Me.Guna2Separator1.TabIndex = 72
-        '
-        'lblStatus
-        '
-        Me.lblStatus.AutoSize = True
-        Me.lblStatus.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStatus.Location = New System.Drawing.Point(486, 334)
-        Me.lblStatus.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblStatus.Name = "lblStatus"
-        Me.lblStatus.Size = New System.Drawing.Size(55, 21)
-        Me.lblStatus.TabIndex = 69
-        Me.lblStatus.Text = "Status:"
         '
         'lblBrand
         '
@@ -149,7 +138,7 @@ Partial Class AddVehicle
         '
         Me.lblPrice.AutoSize = True
         Me.lblPrice.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrice.Location = New System.Drawing.Point(54, 334)
+        Me.lblPrice.Location = New System.Drawing.Point(486, 344)
         Me.lblPrice.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPrice.Name = "lblPrice"
         Me.lblPrice.Size = New System.Drawing.Size(47, 21)
@@ -199,7 +188,7 @@ Partial Class AddVehicle
         Me.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtPrice.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtPrice.Location = New System.Drawing.Point(175, 334)
+        Me.txtPrice.Location = New System.Drawing.Point(583, 344)
         Me.txtPrice.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.PlaceholderText = ""
@@ -224,23 +213,6 @@ Partial Class AddVehicle
         Me.btnBrand.TabIndex = 74
         Me.btnBrand.Text = "+"
         '
-        'cmbStatus
-        '
-        Me.cmbStatus.BackColor = System.Drawing.Color.Transparent
-        Me.cmbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbStatus.FillColor = System.Drawing.Color.LightGray
-        Me.cmbStatus.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.cmbStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.cmbStatus.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.cmbStatus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.cmbStatus.ItemHeight = 30
-        Me.cmbStatus.Location = New System.Drawing.Point(583, 334)
-        Me.cmbStatus.Margin = New System.Windows.Forms.Padding(2)
-        Me.cmbStatus.Name = "cmbStatus"
-        Me.cmbStatus.Size = New System.Drawing.Size(241, 36)
-        Me.cmbStatus.TabIndex = 75
-        '
         'cmbCategory
         '
         Me.cmbCategory.BackColor = System.Drawing.Color.Transparent
@@ -252,7 +224,7 @@ Partial Class AddVehicle
         Me.cmbCategory.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.cmbCategory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbCategory.ItemHeight = 30
-        Me.cmbCategory.Location = New System.Drawing.Point(583, 386)
+        Me.cmbCategory.Location = New System.Drawing.Point(583, 399)
         Me.cmbCategory.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbCategory.Name = "cmbCategory"
         Me.cmbCategory.Size = New System.Drawing.Size(189, 36)
@@ -262,7 +234,7 @@ Partial Class AddVehicle
         '
         Me.lblCategory.AutoSize = True
         Me.lblCategory.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCategory.Location = New System.Drawing.Point(486, 386)
+        Me.lblCategory.Location = New System.Drawing.Point(486, 399)
         Me.lblCategory.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCategory.Name = "lblCategory"
         Me.lblCategory.Size = New System.Drawing.Size(76, 21)
@@ -279,7 +251,7 @@ Partial Class AddVehicle
         Me.btnCategory.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnCategory.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold)
         Me.btnCategory.ForeColor = System.Drawing.Color.White
-        Me.btnCategory.Location = New System.Drawing.Point(776, 385)
+        Me.btnCategory.Location = New System.Drawing.Point(776, 398)
         Me.btnCategory.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCategory.Name = "btnCategory"
         Me.btnCategory.Size = New System.Drawing.Size(48, 37)
@@ -316,21 +288,52 @@ Partial Class AddVehicle
         Me.imgVehicle.TabIndex = 80
         Me.imgVehicle.TabStop = False
         '
+        'lblModel
+        '
+        Me.lblModel.AutoSize = True
+        Me.lblModel.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModel.Location = New System.Drawing.Point(54, 333)
+        Me.lblModel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblModel.Name = "lblModel"
+        Me.lblModel.Size = New System.Drawing.Size(57, 21)
+        Me.lblModel.TabIndex = 82
+        Me.lblModel.Text = "Model:"
+        '
+        'txtModel
+        '
+        Me.txtModel.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtModel.DefaultText = ""
+        Me.txtModel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtModel.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtModel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtModel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtModel.FillColor = System.Drawing.Color.LightGray
+        Me.txtModel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtModel.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtModel.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtModel.Location = New System.Drawing.Point(175, 333)
+        Me.txtModel.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtModel.Name = "txtModel"
+        Me.txtModel.PlaceholderText = ""
+        Me.txtModel.SelectedText = ""
+        Me.txtModel.Size = New System.Drawing.Size(219, 32)
+        Me.txtModel.TabIndex = 81
+        '
         'AddVehicle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(893, 640)
+        Me.Controls.Add(Me.lblModel)
+        Me.Controls.Add(Me.txtModel)
         Me.Controls.Add(Me.imgVehicle)
         Me.Controls.Add(Me.txtNumberPlate)
         Me.Controls.Add(Me.btnCategory)
         Me.Controls.Add(Me.cmbCategory)
         Me.Controls.Add(Me.lblCategory)
-        Me.Controls.Add(Me.cmbStatus)
         Me.Controls.Add(Me.btnBrand)
         Me.Controls.Add(Me.lblFormName)
         Me.Controls.Add(Me.Guna2Separator1)
-        Me.Controls.Add(Me.lblStatus)
         Me.Controls.Add(Me.lblBrand)
         Me.Controls.Add(Me.cmbBrand)
         Me.Controls.Add(Me.btnDelete)
@@ -351,7 +354,6 @@ Partial Class AddVehicle
 
     Friend WithEvents lblFormName As Label
     Friend WithEvents Guna2Separator1 As Guna.UI2.WinForms.Guna2Separator
-    Friend WithEvents lblStatus As Label
     Friend WithEvents lblBrand As Label
     Friend WithEvents cmbBrand As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents btnDelete As Guna.UI2.WinForms.Guna2Button
@@ -362,10 +364,11 @@ Partial Class AddVehicle
     Friend WithEvents txtName As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents txtPrice As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btnBrand As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents cmbStatus As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents cmbCategory As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents lblCategory As Label
     Friend WithEvents btnCategory As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtNumberPlate As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents imgVehicle As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents lblModel As Label
+    Friend WithEvents txtModel As Guna.UI2.WinForms.Guna2TextBox
 End Class

@@ -15,6 +15,7 @@ Public Class FieldValidator
         PHONE
         PASSWORD
         DATEVALUE
+        NUMBER_PLATE
     End Enum
 
     ' Structure to hold one validation entry
@@ -98,14 +99,19 @@ Public Class FieldValidator
         Select Case field
             Case FieldType.NAME
                 If input.Length < 3 Then
-                    errorMessage = $"The '{label}' filed cannot be less than 3 characters."
+                    errorMessage = $"The '{label}' field cannot be less than 3 characters."
                 ElseIf Not Regex.IsMatch(input, "^[a-zA-Z\s]+$") Then
-                    errorMessage = $"The '{label}' filed must only contain letters and spaces."
+                    errorMessage = $"The '{label}' field must only contain letters and spaces."
+                End If
+
+            Case FieldType.NUMBER_PLATE
+                If input.Length < 4 Or input.Length > 9 Then
+                    errorMessage = $"The '{label}' field must be between 4 and 9 characters.  "
                 End If
 
             Case FieldType.PASSWORD
                 If EstimateStrengthScore(input) < 5 Then
-                    errorMessage = $"The '{label}' filed must not be less than {PassLength} characters, have upper and lower cases and contain a number. Adding a symbol makes it even stronger!."
+                    errorMessage = $"The '{label}' field must not be less than {PassLength} characters, have upper and lower cases and contain a number. Adding a symbol makes it even stronger!."
                 End If
 
             Case FieldType.MONEY
