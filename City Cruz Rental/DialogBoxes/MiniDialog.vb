@@ -21,11 +21,16 @@ Public Class MiniDialog
             }
             Dim db = New DatabaseHelper
             db.ExecuteNonQuery(Query, parameters)
+            Me.DialogResult = DialogResult.OK
             Me.Close()
         End If
     End Sub
 
     Private Sub MiniDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Validation()
+    End Sub
+
+    Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        Me.Close()
     End Sub
 End Class

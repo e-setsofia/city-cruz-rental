@@ -50,6 +50,10 @@ Public Class DatabaseHelper
         End Try
     End Function
 
+    Public Sub SelectLastItem(cmb As Guna.UI2.WinForms.Guna2ComboBox, dt As DataTable)
+        cmb.SelectedIndex = dt.Rows.Count 'One item will be added, but won't be updated before being sent as a datatable
+    End Sub
+
 
     ''' <summary>
     ''' Executes an SQL command that does not return any data (e.g., INSERT, UPDATE, DELETE).

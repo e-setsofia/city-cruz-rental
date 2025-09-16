@@ -26,9 +26,6 @@ Public Class BookVehicle
         ' Add payment method
         Utils.AddItemToComboBox(cmbPaymentMethod, "Cash", "Cash")
         Utils.AddItemToComboBox(cmbPaymentMethod, "MobileMoney", "Mobile Money")
-
-
-
     End Sub
 
     Private Sub BookVehicle_Load(sender As Object, e As EventArgs) Handles MyBase.Load
