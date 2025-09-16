@@ -22,9 +22,9 @@ Partial Class DashboardControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
@@ -41,10 +41,10 @@ Partial Class DashboardControl
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.pnlVehicles = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Guna2VSeparator2 = New Guna.UI2.WinForms.Guna2VSeparator()
         Me.Guna2VSeparator1 = New Guna.UI2.WinForms.Guna2VSeparator()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblTotalVehicles = New System.Windows.Forms.Label()
@@ -107,19 +107,19 @@ Partial Class DashboardControl
         '
         'Chart1
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend2)
         Me.Chart1.Location = New System.Drawing.Point(19, 19)
         Me.Chart1.Name = "Chart1"
         Me.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel
-        Series1.ChartArea = "ChartArea1"
-        Series1.Color = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Series1.Legend = "Legend1"
-        Series1.Name = "Sales"
-        Series1.YValuesPerPoint = 4
-        Me.Chart1.Series.Add(Series1)
+        Series2.ChartArea = "ChartArea1"
+        Series2.Color = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Series2.Legend = "Legend1"
+        Series2.Name = "Sales"
+        Series2.YValuesPerPoint = 4
+        Me.Chart1.Series.Add(Series2)
         Me.Chart1.Size = New System.Drawing.Size(396, 290)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
@@ -247,10 +247,10 @@ Partial Class DashboardControl
         Me.pnlVehicles.BorderColor = System.Drawing.SystemColors.Control
         Me.pnlVehicles.BorderRadius = 24
         Me.pnlVehicles.BorderThickness = 1
-        Me.pnlVehicles.Controls.Add(Me.Label6)
+        Me.pnlVehicles.Controls.Add(Me.Label9)
         Me.pnlVehicles.Controls.Add(Me.Label5)
+        Me.pnlVehicles.Controls.Add(Me.Label8)
         Me.pnlVehicles.Controls.Add(Me.Label2)
-        Me.pnlVehicles.Controls.Add(Me.Guna2VSeparator2)
         Me.pnlVehicles.Controls.Add(Me.Guna2VSeparator1)
         Me.pnlVehicles.Controls.Add(Me.Label1)
         Me.pnlVehicles.Controls.Add(Me.lblTotalVehicles)
@@ -260,43 +260,47 @@ Partial Class DashboardControl
         Me.pnlVehicles.Size = New System.Drawing.Size(304, 236)
         Me.pnlVehicles.TabIndex = 7
         '
-        'Label6
+        'Label9
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(207, 160)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(48, 16)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Label5"
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(221, 187)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(33, 16)
+        Me.Label9.TabIndex = 5
+        Me.Label9.Text = "25%"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(109, 160)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(221, 153)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 16)
+        Me.Label5.Size = New System.Drawing.Size(59, 25)
         Me.Label5.TabIndex = 5
-        Me.Label5.Text = "Label5"
+        Me.Label5.Text = "Male"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(54, 201)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(33, 16)
+        Me.Label8.TabIndex = 4
+        Me.Label8.Text = "25%"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(8, 160)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(44, 156)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 16)
+        Me.Label2.Size = New System.Drawing.Size(83, 25)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Label2"
-        '
-        'Guna2VSeparator2
-        '
-        Me.Guna2VSeparator2.Location = New System.Drawing.Point(182, 143)
-        Me.Guna2VSeparator2.Name = "Guna2VSeparator2"
-        Me.Guna2VSeparator2.Size = New System.Drawing.Size(19, 75)
-        Me.Guna2VSeparator2.TabIndex = 3
+        Me.Label2.Text = "Female"
         '
         'Guna2VSeparator1
         '
-        Me.Guna2VSeparator1.Location = New System.Drawing.Point(79, 143)
+        Me.Guna2VSeparator1.Location = New System.Drawing.Point(153, 143)
         Me.Guna2VSeparator1.Name = "Guna2VSeparator1"
         Me.Guna2VSeparator1.Size = New System.Drawing.Size(18, 75)
         Me.Guna2VSeparator1.TabIndex = 2
@@ -311,9 +315,9 @@ Partial Class DashboardControl
         Me.Label1.Margin = New System.Windows.Forms.Padding(20, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Padding = New System.Windows.Forms.Padding(21, 0, 0, 5)
-        Me.Label1.Size = New System.Drawing.Size(147, 28)
+        Me.Label1.Size = New System.Drawing.Size(169, 28)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Total Vehicles"
+        Me.Label1.Text = "Total Customers"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'lblTotalVehicles
@@ -388,10 +392,8 @@ Partial Class DashboardControl
     Friend WithEvents Label1 As Label
     Friend WithEvents lblTotalVehicles As Label
     Friend WithEvents Guna2VSeparator1 As Guna.UI2.WinForms.Guna2VSeparator
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Guna2VSeparator2 As Guna.UI2.WinForms.Guna2VSeparator
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label7 As Label
     Friend WithEvents Panel9 As Panel
@@ -402,4 +404,6 @@ Partial Class DashboardControl
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
 End Class
