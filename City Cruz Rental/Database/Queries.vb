@@ -92,9 +92,6 @@ Public Class Queries
 
     ' CUSTOMER TABLE
 
-    Public Shared Function InsertRental()
-
-    End Function
 
     Public Shared Function InsertCustomer(
     fName As String,

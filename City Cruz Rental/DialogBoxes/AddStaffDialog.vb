@@ -37,8 +37,8 @@ Public Class AddStaffDialog
             cmbRole.Items.Clear()
             ' Add roles dynamically
             Utils.AddItemToComboBox(cmbRole, "admin", "Admin")
-            Utils.AddItemToComboBox(cmbRole, "recep", "Receptionist")
-            Utils.AddItemToComboBox(cmbRole, "atten", "Attendant")
+            Utils.AddItemToComboBox(cmbRole, "receptionist", "Receptionist")
+            Utils.AddItemToComboBox(cmbRole, "attendant", "Attendant")
             cmbRole.SelectedIndex = 2
         Catch ex As Exception
 
