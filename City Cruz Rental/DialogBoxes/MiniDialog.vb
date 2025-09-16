@@ -16,8 +16,12 @@ Public Class MiniDialog
         Dim validated = validator.ValidateAll()
 
         If validated Then
+            Dim parameters As New List(Of MySqlParameter) From {
+                New MySqlParameter("@value", txtName.Text)
+            }
             Dim db = New DatabaseHelper
-            db.ExecuteNonQuery(Query, Nothing)
+            db.ExecuteNonQuery(Query, parameters)
+            Me.Close()
         End If
     End Sub
 

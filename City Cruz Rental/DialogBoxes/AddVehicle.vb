@@ -41,7 +41,7 @@
         Dim dialog = New MiniDialog
         dialog.lblFormName.Text = "New Brand"
         dialog.lblName.Text = "Brand:"
-        dialog.Query = "INSERT INTO `brands`( `name`) VALUES (@value)"
+        dialog.Query = $"INSERT INTO `brands`( `name`) VALUES (@value)"
         dialog.ShowDialog()
     End Sub
 
