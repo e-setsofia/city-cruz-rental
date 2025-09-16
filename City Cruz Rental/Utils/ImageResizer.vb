@@ -54,5 +54,14 @@ Public Class ImageUtils
         Return Nothing
     End Function
 
+    Public Shared Function ByteArrayToImage(imageBytes As Byte()) As Image
+        If imageBytes Is Nothing OrElse imageBytes.Length = 0 Then
+            Return Nothing
+        End If
+
+        Using ms As New MemoryStream(imageBytes)
+            Return Image.FromStream(ms)
+        End Using
+    End Function
 
 End Class
