@@ -29,7 +29,9 @@ Public Class StaffControl
             Using adapter As New MySqlDataAdapter(query, conn)
                 Dim dt As New DataTable()
                 adapter.Fill(dt)
-                dvgStaffdetails.DataSource = dt
+                ' Bind a DataView instead of DataTable
+                Dim dv As New DataView(dt)
+                dvgStaffdetails.DataSource = dv
             End Using
 
             ' Execute Staff count query
@@ -50,10 +52,15 @@ Public Class StaffControl
 
     End Sub
 
+    ' Event handler that displays the new search result
+    Private Sub OnSearchResultChanged(newValue As String)
+        Search.FilterDataGridView(newValue, dvgStaffdetails, "First Name", "Last Name", "Phone", "Email")
+    End Sub
 
     Private Sub StaffControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         loadStaffData()
+        ' Subscribe to the event
+        AddHandler Search.SearchResultChanged, AddressOf OnSearchResultChanged
     End Sub
 
     Private Sub BtnAddUser_Click(sender As Object, e As EventArgs) Handles btnAddUser.Click
