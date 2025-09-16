@@ -1,4 +1,6 @@
-﻿Public Class VehicleControl
+﻿Imports System.IO
+
+Public Class VehicleControl
     Private Sub VehicleControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadData()
         ' Subscribe to the event
@@ -27,6 +29,8 @@
         dtgVehicles.Columns("id").Visible = False
         dtgVehicles.Columns("brand_id").Visible = False
         dtgVehicles.Columns("category_id").Visible = False
+        dtgVehicles.Columns("image").Visible = False
+
     End Sub
 
     ' Event handler that displays the new search result
@@ -58,11 +62,23 @@
         dpRentalPrice.ValueText = selectedRow.Cells("rental_price").Value
 
         Try
-            dpNumberPlate.ValueText = selectedRow.Cells("number_plate").Value
+            dpNumberPlate.ValueText = selectedRow.Cells("number_plate").Value.ToString()
+
+            Dim imageBytes As Byte() = CType(selectedRow.Cells("image").Value, Byte())
+            If imageBytes IsNot Nothing AndAlso imageBytes.Length > 0 Then
+                Using ms As New MemoryStream(imageBytes)
+                    imgCar.Image = Image.FromStream(ms)
+                End Using
+            Else
+                imgCar.Image = My.Resources.car_symbol
+            End If
+
         Catch ex As Exception
-            dpNumberPlate.ValueText = "Unkown"
-            Console.WriteLine("Vehicle control (Preview): " & ex.ToString)
+            dpNumberPlate.ValueText = "Unknown"
+            imgCar.Image = My.Resources.car_symbol
+            Console.WriteLine("Vehicle control (Preview): " & ex.ToString())
         End Try
+
     End Sub
 
     Private Sub dtgVehicles_RowEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dtgVehicles.RowEnter

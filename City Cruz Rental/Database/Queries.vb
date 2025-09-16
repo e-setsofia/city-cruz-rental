@@ -38,7 +38,8 @@ Public Class Queries
                 v.number_plate,
                 v.rental_price, 
                 v.state, 
-                v.rating, 
+                v.rating,
+                v.image,
                 v.category_id, 
                 c.name AS category_name
             FROM 

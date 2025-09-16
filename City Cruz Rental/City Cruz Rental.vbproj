@@ -355,5 +355,8 @@
   <ItemGroup>
     <None Include="Resources\benz1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_296611225_jzt2xvCHztrDjx4fWrVpO86rZce7qWdQ.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

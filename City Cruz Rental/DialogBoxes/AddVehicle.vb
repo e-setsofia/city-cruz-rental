@@ -83,6 +83,7 @@ Public Class AddVehicle
 
     Private Sub AddVehicle_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' All setup now handled in InitializeForm()
+        LoadComboBoxes()
     End Sub
 
     Private Sub BtnBrand_Click(sender As Object, e As EventArgs) Handles btnBrand.Click
