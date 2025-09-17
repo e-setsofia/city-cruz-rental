@@ -60,7 +60,7 @@ Public Class Login
 
 
                 Else
-                        MessageBox.Show("User not found or invalid credentials.")
+                    MessageBox.Show("User not found or invalid credentials.")
                 End If
 
             Catch ex As Exception
@@ -68,11 +68,6 @@ Public Class Login
             End Try
         End Using
     End Sub
-
-    Private Function extractText(textBox As Guna2TextBox)
-        Return textBox.Text.ToLower
-    End Function
-
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         Dim conn As MySqlConnection

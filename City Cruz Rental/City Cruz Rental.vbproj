@@ -164,6 +164,12 @@
     <Compile Include="Custom controls\DataPair.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Custom controls\Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom controls\Reports.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Custom controls\VehicleControl.Designer.vb">
       <DependentUpon>VehicleControl.vb</DependentUpon>
     </Compile>
@@ -266,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom controls\DataPair.resx">
       <DependentUpon>DataPair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom controls\Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom controls\VehicleControl.resx">
       <DependentUpon>VehicleControl.vb</DependentUpon>
