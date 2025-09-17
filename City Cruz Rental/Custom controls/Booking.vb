@@ -5,13 +5,17 @@ Public Class Booking
 
         ' Subscribe to the event
         AddHandler Search.SearchResultChanged, AddressOf OnSearchResultChanged
+
+        ' Subscribe to double-click event on DataGridView rows
+        AddHandler dtgBooking.CellDoubleClick, AddressOf DtgBooking_CellDoubleClick
     End Sub
+
     Private Sub LoadData()
         Using conn As New MySqlConnection(My.Resources.conn)
             Try
                 conn.Open()
 
-                Dim countTotalBookings As String = "SELECT COUNT(*) FROM  rentals r WHERE  r.return_date IS NULL OR r.status != 'Returned';"
+                Dim countTotalBookings As String = "SELECT COUNT(*) FROM rentals r WHERE r.return_date IS NULL OR r.status != 'Returned';"
                 Using cmd As New MySqlCommand(countTotalBookings, conn)
                     Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
                     lblBookedVehicles.Text = deletedCount.ToString()
@@ -31,17 +35,13 @@ Public Class Booking
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
-
         End Using
 
-
-        Dim dt = Queries.ListBookedVehicles
-        ' Bind a DataView instead of DataTable
+        Dim dt = Queries.ListBookedVehicles()
         Dim dv As New DataView(dt)
-
         dtgBooking.DataSource = dv
 
-        ' Set column headers for rentals
+        ' Set column headers
         dtgBooking.Columns("rental_id").HeaderText = "Rental ID"
         dtgBooking.Columns("vehicle_name").HeaderText = "Vehicle"
         dtgBooking.Columns("vehicle_model").HeaderText = "Model"
@@ -54,21 +54,36 @@ Public Class Booking
         dtgBooking.Columns("status").HeaderText = "Rental Status"
         dtgBooking.Columns("return_date").HeaderText = "Return Date"
 
-        ' Hide internal or unnecessary columns (if any)
-        dtgBooking.Columns("rental_id").Visible = False ' optional
-    End Sub
-
-    Private Sub dtgBooking_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
-
+        ' Hide internal ID
+        dtgBooking.Columns("rental_id").Visible = False
     End Sub
 
     Private Sub OnSearchResultChanged(newValue As String)
-        Search.FilterDataGridView(newValue, dtgBooking, "vehicle_name", "vehicle_model", "customer_first_name", "customer_email", "staff_first_name", "status")
+        Search.FilterDataGridView(newValue, dtgBooking,
+                                  "vehicle_name", "vehicle_model",
+                                  "customer_first_name", "customer_email",
+                                  "staff_first_name", "status")
     End Sub
 
+    ' === ADD BOOKING ===
     Private Sub BtnBookVehicle_Click(sender As Object, e As EventArgs) Handles btnBookVehicle.Click
-        If BookVehicle.ShowDialog() = DialogResult.OK Then
+        Dim frm As New BookVehicle()
+        frm.InitializeForm() ' Add mode
+        If frm.ShowDialog() = DialogResult.OK Then
             LoadData()
+        End If
+    End Sub
+
+    ' === EDIT BOOKING ON DOUBLE-CLICK ===
+    Private Sub DtgBooking_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
+        If e.RowIndex >= 0 Then
+            Dim rentalId As Integer = Convert.ToInt32(dtgBooking.Rows(e.RowIndex).Cells("rental_id").Value)
+
+            Dim frm As New BookVehicle()
+            frm.InitializeForm(rentalId) ' Edit mode
+            If frm.ShowDialog() = DialogResult.OK Then
+                LoadData()
+            End If
         End If
     End Sub
 End Class
