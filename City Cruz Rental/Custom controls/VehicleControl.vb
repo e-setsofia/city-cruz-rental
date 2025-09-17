@@ -63,10 +63,10 @@ Public Class VehicleControl
         Dim name = selectedRow.Cells("model").Value & " - " & selectedRow.Cells("brand_name").Value
         lblFormName.Text = name
         dpModel.ValueText = selectedRow.Cells("model").Value
-        dpStatus.ValueText = selectedRow.Cells("state").Value
         dpRentalPrice.ValueText = selectedRow.Cells("rental_price").Value
 
         Try
+            dpStatus.ValueText = selectedRow.Cells("state").Value
             dpNumberPlate.ValueText = selectedRow.Cells("number_plate").Value.ToString()
 
             Dim imageBytes As Byte() = CType(selectedRow.Cells("image").Value, Byte())

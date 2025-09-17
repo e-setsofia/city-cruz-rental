@@ -32,7 +32,8 @@ Public Class BookVehicleDialog
     End Sub
 
     Private Sub PopulateCombobox()
-        vehicles = db.ExecuteQuery("SELECT id, name, model, rental_price FROM vehicles WHERE state = 'Available';")
+        vehicles = db.ExecuteQuery($"SELECT id, name, model, rental_price FROM vehicles WHERE state = 'Available' OR id={vehicleId};")
+
         customers = db.ExecuteQuery("SELECT customer_id, fName, lName FROM customers;")
 
         cmbVehicle.DataSource = Nothing
@@ -88,7 +89,7 @@ Public Class BookVehicleDialog
         'Setting status for update.
         Dim nextStatus = "Picked Up"
 
-        If currentStatus.ToLower = "picked up" Then ' TODO Update current status
+        If currentStatus.ToLower = "picked up" Or currentStatus.ToLower = "overdue" Then ' TODO Update current status
             nextStatus = "Returned"
         End If
 
@@ -96,9 +97,6 @@ Public Class BookVehicleDialog
 
         If MsgBox($"Has this vehicle been {nextStatus.ToLower}?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
             finalStatus = nextStatus
-            If finalStatus = "Returned" Then
-                finalStatus = "Available"  ' Change the word returned to available.
-            End If
         End If
 
 
@@ -119,21 +117,28 @@ Public Class BookVehicleDialog
                 New MySqlParameter("@total_price", Convert.ToDecimal(txtTotalPrice.Text)),
                 New MySqlParameter("@payment_method", cmbPaymentMethod.SelectedValue.ToString()),
                 New MySqlParameter("@payment_status", "Pending"),
+                New MySqlParameter("@return_date", DateTime.Now),
                 New MySqlParameter("@status", finalStatus)
             }
 
             If isEditMode Then
-                query = "UPDATE rentals SET vehicle_id=@vehicle_id, customer_id=@customer_id, staff_user_id=@staff_user_id, start_date=@start_date, end_date=@end_date, daily_price=@daily_price, total_price=@total_price, status=@status, payment_method=@payment_method WHERE id=@id;"
+                query = "UPDATE rentals SET vehicle_id=@vehicle_id, customer_id=@customer_id, staff_user_id=@staff_user_id, start_date=@start_date, end_date=@end_date, daily_price=@daily_price, total_price=@total_price, status=@status, payment_method=@payment_method, return_date=@return_date WHERE id=@id "
                 parameters.Add(New MySqlParameter("@id", editBookingId))
-                db.ExecuteNonQuery(query, parameters)
-
-                query = "UPDATE `vehicles` SET `state`=@status WHERE `id` = @vehicle_id" ' Update vehicle status too.
             Else
                 query = "INSERT INTO rentals (vehicle_id, customer_id, staff_user_id, booking_date, start_date, end_date, return_date, status, daily_price, total_price, payment_method, payment_status, fuel_level, odometer_reading, damage_notes) " &
                         "VALUES (@vehicle_id, @customer_id, @staff_user_id, @booking_date, @start_date, @end_date, NULL, 'Reserved', @daily_price, @total_price, @payment_method, @payment_status, NULL, NULL, NULL);"
+
+            End If
+            db.ExecuteNonQuery(query, parameters)
+
+            ' Update vehicle
+            If finalStatus = "Returned" Then
+                finalStatus = "Available"
             End If
 
+            query = $"UPDATE `vehicles` SET `state`='{finalStatus}' WHERE `id` = @vehicle_id" ' Update vehicle status too.
             db.ExecuteNonQuery(query, parameters)
+
             MessageBox.Show(If(isEditMode, "Booking updated successfully!", "Vehicle booked successfully!"))
             Me.DialogResult = DialogResult.OK
             Me.Close()
@@ -154,6 +159,7 @@ Public Class BookVehicleDialog
             If dt.Rows.Count > 0 Then
                 Dim row As DataRow = dt.Rows(0)
                 cmbVehicle.SelectedValue = row("vehicle_id")
+                vehicleId = Convert.ToInt64(row("vehicle_id"))
                 cmbCustomer.SelectedValue = row("customer_id")
                 currentStatus = row("status")
                 tmpStart.Value = Convert.ToDateTime(row("start_date"))
@@ -161,6 +167,8 @@ Public Class BookVehicleDialog
                 txtDailyPrice.Text = row("daily_price").ToString()
                 txtTotalPrice.Text = row("total_price").ToString()
                 cmbPaymentMethod.SelectedValue = row("payment_method").ToString()
+
+                PopulateCombobox()
             Else
                 MessageBox.Show("Booking not found.")
                 Me.Close()
@@ -196,5 +204,9 @@ Public Class BookVehicleDialog
                 End Try
             End If
         End If
+    End Sub
+
+    Private Sub DisableControls()
+
     End Sub
 End Class

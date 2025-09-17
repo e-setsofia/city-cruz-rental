@@ -15,7 +15,7 @@ Public Class Booking
             Try
                 conn.Open()
 
-                Dim countTotalBookings As String = "SELECT COUNT(*) FROM rentals r WHERE r.return_date IS NULL OR r.status != 'Returned';"
+                Dim countTotalBookings As String = "SELECT COUNT(*) FROM rentals r WHERE r.status != 'Returned' ;"
                 Using cmd As New MySqlCommand(countTotalBookings, conn)
                     Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
                     lblBookedVehicles.Text = deletedCount.ToString()
@@ -27,11 +27,18 @@ Public Class Booking
                     lblReserved.Text = deletedCount.ToString()
                 End Using
 
-                Dim countOverdueBookings As String = "SELECT COUNT(*) FROM rentals r WHERE r.return_date IS NULL AND r.end_date < CURDATE();"
+                ' Update outdated vehicles
+                Dim updateOverdueBookings As String = "Update `rentals` Set `status`='Overdue' WHERE end_date < CURDATE() AND `status`='Picked up';"
+                Using cmd As New MySqlCommand(updateOverdueBookings, conn)
+                    Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                End Using
+
+                Dim countOverdueBookings As String = "SELECT COUNT(*) FROM rentals r WHERE r.status = 'Overdue';"
                 Using cmd As New MySqlCommand(countOverdueBookings, conn)
                     Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
                     lblOverdue.Text = deletedCount.ToString()
                 End Using
+
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
