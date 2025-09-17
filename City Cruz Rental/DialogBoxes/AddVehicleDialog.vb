@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class AddVehicle
+Public Class AddVehicleDialog
     Private validator As New FieldValidator
     Private brands As New DataTable
     Private categories As New DataTable

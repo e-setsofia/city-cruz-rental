@@ -1,10 +1,12 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class BookVehicle
+Public Class BookVehicleDialog
     Private Shared db As New DatabaseHelper()
     Private vehicles As DataTable
     Private customers As DataTable
     Private rentalPrice As Double = 0.0
+    Private currentStatus As String = "Reserved"
+    Private vehicleId As Int32 = 0
 
     ' Edit mode fields
     Private isEditMode As Boolean = False
@@ -82,6 +84,24 @@ Public Class BookVehicle
     End Sub
 
     Private Sub BtnBook_Click(sender As Object, e As EventArgs) Handles btnBook.Click
+
+        'Setting status for update.
+        Dim nextStatus = "Picked Up"
+
+        If currentStatus.ToLower = "picked up" Then ' TODO Update current status
+            nextStatus = "Returned"
+        End If
+
+        Dim finalStatus = currentStatus ' This will be sent to the database.
+
+        If MsgBox($"Has this vehicle been {nextStatus.ToLower}?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+            finalStatus = nextStatus
+            If finalStatus = "Returned" Then
+                finalStatus = "Available"  ' Change the word returned to available.
+            End If
+        End If
+
+
         Dim confirmationMessage As String = If(isEditMode,
             $"Are you sure you want to update this booking for {cmbCustomer.Text}?",
             $"Are you sure you want to book {cmbVehicle.Text} for {cmbCustomer.Text} for GH¢ {txtTotalPrice.Text}?")
@@ -98,12 +118,16 @@ Public Class BookVehicle
                 New MySqlParameter("@daily_price", Convert.ToDecimal(txtDailyPrice.Text)),
                 New MySqlParameter("@total_price", Convert.ToDecimal(txtTotalPrice.Text)),
                 New MySqlParameter("@payment_method", cmbPaymentMethod.SelectedValue.ToString()),
-                New MySqlParameter("@payment_status", "Pending")
+                New MySqlParameter("@payment_status", "Pending"),
+                New MySqlParameter("@status", finalStatus)
             }
 
             If isEditMode Then
-                query = "UPDATE rentals SET vehicle_id=@vehicle_id, customer_id=@customer_id, staff_user_id=@staff_user_id, start_date=@start_date, end_date=@end_date, daily_price=@daily_price, total_price=@total_price, payment_method=@payment_method WHERE id=@id;"
+                query = "UPDATE rentals SET vehicle_id=@vehicle_id, customer_id=@customer_id, staff_user_id=@staff_user_id, start_date=@start_date, end_date=@end_date, daily_price=@daily_price, total_price=@total_price, status=@status, payment_method=@payment_method WHERE id=@id;"
                 parameters.Add(New MySqlParameter("@id", editBookingId))
+                db.ExecuteNonQuery(query, parameters)
+
+                query = "UPDATE `vehicles` SET `state`=@status WHERE `id` = @vehicle_id" ' Update vehicle status too.
             Else
                 query = "INSERT INTO rentals (vehicle_id, customer_id, staff_user_id, booking_date, start_date, end_date, return_date, status, daily_price, total_price, payment_method, payment_status, fuel_level, odometer_reading, damage_notes) " &
                         "VALUES (@vehicle_id, @customer_id, @staff_user_id, @booking_date, @start_date, @end_date, NULL, 'Reserved', @daily_price, @total_price, @payment_method, @payment_status, NULL, NULL, NULL);"
@@ -131,6 +155,7 @@ Public Class BookVehicle
                 Dim row As DataRow = dt.Rows(0)
                 cmbVehicle.SelectedValue = row("vehicle_id")
                 cmbCustomer.SelectedValue = row("customer_id")
+                currentStatus = row("status")
                 tmpStart.Value = Convert.ToDateTime(row("start_date"))
                 tmpEnd.Value = Convert.ToDateTime(row("end_date"))
                 txtDailyPrice.Text = row("daily_price").ToString()
@@ -153,11 +178,16 @@ Public Class BookVehicle
         Else
             If MsgBox("Are you sure you want to delete this booking?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
                 Try
-                    Dim query As String = "UPDATE rentals SET status='Cancelled' WHERE id=@id"
+                    Dim query As String = "UPDATE rentals SET status='Available' WHERE id=@id"
                     Dim parameters As New List(Of MySqlParameter) From {
-                        New MySqlParameter("@id", editBookingId)
+                        New MySqlParameter("@id", editBookingId),
+                        New MySqlParameter("@vehicle_id", cmbVehicle.SelectedValue)
                     }
                     db.ExecuteNonQuery(query, parameters)
+
+                    query = "UPDATE `vehicles` SET `state`=@status WHERE `id` = @vehicle_id" ' Update vehicle status too.
+                    db.ExecuteNonQuery(query, parameters)
+
                     MessageBox.Show("Booking cancelled successfully!")
                     Me.DialogResult = DialogResult.OK
                     Me.Close()

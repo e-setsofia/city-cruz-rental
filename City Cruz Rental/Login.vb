@@ -71,7 +71,7 @@ Public Class Login
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         Dim conn As MySqlConnection
-        conn = New MySqlConnection(My.Settings.remoteConn)
+        conn = New MySqlConnection(My.Resources.remoteConn)
         Try
             conn.Open()
         Catch ex As Exception

@@ -67,7 +67,7 @@ Public Class Booking
 
     ' === ADD BOOKING ===
     Private Sub BtnBookVehicle_Click(sender As Object, e As EventArgs) Handles btnBookVehicle.Click
-        Dim frm As New BookVehicle()
+        Dim frm As New BookVehicleDialog()
         frm.InitializeForm() ' Add mode
         If frm.ShowDialog() = DialogResult.OK Then
             LoadData()
@@ -79,7 +79,7 @@ Public Class Booking
         If e.RowIndex >= 0 Then
             Dim rentalId As Integer = Convert.ToInt32(dtgBooking.Rows(e.RowIndex).Cells("rental_id").Value)
 
-            Dim frm As New BookVehicle()
+            Dim frm As New BookVehicleDialog()
             frm.InitializeForm(rentalId) ' Edit mode
             If frm.ShowDialog() = DialogResult.OK Then
                 LoadData()

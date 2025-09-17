@@ -96,7 +96,7 @@ Public Class VehicleControl
     End Sub
 
     Private Sub BtnAddVehicle_Click(sender As Object, e As EventArgs) Handles btnAddVehicle.Click
-        Dim dialog = New AddVehicle
+        Dim dialog = New AddVehicleDialog
         dialog.ShowDialog()
 
         If dialog.DialogResult = DialogResult.OK Then
@@ -114,7 +114,7 @@ Public Class VehicleControl
         Dim vehicleId As Integer = Convert.ToInt32(selectedRow.Cells("id").Value)
 
         ' Open the dialog with the selected vehicle ID
-        Dim dialog As New AddVehicle()
+        Dim dialog As New AddVehicleDialog()
         dialog.InitializeForm(vehicleId) ' Pass the selected ID
 
         Try

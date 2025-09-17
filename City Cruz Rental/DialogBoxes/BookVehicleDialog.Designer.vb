@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class BookVehicle
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class BookVehicleDialog
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class BookVehicle
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblFormName = New System.Windows.Forms.Label()
         Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
@@ -46,19 +46,17 @@ Partial Class BookVehicle
         '
         Me.lblFormName.AutoSize = True
         Me.lblFormName.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFormName.Location = New System.Drawing.Point(29, 31)
-        Me.lblFormName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblFormName.Location = New System.Drawing.Point(22, 25)
         Me.lblFormName.Name = "lblFormName"
-        Me.lblFormName.Size = New System.Drawing.Size(588, 91)
+        Me.lblFormName.Size = New System.Drawing.Size(481, 73)
         Me.lblFormName.TabIndex = 73
         Me.lblFormName.Text = "Book A Vehicle"
         '
         'Guna2Separator1
         '
-        Me.Guna2Separator1.Location = New System.Drawing.Point(47, 124)
-        Me.Guna2Separator1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2Separator1.Location = New System.Drawing.Point(35, 101)
         Me.Guna2Separator1.Name = "Guna2Separator1"
-        Me.Guna2Separator1.Size = New System.Drawing.Size(1021, 12)
+        Me.Guna2Separator1.Size = New System.Drawing.Size(766, 10)
         Me.Guna2Separator1.TabIndex = 72
         '
         'tmpStart
@@ -67,12 +65,12 @@ Partial Class BookVehicle
         Me.tmpStart.FillColor = System.Drawing.Color.White
         Me.tmpStart.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tmpStart.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.tmpStart.Location = New System.Drawing.Point(203, 251)
-        Me.tmpStart.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tmpStart.Location = New System.Drawing.Point(152, 204)
+        Me.tmpStart.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tmpStart.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.tmpStart.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.tmpStart.Name = "tmpStart"
-        Me.tmpStart.Size = New System.Drawing.Size(292, 39)
+        Me.tmpStart.Size = New System.Drawing.Size(219, 32)
         Me.tmpStart.TabIndex = 56
         Me.tmpStart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.tmpStart.Value = New Date(2025, 8, 20, 0, 0, 0, 0)
@@ -81,9 +79,10 @@ Partial Class BookVehicle
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(623, 310)
+        Me.Label9.Location = New System.Drawing.Point(463, 252)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(105, 28)
+        Me.Label9.Size = New System.Drawing.Size(83, 21)
         Me.Label9.TabIndex = 69
         Me.Label9.Text = "Total Price:"
         '
@@ -91,9 +90,10 @@ Partial Class BookVehicle
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(623, 246)
+        Me.Label8.Location = New System.Drawing.Point(463, 200)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(95, 28)
+        Me.Label8.Size = New System.Drawing.Size(75, 21)
         Me.Label8.TabIndex = 70
         Me.Label8.Text = "End Date:"
         '
@@ -101,9 +101,10 @@ Partial Class BookVehicle
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(617, 186)
+        Me.Label7.Location = New System.Drawing.Point(463, 151)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(100, 28)
+        Me.Label7.Size = New System.Drawing.Size(81, 21)
         Me.Label7.TabIndex = 71
         Me.Label7.Text = "Customer:"
         '
@@ -120,12 +121,12 @@ Partial Class BookVehicle
         Me.txtTotalPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtTotalPrice.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtTotalPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtTotalPrice.Location = New System.Drawing.Point(752, 310)
-        Me.txtTotalPrice.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtTotalPrice.Location = New System.Drawing.Point(564, 252)
+        Me.txtTotalPrice.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.txtTotalPrice.Name = "txtTotalPrice"
         Me.txtTotalPrice.PlaceholderText = ""
         Me.txtTotalPrice.SelectedText = ""
-        Me.txtTotalPrice.Size = New System.Drawing.Size(316, 39)
+        Me.txtTotalPrice.Size = New System.Drawing.Size(237, 32)
         Me.txtTotalPrice.TabIndex = 55
         '
         'btnCancel
@@ -138,10 +139,10 @@ Partial Class BookVehicle
         Me.btnCancel.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnCancel.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold)
         Me.btnCancel.ForeColor = System.Drawing.Color.White
-        Me.btnCancel.Location = New System.Drawing.Point(623, 514)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnCancel.Location = New System.Drawing.Point(467, 418)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(107, 41)
+        Me.btnCancel.Size = New System.Drawing.Size(80, 33)
         Me.btnCancel.TabIndex = 61
         Me.btnCancel.Text = "Cancel"
         '
@@ -155,10 +156,10 @@ Partial Class BookVehicle
         Me.btnBook.FillColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.btnBook.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold)
         Me.btnBook.ForeColor = System.Drawing.Color.White
-        Me.btnBook.Location = New System.Drawing.Point(373, 514)
-        Me.btnBook.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnBook.Location = New System.Drawing.Point(280, 418)
+        Me.btnBook.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnBook.Name = "btnBook"
-        Me.btnBook.Size = New System.Drawing.Size(221, 41)
+        Me.btnBook.Size = New System.Drawing.Size(166, 33)
         Me.btnBook.TabIndex = 60
         Me.btnBook.Text = "Book"
         '
@@ -166,9 +167,10 @@ Partial Class BookVehicle
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(41, 367)
+        Me.Label5.Location = New System.Drawing.Point(31, 298)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(166, 28)
+        Me.Label5.Size = New System.Drawing.Size(131, 21)
         Me.Label5.TabIndex = 62
         Me.Label5.Text = "Payment Method:"
         '
@@ -176,9 +178,10 @@ Partial Class BookVehicle
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(41, 310)
+        Me.Label4.Location = New System.Drawing.Point(31, 252)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(107, 28)
+        Me.Label4.Size = New System.Drawing.Size(86, 21)
         Me.Label4.TabIndex = 66
         Me.Label4.Text = "Daily Price:"
         '
@@ -186,9 +189,10 @@ Partial Class BookVehicle
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(41, 246)
+        Me.Label3.Location = New System.Drawing.Point(31, 200)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(103, 28)
+        Me.Label3.Size = New System.Drawing.Size(81, 21)
         Me.Label3.TabIndex = 63
         Me.Label3.Text = "Start Date:"
         '
@@ -196,9 +200,10 @@ Partial Class BookVehicle
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(41, 186)
+        Me.Label1.Location = New System.Drawing.Point(31, 151)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(77, 28)
+        Me.Label1.Size = New System.Drawing.Size(62, 21)
         Me.Label1.TabIndex = 64
         Me.Label1.Text = "Vehicle:"
         '
@@ -214,10 +219,10 @@ Partial Class BookVehicle
         Me.cmbPaymentMethod.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.cmbPaymentMethod.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbPaymentMethod.ItemHeight = 30
-        Me.cmbPaymentMethod.Location = New System.Drawing.Point(203, 367)
-        Me.cmbPaymentMethod.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmbPaymentMethod.Location = New System.Drawing.Point(152, 298)
+        Me.cmbPaymentMethod.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmbPaymentMethod.Name = "cmbPaymentMethod"
-        Me.cmbPaymentMethod.Size = New System.Drawing.Size(292, 36)
+        Me.cmbPaymentMethod.Size = New System.Drawing.Size(220, 36)
         Me.cmbPaymentMethod.TabIndex = 52
         Me.cmbPaymentMethod.ValueMember = "sfdm, dsjdifs"
         '
@@ -234,12 +239,12 @@ Partial Class BookVehicle
         Me.txtDailyPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtDailyPrice.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtDailyPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtDailyPrice.Location = New System.Drawing.Point(203, 310)
-        Me.txtDailyPrice.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtDailyPrice.Location = New System.Drawing.Point(152, 252)
+        Me.txtDailyPrice.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.txtDailyPrice.Name = "txtDailyPrice"
         Me.txtDailyPrice.PlaceholderText = ""
         Me.txtDailyPrice.SelectedText = ""
-        Me.txtDailyPrice.Size = New System.Drawing.Size(292, 39)
+        Me.txtDailyPrice.Size = New System.Drawing.Size(219, 32)
         Me.txtDailyPrice.TabIndex = 54
         '
         'cmbVehicle
@@ -254,10 +259,10 @@ Partial Class BookVehicle
         Me.cmbVehicle.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.cmbVehicle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbVehicle.ItemHeight = 30
-        Me.cmbVehicle.Location = New System.Drawing.Point(203, 181)
-        Me.cmbVehicle.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmbVehicle.Location = New System.Drawing.Point(152, 147)
+        Me.cmbVehicle.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmbVehicle.Name = "cmbVehicle"
-        Me.cmbVehicle.Size = New System.Drawing.Size(292, 36)
+        Me.cmbVehicle.Size = New System.Drawing.Size(220, 36)
         Me.cmbVehicle.TabIndex = 74
         Me.cmbVehicle.ValueMember = "sfdm, dsjdifs"
         '
@@ -272,10 +277,10 @@ Partial Class BookVehicle
         Me.cmbCustomer.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.cmbCustomer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbCustomer.ItemHeight = 30
-        Me.cmbCustomer.Location = New System.Drawing.Point(752, 181)
-        Me.cmbCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmbCustomer.Location = New System.Drawing.Point(564, 147)
+        Me.cmbCustomer.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmbCustomer.Name = "cmbCustomer"
-        Me.cmbCustomer.Size = New System.Drawing.Size(316, 36)
+        Me.cmbCustomer.Size = New System.Drawing.Size(238, 36)
         Me.cmbCustomer.TabIndex = 75
         '
         'tmpEnd
@@ -284,21 +289,21 @@ Partial Class BookVehicle
         Me.tmpEnd.FillColor = System.Drawing.Color.White
         Me.tmpEnd.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tmpEnd.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.tmpEnd.Location = New System.Drawing.Point(751, 251)
-        Me.tmpEnd.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tmpEnd.Location = New System.Drawing.Point(563, 204)
+        Me.tmpEnd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tmpEnd.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.tmpEnd.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.tmpEnd.Name = "tmpEnd"
-        Me.tmpEnd.Size = New System.Drawing.Size(319, 39)
+        Me.tmpEnd.Size = New System.Drawing.Size(239, 32)
         Me.tmpEnd.TabIndex = 76
         Me.tmpEnd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.tmpEnd.Value = New Date(2025, 8, 20, 0, 0, 0, 0)
         '
-        'BookVehicle
+        'BookVehicleDialog
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1099, 586)
+        Me.ClientSize = New System.Drawing.Size(824, 476)
         Me.Controls.Add(Me.tmpEnd)
         Me.Controls.Add(Me.cmbCustomer)
         Me.Controls.Add(Me.cmbVehicle)
@@ -317,8 +322,7 @@ Partial Class BookVehicle
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cmbPaymentMethod)
         Me.Controls.Add(Me.txtDailyPrice)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Name = "BookVehicle"
+        Me.Name = "BookVehicleDialog"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "BookVehicle"
         Me.ResumeLayout(False)
