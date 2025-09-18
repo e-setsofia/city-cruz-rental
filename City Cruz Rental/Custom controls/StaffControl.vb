@@ -89,5 +89,8 @@ Public Class StaffControl
         End If
     End Sub
 
+    Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
+        loadStaffData()
+    End Sub
 End Class
 

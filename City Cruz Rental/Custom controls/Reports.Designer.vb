@@ -26,6 +26,7 @@ Partial Class Reports
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblBookedVehicles = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.btnBookVehicle = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -37,7 +38,7 @@ Partial Class Reports
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblReserved = New System.Windows.Forms.Label()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
+        Me.btnUpdate = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -93,6 +94,15 @@ Partial Class Reports
         Me.Panel2.Size = New System.Drawing.Size(936, 404)
         Me.Panel2.TabIndex = 10
         '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebBrowser1.Location = New System.Drawing.Point(36, 36)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(864, 332)
+        Me.WebBrowser1.TabIndex = 0
+        '
         'btnBookVehicle
         '
         Me.btnBookVehicle.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -122,6 +132,7 @@ Partial Class Reports
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.btnUpdate)
         Me.Panel1.Controls.Add(Me.Guna2Panel3)
         Me.Panel1.Controls.Add(Me.lblQueryName)
         Me.Panel1.Controls.Add(Me.Guna2Separator1)
@@ -229,14 +240,21 @@ Partial Class Reports
         Me.lblReserved.Text = "25"
         Me.lblReserved.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'WebBrowser1
+        'btnUpdate
         '
-        Me.WebBrowser1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WebBrowser1.Location = New System.Drawing.Point(36, 36)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(864, 332)
-        Me.WebBrowser1.TabIndex = 0
+        Me.btnUpdate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnUpdate.AutoRoundedCorners = True
+        Me.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnUpdate.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnUpdate.Location = New System.Drawing.Point(834, 177)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(66, 32)
+        Me.btnUpdate.TabIndex = 53
+        Me.btnUpdate.Text = "Update"
         '
         'Reports
         '
@@ -274,4 +292,5 @@ Partial Class Reports
     Friend WithEvents Label4 As Label
     Friend WithEvents lblReserved As Label
     Friend WithEvents WebBrowser1 As WebBrowser
+    Friend WithEvents btnUpdate As Guna.UI2.WinForms.Guna2Button
 End Class

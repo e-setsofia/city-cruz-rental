@@ -34,20 +34,22 @@ Partial Class StaffControl
         Me.btnAddUser = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnUpdate = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel2.SuspendLayout()
         CType(Me.dvgStaffdetails, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.dvgStaffdetails)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 268)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel2.Location = New System.Drawing.Point(0, 218)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Padding = New System.Windows.Forms.Padding(48, 44, 48, 44)
-        Me.Panel2.Size = New System.Drawing.Size(1151, 499)
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(36, 36, 36, 36)
+        Me.Panel2.Size = New System.Drawing.Size(863, 405)
         Me.Panel2.TabIndex = 1
         '
         'dvgStaffdetails
@@ -74,13 +76,13 @@ Partial Class StaffControl
         Me.dvgStaffdetails.DefaultCellStyle = DataGridViewCellStyle3
         Me.dvgStaffdetails.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dvgStaffdetails.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dvgStaffdetails.Location = New System.Drawing.Point(48, 44)
-        Me.dvgStaffdetails.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dvgStaffdetails.Location = New System.Drawing.Point(36, 36)
+        Me.dvgStaffdetails.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dvgStaffdetails.Name = "dvgStaffdetails"
         Me.dvgStaffdetails.RowHeadersVisible = False
         Me.dvgStaffdetails.RowHeadersWidth = 51
         Me.dvgStaffdetails.RowTemplate.Height = 24
-        Me.dvgStaffdetails.Size = New System.Drawing.Size(1055, 411)
+        Me.dvgStaffdetails.Size = New System.Drawing.Size(791, 333)
         Me.dvgStaffdetails.TabIndex = 0
         Me.dvgStaffdetails.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.dvgStaffdetails.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -112,10 +114,9 @@ Partial Class StaffControl
         Me.Guna2Panel1.Controls.Add(Me.lblDeletedStaff)
         Me.Guna2Panel1.Controls.Add(Me.Label2)
         Me.Guna2Panel1.Controls.Add(Me.lblStaff)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(33, 25)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(25, 20)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(193, 121)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(145, 98)
         Me.Guna2Panel1.TabIndex = 5
         '
         'lblDeletedStaff
@@ -123,10 +124,9 @@ Partial Class StaffControl
         Me.lblDeletedStaff.AutoSize = True
         Me.lblDeletedStaff.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDeletedStaff.ForeColor = System.Drawing.Color.Red
-        Me.lblDeletedStaff.Location = New System.Drawing.Point(125, 54)
-        Me.lblDeletedStaff.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDeletedStaff.Location = New System.Drawing.Point(94, 44)
         Me.lblDeletedStaff.Name = "lblDeletedStaff"
-        Me.lblDeletedStaff.Size = New System.Drawing.Size(33, 29)
+        Me.lblDeletedStaff.Size = New System.Drawing.Size(26, 23)
         Me.lblDeletedStaff.TabIndex = 3
         Me.lblDeletedStaff.Text = "25"
         Me.lblDeletedStaff.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -136,11 +136,11 @@ Partial Class StaffControl
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(32, 92)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(20, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(24, 75)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(15, 0, 3, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Padding = New System.Windows.Forms.Padding(21, 0, 0, 5)
-        Me.Label2.Size = New System.Drawing.Size(116, 28)
+        Me.Label2.Padding = New System.Windows.Forms.Padding(16, 0, 0, 4)
+        Me.Label2.Size = New System.Drawing.Size(91, 22)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Total Staff"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -149,10 +149,9 @@ Partial Class StaffControl
         '
         Me.lblStaff.AutoSize = True
         Me.lblStaff.Font = New System.Drawing.Font("Bahnschrift SemiBold SemiConden", 40.0!, System.Drawing.FontStyle.Bold)
-        Me.lblStaff.Location = New System.Drawing.Point(48, 12)
-        Me.lblStaff.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblStaff.Location = New System.Drawing.Point(36, 10)
         Me.lblStaff.Name = "lblStaff"
-        Me.lblStaff.Size = New System.Drawing.Size(98, 81)
+        Me.lblStaff.Size = New System.Drawing.Size(79, 65)
         Me.lblStaff.TabIndex = 0
         Me.lblStaff.Text = "25"
         Me.lblStaff.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -166,10 +165,9 @@ Partial Class StaffControl
         Me.btnAddUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnAddUser.Font = New System.Drawing.Font("Segoe UI", 27.75!)
         Me.btnAddUser.ForeColor = System.Drawing.Color.White
-        Me.btnAddUser.Location = New System.Drawing.Point(251, 25)
-        Me.btnAddUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAddUser.Location = New System.Drawing.Point(188, 20)
         Me.btnAddUser.Name = "btnAddUser"
-        Me.btnAddUser.Size = New System.Drawing.Size(71, 92)
+        Me.btnAddUser.Size = New System.Drawing.Size(53, 75)
         Me.btnAddUser.TabIndex = 6
         Me.btnAddUser.Text = "+"
         '
@@ -177,25 +175,41 @@ Partial Class StaffControl
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(247, 129)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(185, 105)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(75, 17)
+        Me.Label1.Size = New System.Drawing.Size(60, 13)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Add Staff"
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.btnUpdate)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1151, 268)
+        Me.Panel1.Size = New System.Drawing.Size(863, 218)
         Me.Panel1.TabIndex = 2
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnUpdate.AutoRoundedCorners = True
+        Me.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnUpdate.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnUpdate.Location = New System.Drawing.Point(776, 181)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(66, 32)
+        Me.btnUpdate.TabIndex = 53
+        Me.btnUpdate.Text = "Update"
         '
         'StaffControl
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.Controls.Add(Me.Label1)
@@ -203,13 +217,13 @@ Partial Class StaffControl
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "StaffControl"
-        Me.Size = New System.Drawing.Size(1151, 767)
+        Me.Size = New System.Drawing.Size(863, 623)
         Me.Panel2.ResumeLayout(False)
         CType(Me.dvgStaffdetails, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -223,4 +237,5 @@ Partial Class StaffControl
     Friend WithEvents Label1 As Label
     Friend WithEvents lblDeletedStaff As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnUpdate As Guna.UI2.WinForms.Guna2Button
 End Class

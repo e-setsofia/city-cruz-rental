@@ -22,10 +22,10 @@ Partial Class VehicleControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel9 = New System.Windows.Forms.Panel()
@@ -48,6 +48,7 @@ Partial Class VehicleControl
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.dtgVehicles = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.btnUpdate = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel9.SuspendLayout()
@@ -82,13 +83,14 @@ Partial Class VehicleControl
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel1, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel2, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Panel6, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnUpdate, 3, 2)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(32, 32)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(812, 205)
         Me.TableLayoutPanel1.TabIndex = 1
         '
@@ -98,9 +100,9 @@ Partial Class VehicleControl
         Me.Panel9.Controls.Add(Me.dpNumberPlate)
         Me.Panel9.Controls.Add(Me.Panel8)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(559, 95)
+        Me.Panel9.Location = New System.Drawing.Point(559, 91)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(150, 86)
+        Me.Panel9.Size = New System.Drawing.Size(150, 82)
         Me.Panel9.TabIndex = 15
         '
         'dpRentalPrice
@@ -130,7 +132,7 @@ Partial Class VehicleControl
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(24, 86)
+        Me.Panel8.Size = New System.Drawing.Size(24, 82)
         Me.Panel8.TabIndex = 13
         '
         'pnlAddVehicle
@@ -141,7 +143,7 @@ Partial Class VehicleControl
         Me.pnlAddVehicle.Location = New System.Drawing.Point(715, 3)
         Me.pnlAddVehicle.Name = "pnlAddVehicle"
         Me.TableLayoutPanel1.SetRowSpan(Me.pnlAddVehicle, 2)
-        Me.pnlAddVehicle.Size = New System.Drawing.Size(94, 178)
+        Me.pnlAddVehicle.Size = New System.Drawing.Size(94, 170)
         Me.pnlAddVehicle.TabIndex = 6
         Me.pnlAddVehicle.Visible = False
         '
@@ -157,7 +159,7 @@ Partial Class VehicleControl
         Me.btnAddVehicle.ForeColor = System.Drawing.Color.White
         Me.btnAddVehicle.Location = New System.Drawing.Point(21, 21)
         Me.btnAddVehicle.Name = "btnAddVehicle"
-        Me.btnAddVehicle.Size = New System.Drawing.Size(53, 127)
+        Me.btnAddVehicle.Size = New System.Drawing.Size(53, 115)
         Me.btnAddVehicle.TabIndex = 15
         Me.btnAddVehicle.Text = "+"
         '
@@ -166,7 +168,7 @@ Partial Class VehicleControl
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(11, 163)
+        Me.Label8.Location = New System.Drawing.Point(11, 152)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(75, 13)
         Me.Label8.TabIndex = 16
@@ -182,7 +184,7 @@ Partial Class VehicleControl
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel1.Location = New System.Drawing.Point(403, 3)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(306, 86)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(306, 82)
         Me.Guna2Panel1.TabIndex = 3
         '
         'Panel5
@@ -190,7 +192,7 @@ Partial Class VehicleControl
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel5.Location = New System.Drawing.Point(282, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(24, 76)
+        Me.Panel5.Size = New System.Drawing.Size(24, 72)
         Me.Panel5.TabIndex = 53
         '
         'lblFormName
@@ -207,7 +209,7 @@ Partial Class VehicleControl
         'Guna2Separator1
         '
         Me.Guna2Separator1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Guna2Separator1.Location = New System.Drawing.Point(24, 76)
+        Me.Guna2Separator1.Location = New System.Drawing.Point(24, 72)
         Me.Guna2Separator1.Name = "Guna2Separator1"
         Me.Guna2Separator1.Size = New System.Drawing.Size(282, 10)
         Me.Guna2Separator1.TabIndex = 51
@@ -217,7 +219,7 @@ Partial Class VehicleControl
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(24, 86)
+        Me.Panel3.Size = New System.Drawing.Size(24, 82)
         Me.Panel3.TabIndex = 0
         '
         'Guna2Panel2
@@ -228,7 +230,7 @@ Partial Class VehicleControl
         Me.Guna2Panel2.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.TableLayoutPanel1.SetRowSpan(Me.Guna2Panel2, 2)
-        Me.Guna2Panel2.Size = New System.Drawing.Size(394, 178)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(394, 170)
         Me.Guna2Panel2.TabIndex = 4
         '
         'imgCar
@@ -239,7 +241,7 @@ Partial Class VehicleControl
         Me.imgCar.ImageRotate = 0!
         Me.imgCar.Location = New System.Drawing.Point(0, 0)
         Me.imgCar.Name = "imgCar"
-        Me.imgCar.Size = New System.Drawing.Size(394, 178)
+        Me.imgCar.Size = New System.Drawing.Size(394, 170)
         Me.imgCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.imgCar.TabIndex = 3
         Me.imgCar.TabStop = False
@@ -250,9 +252,9 @@ Partial Class VehicleControl
         Me.Panel6.Controls.Add(Me.dpModel)
         Me.Panel6.Controls.Add(Me.Panel7)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(403, 95)
+        Me.Panel6.Location = New System.Drawing.Point(403, 91)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(150, 86)
+        Me.Panel6.Size = New System.Drawing.Size(150, 82)
         Me.Panel6.TabIndex = 7
         '
         'dpStatus
@@ -282,7 +284,7 @@ Partial Class VehicleControl
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(24, 86)
+        Me.Panel7.Size = New System.Drawing.Size(24, 82)
         Me.Panel7.TabIndex = 11
         '
         'Panel2
@@ -300,44 +302,44 @@ Partial Class VehicleControl
         Me.dtgVehicles.AllowUserToAddRows = False
         Me.dtgVehicles.AllowUserToDeleteRows = False
         Me.dtgVehicles.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(179, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
-        Me.dtgVehicles.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(128, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(128, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgVehicles.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(179, Byte), Integer))
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
+        Me.dtgVehicles.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(128, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(128, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgVehicles.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.dtgVehicles.ColumnHeadersHeight = 24
         Me.dtgVehicles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(179, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dtgVehicles.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(179, Byte), Integer))
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dtgVehicles.DefaultCellStyle = DataGridViewCellStyle7
         Me.dtgVehicles.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dtgVehicles.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dtgVehicles.Location = New System.Drawing.Point(32, 32)
         Me.dtgVehicles.Name = "dtgVehicles"
         Me.dtgVehicles.ReadOnly = True
         Me.dtgVehicles.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgVehicles.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgVehicles.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.dtgVehicles.RowHeadersVisible = False
         Me.dtgVehicles.RowHeadersWidth = 51
         Me.dtgVehicles.Size = New System.Drawing.Size(812, 303)
@@ -363,6 +365,22 @@ Partial Class VehicleControl
         Me.dtgVehicles.ThemeStyle.RowsStyle.Height = 22
         Me.dtgVehicles.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(179, Byte), Integer))
         Me.dtgVehicles.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnUpdate.AutoRoundedCorners = True
+        Me.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnUpdate.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnUpdate.Location = New System.Drawing.Point(715, 179)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(94, 23)
+        Me.btnUpdate.TabIndex = 53
+        Me.btnUpdate.Text = "Update"
         '
         'VehicleControl
         '
@@ -409,4 +427,5 @@ Partial Class VehicleControl
     Friend WithEvents dpRentalPrice As DataPair
     Friend WithEvents dpNumberPlate As DataPair
     Friend WithEvents Panel8 As Panel
+    Friend WithEvents btnUpdate As Guna.UI2.WinForms.Guna2Button
 End Class

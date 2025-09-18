@@ -69,6 +69,7 @@ Partial Class CustomerControl
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.btnUpdate = New Guna.UI2.WinForms.Guna2Button()
         Me.dpAddress = New City_Cruz_Rental.DataPair()
         Me.dpPostalCode = New City_Cruz_Rental.DataPair()
         Me.dpLicence = New City_Cruz_Rental.DataPair()
@@ -347,6 +348,7 @@ Partial Class CustomerControl
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.09677!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.90323!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(198, 133)
         Me.TableLayoutPanel5.TabIndex = 0
         '
@@ -471,6 +473,7 @@ Partial Class CustomerControl
         '
         'Panel7
         '
+        Me.Panel7.Controls.Add(Me.btnUpdate)
         Me.Panel7.Controls.Add(Me.btnAddCustomer)
         Me.Panel7.Controls.Add(Me.Label8)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Right
@@ -706,6 +709,22 @@ Partial Class CustomerControl
         Me.Label4.Text = "300"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'btnUpdate
+        '
+        Me.btnUpdate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnUpdate.AutoRoundedCorners = True
+        Me.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnUpdate.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnUpdate.Location = New System.Drawing.Point(15, 120)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(66, 32)
+        Me.btnUpdate.TabIndex = 53
+        Me.btnUpdate.Text = "Update"
+        '
         'dpAddress
         '
         Me.dpAddress.BackColor = System.Drawing.Color.Transparent
@@ -853,4 +872,5 @@ Partial Class CustomerControl
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents btnBookVehicle As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnUpdate As Guna.UI2.WinForms.Guna2Button
 End Class
