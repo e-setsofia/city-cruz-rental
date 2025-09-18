@@ -2,6 +2,7 @@
 
 Public Class AddCustomerDialog
 
+    Private validator As New FieldValidator()
     Private isEditMode As Boolean = False
     Private editCustomerId As Integer = -1
 
@@ -18,8 +19,18 @@ Public Class AddCustomerDialog
             editCustomerId = -1
         End If
     End Sub
+    Private Sub Validation()
+        validator.ClearEntries()
+        validator.AddEntry(txtFirstName, Label1, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtLastName, Label7, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtLicenseNumber, Label1, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtEmail, Label10, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtPostalCode, Label11, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtAddress, Label3, FieldValidator.FieldType.NAME)
+    End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        Validation()
 
         Try
             Dim query As String
