@@ -8,9 +8,9 @@ Public Class frmMain
         New MenuItemData("Staff", 1, New StaffControl),
         New MenuItemData("Vehicles", 2, New VehicleControl),
         New MenuItemData("Customers", 3, New CustomerControl),
-        New MenuItemData("Book A Car", 4, New Booking),
-        New MenuItemData("Reports", 5, New Reports)
-    }
+        New MenuItemData("Book A Car", 4, New Booking)
+    } 'New MenuItemData("Reports", 5, New Reports)
+
 
 
     Private Sub frmDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
