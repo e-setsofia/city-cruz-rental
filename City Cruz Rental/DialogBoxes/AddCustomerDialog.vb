@@ -164,6 +164,7 @@ Public Class AddCustomerDialog
     Private Sub AddCustomerDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetDatePickers()
         PopulateCityComboBox()
+        Validation()
         btnAdd.Text = "Add"
         btnCancel.Text = "Cancel"
     End Sub
