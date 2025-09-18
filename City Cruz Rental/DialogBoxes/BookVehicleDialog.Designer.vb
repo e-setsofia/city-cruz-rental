@@ -66,7 +66,7 @@ Partial Class BookVehicleDialog
         Me.tmpStart.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tmpStart.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.tmpStart.Location = New System.Drawing.Point(152, 204)
-        Me.tmpStart.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tmpStart.Margin = New System.Windows.Forms.Padding(2)
         Me.tmpStart.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.tmpStart.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.tmpStart.Name = "tmpStart"
@@ -140,7 +140,7 @@ Partial Class BookVehicleDialog
         Me.btnCancel.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold)
         Me.btnCancel.ForeColor = System.Drawing.Color.White
         Me.btnCancel.Location = New System.Drawing.Point(467, 418)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(80, 33)
         Me.btnCancel.TabIndex = 61
@@ -157,7 +157,7 @@ Partial Class BookVehicleDialog
         Me.btnBook.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold)
         Me.btnBook.ForeColor = System.Drawing.Color.White
         Me.btnBook.Location = New System.Drawing.Point(280, 418)
-        Me.btnBook.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBook.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBook.Name = "btnBook"
         Me.btnBook.Size = New System.Drawing.Size(166, 33)
         Me.btnBook.TabIndex = 60
@@ -170,9 +170,9 @@ Partial Class BookVehicleDialog
         Me.Label5.Location = New System.Drawing.Point(31, 298)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(131, 21)
+        Me.Label5.Size = New System.Drawing.Size(104, 21)
         Me.Label5.TabIndex = 62
-        Me.Label5.Text = "Payment Method:"
+        Me.Label5.Text = "Pay't Method:"
         '
         'Label4
         '
@@ -220,7 +220,7 @@ Partial Class BookVehicleDialog
         Me.cmbPaymentMethod.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbPaymentMethod.ItemHeight = 30
         Me.cmbPaymentMethod.Location = New System.Drawing.Point(152, 298)
-        Me.cmbPaymentMethod.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbPaymentMethod.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbPaymentMethod.Name = "cmbPaymentMethod"
         Me.cmbPaymentMethod.Size = New System.Drawing.Size(220, 36)
         Me.cmbPaymentMethod.TabIndex = 52
@@ -260,7 +260,7 @@ Partial Class BookVehicleDialog
         Me.cmbVehicle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbVehicle.ItemHeight = 30
         Me.cmbVehicle.Location = New System.Drawing.Point(152, 147)
-        Me.cmbVehicle.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbVehicle.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbVehicle.Name = "cmbVehicle"
         Me.cmbVehicle.Size = New System.Drawing.Size(220, 36)
         Me.cmbVehicle.TabIndex = 74
@@ -278,7 +278,7 @@ Partial Class BookVehicleDialog
         Me.cmbCustomer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbCustomer.ItemHeight = 30
         Me.cmbCustomer.Location = New System.Drawing.Point(564, 147)
-        Me.cmbCustomer.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbCustomer.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbCustomer.Name = "cmbCustomer"
         Me.cmbCustomer.Size = New System.Drawing.Size(238, 36)
         Me.cmbCustomer.TabIndex = 75
@@ -290,7 +290,7 @@ Partial Class BookVehicleDialog
         Me.tmpEnd.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tmpEnd.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.tmpEnd.Location = New System.Drawing.Point(563, 204)
-        Me.tmpEnd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tmpEnd.Margin = New System.Windows.Forms.Padding(2)
         Me.tmpEnd.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.tmpEnd.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.tmpEnd.Name = "tmpEnd"

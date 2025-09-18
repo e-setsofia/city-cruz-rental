@@ -28,20 +28,11 @@ Partial Class CustomerControl
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.dpAddress = New City_Cruz_Rental.DataPair()
-        Me.dpPostalCode = New City_Cruz_Rental.DataPair()
-        Me.dpLicence = New City_Cruz_Rental.DataPair()
-        Me.dpPhone = New City_Cruz_Rental.DataPair()
-        Me.dpEmail = New City_Cruz_Rental.DataPair()
         Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.lblStatus = New System.Windows.Forms.Label()
         Me.lblFullName = New System.Windows.Forms.Label()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Separator2 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
@@ -53,13 +44,13 @@ Partial Class CustomerControl
         Me.Guna2Separator5 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.lblBookedCustomers = New System.Windows.Forms.Label()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Separator6 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lblTotalCustomers = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.btnAddCustomer = New Guna.UI2.WinForms.Guna2Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -78,12 +69,15 @@ Partial Class CustomerControl
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.dpAddress = New City_Cruz_Rental.DataPair()
+        Me.dpPostalCode = New City_Cruz_Rental.DataPair()
+        Me.dpLicence = New City_Cruz_Rental.DataPair()
+        Me.dpPhone = New City_Cruz_Rental.DataPair()
+        Me.dpEmail = New City_Cruz_Rental.DataPair()
         Me.Panel1.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel9.SuspendLayout()
-        Me.Guna2GradientPanel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
@@ -107,7 +101,6 @@ Partial Class CustomerControl
         Me.Panel1.AutoScroll = True
         Me.Panel1.BackColor = System.Drawing.SystemColors.Control
         Me.Panel1.Controls.Add(Me.Guna2Panel1)
-        Me.Panel1.Controls.Add(Me.Panel9)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
@@ -132,68 +125,8 @@ Partial Class CustomerControl
         Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(3, 3, 3, 16)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Padding = New System.Windows.Forms.Padding(8)
-        Me.Guna2Panel1.Size = New System.Drawing.Size(284, 351)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(284, 577)
         Me.Guna2Panel1.TabIndex = 0
-        '
-        'dpAddress
-        '
-        Me.dpAddress.BackColor = System.Drawing.Color.Transparent
-        Me.dpAddress.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dpAddress.LabelText = "Address"
-        Me.dpAddress.Location = New System.Drawing.Point(8, 283)
-        Me.dpAddress.Margin = New System.Windows.Forms.Padding(4)
-        Me.dpAddress.Name = "dpAddress"
-        Me.dpAddress.Size = New System.Drawing.Size(268, 48)
-        Me.dpAddress.TabIndex = 8
-        Me.dpAddress.ValueText = "Trasaco Estate"
-        '
-        'dpPostalCode
-        '
-        Me.dpPostalCode.BackColor = System.Drawing.Color.Transparent
-        Me.dpPostalCode.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dpPostalCode.LabelText = "Postal Code:"
-        Me.dpPostalCode.Location = New System.Drawing.Point(8, 235)
-        Me.dpPostalCode.Margin = New System.Windows.Forms.Padding(4)
-        Me.dpPostalCode.Name = "dpPostalCode"
-        Me.dpPostalCode.Size = New System.Drawing.Size(268, 48)
-        Me.dpPostalCode.TabIndex = 6
-        Me.dpPostalCode.ValueText = "+233 0550 495 601"
-        '
-        'dpLicence
-        '
-        Me.dpLicence.BackColor = System.Drawing.Color.Transparent
-        Me.dpLicence.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dpLicence.LabelText = "Drivers license:"
-        Me.dpLicence.Location = New System.Drawing.Point(8, 187)
-        Me.dpLicence.Margin = New System.Windows.Forms.Padding(4)
-        Me.dpLicence.Name = "dpLicence"
-        Me.dpLicence.Size = New System.Drawing.Size(268, 48)
-        Me.dpLicence.TabIndex = 5
-        Me.dpLicence.ValueText = "Something"
-        '
-        'dpPhone
-        '
-        Me.dpPhone.BackColor = System.Drawing.Color.Transparent
-        Me.dpPhone.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dpPhone.LabelText = "Phone:"
-        Me.dpPhone.Location = New System.Drawing.Point(8, 139)
-        Me.dpPhone.Margin = New System.Windows.Forms.Padding(4)
-        Me.dpPhone.Name = "dpPhone"
-        Me.dpPhone.Size = New System.Drawing.Size(268, 48)
-        Me.dpPhone.TabIndex = 4
-        Me.dpPhone.ValueText = "+233 0550 495 601"
-        '
-        'dpEmail
-        '
-        Me.dpEmail.BackColor = System.Drawing.Color.Transparent
-        Me.dpEmail.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dpEmail.LabelText = "Email:"
-        Me.dpEmail.Location = New System.Drawing.Point(8, 91)
-        Me.dpEmail.Margin = New System.Windows.Forms.Padding(4)
-        Me.dpEmail.Name = "dpEmail"
-        Me.dpEmail.Size = New System.Drawing.Size(268, 48)
-        Me.dpEmail.TabIndex = 3
-        Me.dpEmail.ValueText = "stephen@uew.edu"
         '
         'Guna2Separator1
         '
@@ -251,56 +184,6 @@ Partial Class CustomerControl
         Me.Guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Guna2CirclePictureBox1.TabIndex = 0
         Me.Guna2CirclePictureBox1.TabStop = False
-        '
-        'Panel9
-        '
-        Me.Panel9.Controls.Add(Me.Guna2GradientPanel1)
-        Me.Panel9.Controls.Add(Me.Guna2Separator2)
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel9.Location = New System.Drawing.Point(16, 367)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(284, 226)
-        Me.Panel9.TabIndex = 1
-        '
-        'Guna2GradientPanel1
-        '
-        Me.Guna2GradientPanel1.BorderRadius = 16
-        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Button1)
-        Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.Lime
-        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.RoyalBlue
-        Me.Guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal
-        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 22)
-        Me.Guna2GradientPanel1.Margin = New System.Windows.Forms.Padding(30, 30, 30, 3)
-        Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
-        Me.Guna2GradientPanel1.Padding = New System.Windows.Forms.Padding(0, 30, 0, 0)
-        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(284, 204)
-        Me.Guna2GradientPanel1.TabIndex = 15
-        '
-        'Guna2Button1
-        '
-        Me.Guna2Button1.AutoRoundedCorners = True
-        Me.Guna2Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.FillColor = System.Drawing.Color.Navy
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(68, 157)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(145, 35)
-        Me.Guna2Button1.TabIndex = 0
-        Me.Guna2Button1.Text = "Update Rent Status"
-        '
-        'Guna2Separator2
-        '
-        Me.Guna2Separator2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Separator2.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Separator2.Name = "Guna2Separator2"
-        Me.Guna2Separator2.Size = New System.Drawing.Size(284, 22)
-        Me.Guna2Separator2.TabIndex = 14
         '
         'Panel2
         '
@@ -454,7 +337,7 @@ Partial Class CustomerControl
         Me.TableLayoutPanel5.Controls.Add(Me.Guna2Separator5, 0, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.Panel10, 0, 2)
         Me.TableLayoutPanel5.Controls.Add(Me.Label9, 1, 0)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label10, 2, 0)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblBookedCustomers, 2, 0)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(16, 0, 16, 0)
@@ -495,20 +378,20 @@ Partial Class CustomerControl
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(45, 59)
         Me.Label9.TabIndex = 2
-        Me.Label9.Text = "Total Customers"
+        Me.Label9.Text = "Booked"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label10
+        'lblBookedCustomers
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(120, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(59, 59)
-        Me.Label10.TabIndex = 3
-        Me.Label10.Text = "300"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblBookedCustomers.AutoSize = True
+        Me.lblBookedCustomers.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblBookedCustomers.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBookedCustomers.Location = New System.Drawing.Point(120, 0)
+        Me.lblBookedCustomers.Name = "lblBookedCustomers"
+        Me.lblBookedCustomers.Size = New System.Drawing.Size(59, 59)
+        Me.lblBookedCustomers.TabIndex = 3
+        Me.lblBookedCustomers.Text = "300"
+        Me.lblBookedCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Guna2Panel6
         '
@@ -531,7 +414,7 @@ Partial Class CustomerControl
         Me.TableLayoutPanel6.Controls.Add(Me.Guna2Separator6, 0, 1)
         Me.TableLayoutPanel6.Controls.Add(Me.Panel11, 0, 2)
         Me.TableLayoutPanel6.Controls.Add(Me.Label11, 1, 0)
-        Me.TableLayoutPanel6.Controls.Add(Me.Label12, 2, 0)
+        Me.TableLayoutPanel6.Controls.Add(Me.lblTotalCustomers, 2, 0)
         Me.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
@@ -574,17 +457,17 @@ Partial Class CustomerControl
         Me.Label11.Text = "Total Customers"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label12
+        'lblTotalCustomers
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(120, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(59, 59)
-        Me.Label12.TabIndex = 3
-        Me.Label12.Text = "300"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblTotalCustomers.AutoSize = True
+        Me.lblTotalCustomers.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblTotalCustomers.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalCustomers.Location = New System.Drawing.Point(120, 0)
+        Me.lblTotalCustomers.Name = "lblTotalCustomers"
+        Me.lblTotalCustomers.Size = New System.Drawing.Size(59, 59)
+        Me.lblTotalCustomers.TabIndex = 3
+        Me.lblTotalCustomers.Text = "300"
+        Me.lblTotalCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Panel7
         '
@@ -823,6 +706,66 @@ Partial Class CustomerControl
         Me.Label4.Text = "300"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'dpAddress
+        '
+        Me.dpAddress.BackColor = System.Drawing.Color.Transparent
+        Me.dpAddress.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpAddress.LabelText = "Address"
+        Me.dpAddress.Location = New System.Drawing.Point(8, 283)
+        Me.dpAddress.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpAddress.Name = "dpAddress"
+        Me.dpAddress.Size = New System.Drawing.Size(268, 48)
+        Me.dpAddress.TabIndex = 8
+        Me.dpAddress.ValueText = "Trasaco Estate"
+        '
+        'dpPostalCode
+        '
+        Me.dpPostalCode.BackColor = System.Drawing.Color.Transparent
+        Me.dpPostalCode.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpPostalCode.LabelText = "Postal Code:"
+        Me.dpPostalCode.Location = New System.Drawing.Point(8, 235)
+        Me.dpPostalCode.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpPostalCode.Name = "dpPostalCode"
+        Me.dpPostalCode.Size = New System.Drawing.Size(268, 48)
+        Me.dpPostalCode.TabIndex = 6
+        Me.dpPostalCode.ValueText = "+233 0550 495 601"
+        '
+        'dpLicence
+        '
+        Me.dpLicence.BackColor = System.Drawing.Color.Transparent
+        Me.dpLicence.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpLicence.LabelText = "Drivers license:"
+        Me.dpLicence.Location = New System.Drawing.Point(8, 187)
+        Me.dpLicence.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpLicence.Name = "dpLicence"
+        Me.dpLicence.Size = New System.Drawing.Size(268, 48)
+        Me.dpLicence.TabIndex = 5
+        Me.dpLicence.ValueText = "Something"
+        '
+        'dpPhone
+        '
+        Me.dpPhone.BackColor = System.Drawing.Color.Transparent
+        Me.dpPhone.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpPhone.LabelText = "Phone:"
+        Me.dpPhone.Location = New System.Drawing.Point(8, 139)
+        Me.dpPhone.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpPhone.Name = "dpPhone"
+        Me.dpPhone.Size = New System.Drawing.Size(268, 48)
+        Me.dpPhone.TabIndex = 4
+        Me.dpPhone.ValueText = "+233 0550 495 601"
+        '
+        'dpEmail
+        '
+        Me.dpEmail.BackColor = System.Drawing.Color.Transparent
+        Me.dpEmail.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dpEmail.LabelText = "Email:"
+        Me.dpEmail.Location = New System.Drawing.Point(8, 91)
+        Me.dpEmail.Margin = New System.Windows.Forms.Padding(4)
+        Me.dpEmail.Name = "dpEmail"
+        Me.dpEmail.Size = New System.Drawing.Size(268, 48)
+        Me.dpEmail.TabIndex = 3
+        Me.dpEmail.ValueText = "stephen@uew.edu"
+        '
         'CustomerControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -836,8 +779,6 @@ Partial Class CustomerControl
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel9.ResumeLayout(False)
-        Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
         Me.Guna2Panel5.ResumeLayout(False)
@@ -894,23 +835,19 @@ Partial Class CustomerControl
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents dtgCustomers As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents Panel9 As Panel
-    Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
-    Friend WithEvents Guna2Separator2 As Guna.UI2.WinForms.Guna2Separator
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
     Friend WithEvents Guna2Separator5 As Guna.UI2.WinForms.Guna2Separator
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents lblBookedCustomers As Label
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
     Friend WithEvents Guna2Separator6 As Guna.UI2.WinForms.Guna2Separator
     Friend WithEvents Panel11 As Panel
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
+    Friend WithEvents lblTotalCustomers As Label
     Friend WithEvents Panel7 As Panel
     Friend WithEvents btnAddCustomer As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label8 As Label

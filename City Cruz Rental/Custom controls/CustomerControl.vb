@@ -1,8 +1,30 @@
-﻿Public Class CustomerControl
+﻿Imports MySql.Data.MySqlClient
+
+Public Class CustomerControl
 
 
 
     Private Sub LoadData()
+        Using conn As New MySqlConnection(My.Resources.conn)
+            Try
+                conn.Open()
+
+                Dim countTotalBookings As String = "SELECT COUNT(*) FROM customers c WHERE c.status != 'Deleted' ;"
+                Using cmd As New MySqlCommand(countTotalBookings, conn)
+                    Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                    lblTotalCustomers.Text = deletedCount.ToString()
+                End Using
+
+                Dim countTotalReserved As String = "SELECT COUNT(DISTINCT r.customer_id) AS booked_customer_count FROM rentals r WHERE r.status IN ('Reserved', 'Picked up', 'Overdue');"
+                Using cmd As New MySqlCommand(countTotalReserved, conn)
+                    Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                    lblBookedCustomers.Text = deletedCount.ToString()
+                End Using
+
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+        End Using
 
         Dim dt = Queries.GetAllCustomers
         ' Bind a DataView instead of DataTable
