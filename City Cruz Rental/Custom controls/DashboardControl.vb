@@ -35,6 +35,13 @@ Public Class DashboardControl
                     lblTotalVehicles.Text = deletedCount.ToString()
                 End Using
 
+
+                Dim sumSales As String = "SELECT SUM(total_price) AS total_sales FROM Rentals;"
+                Using cmd As New MySqlCommand(sumSales, conn)
+                    Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                    lblTotalSales.Text = deletedCount.ToString("N2")
+                End Using
+
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
@@ -84,77 +91,95 @@ Public Class DashboardControl
             Dim dt As New DataTable()
             adapter.Fill(dt)
 
-            ' Ensure chart area exists
-            If Chart1.ChartAreas.Count = 0 Then
-                Chart1.ChartAreas.Add(New DataVisualization.Charting.ChartArea("Default"))
-            End If
+            ' Clear previous chart setup
+            Chart1.Series.Clear()
+            Chart1.ChartAreas.Clear()
+            Chart1.Titles.Clear()
+            Chart1.Legends.Clear()
 
-            Dim ca = Chart1.ChartAreas(0)
+            ' Chart Area Setup
+            Dim ca As New DataVisualization.Charting.ChartArea("Default")
+            With ca
+                .BackColor = Color.White
+                .BorderWidth = 0
+                .AxisX.Title = "Month"
+                .AxisY.Title = "Total Sales"
 
-            ' Configure the X axis to span months 1..12
-            With ca.AxisX
-                .CustomLabels.Clear()
-                .Minimum = 1
-                .Maximum = 12
-                .Interval = 1
-                .IsMarginVisible = False
-                .LabelAutoFitStyle = DataVisualization.Charting.LabelAutoFitStyles.None
-                .MajorGrid.LineColor = Color.LightGray
+                ' X Axis (Month)
+                With .AxisX
+                    .CustomLabels.Clear()
+                    .Minimum = 1
+                    .Maximum = 12
+                    .Interval = 1
+                    .MajorGrid.LineColor = Color.LightGray
+                    .LineColor = Color.DarkGray
+                    .LabelStyle.Font = New Font("Segoe UI", 9, FontStyle.Regular)
+                    .TitleFont = New Font("Segoe UI Semibold", 10)
+                    .IsMarginVisible = False
+                End With
+
+                ' Y Axis
+                With .AxisY
+                    .MajorGrid.LineColor = Color.LightGray
+                    .LineColor = Color.DarkGray
+                    .LabelStyle.Font = New Font("Segoe UI", 9, FontStyle.Regular)
+                    .TitleFont = New Font("Segoe UI Semibold", 10)
+                End With
+            End With
+            Chart1.ChartAreas.Add(ca)
+
+            ' Series Setup
+            Dim salesSeries As New DataVisualization.Charting.Series("Sales")
+            With salesSeries
+                .ChartType = DataVisualization.Charting.SeriesChartType.Column
+                .Color = Color.FromArgb(33, 150, 243) ' Modern blue (Material Design)
+                .BorderWidth = 0
+                .IsValueShownAsLabel = True
+                .LabelForeColor = Color.DimGray
+                .Font = New Font("Segoe UI", 8)
             End With
 
-            ca.AxisY.MajorGrid.LineColor = Color.LightGray
-
-            ' Prepare series
-            Dim salesSeries As DataVisualization.Charting.Series
-            If Chart1.Series.IndexOf("Sales") >= 0 Then
-                salesSeries = Chart1.Series("Sales")
-                salesSeries.Points.Clear()
-            Else
-                salesSeries = New DataVisualization.Charting.Series("Sales")
-                salesSeries.ChartType = DataVisualization.Charting.SeriesChartType.Column
-                salesSeries.XValueType = DataVisualization.Charting.ChartValueType.Int32
-                Chart1.Series.Add(salesSeries)
-            End If
-
-            ' Build lookup for totals by month
+            ' Build month data
             Dim monthCounts As New Dictionary(Of Integer, Integer)()
             For Each row As DataRow In dt.Rows
                 If Not IsDBNull(row("Month")) Then
                     Dim m As Integer = Convert.ToInt32(row("Month"))
                     If m >= 1 AndAlso m <= 12 Then
-                        Dim t As Integer = 0
-                        If Not IsDBNull(row("Total")) Then
-                            t = Convert.ToInt32(row("Total"))
-                        End If
+                        Dim t As Integer = If(IsDBNull(row("Total")), 0, Convert.ToInt32(row("Total")))
                         monthCounts(m) = t
                     End If
                 End If
             Next
 
-            ' Now add data & labels for all months Jan-Dec
+            ' Add data for all months
             For monthNumber As Integer = 1 To 12
-                Dim totalSales As Integer = 0
-                If monthCounts.ContainsKey(monthNumber) Then
-                    totalSales = monthCounts(monthNumber)
-                End If
-
-                Dim month As String = MonthName(monthNumber).Substring(0, 3) ' ful1 month name
-
+                Dim totalSales As Integer = If(monthCounts.ContainsKey(monthNumber), monthCounts(monthNumber), 0)
                 salesSeries.Points.AddXY(monthNumber, totalSales)
 
-                ' Add custom label
+                ' Add modern label
                 Dim lbl As New DataVisualization.Charting.CustomLabel()
                 lbl.FromPosition = monthNumber - 0.5
                 lbl.ToPosition = monthNumber + 0.5
-                lbl.Text = month
-                lbl.RowIndex = 0
+                lbl.Text = MonthName(monthNumber).Substring(0, 3)
                 lbl.LabelMark = DataVisualization.Charting.LabelMarkStyle.None
                 ca.AxisX.CustomLabels.Add(lbl)
             Next
 
-            ' Titles
-            ca.AxisX.Title = "Month"
-            ca.AxisY.Title = "Total Sales"
+            Chart1.Series.Add(salesSeries)
+
+            ' Optional: Chart Title
+            Dim chartTitle As New DataVisualization.Charting.Title("Monthly Sales Overview")
+            chartTitle.Font = New Font("Segoe UI Semibold", 12, FontStyle.Bold)
+            chartTitle.ForeColor = Color.DimGray
+            Chart1.Titles.Add(chartTitle)
+
+            ' Optional: Add legend (if needed in future)
+            'Dim legend As New DataVisualization.Charting.Legend("Legend")
+            'legend.Font = New Font("Segoe UI", 9)
+            'Chart1.Legends.Add(legend)
+
+            ' Optional: Smooth animation or 3D can be disabled for flat look
+            ca.Area3DStyle.Enable3D = False
 
         Catch ex As Exception
             MessageBox.Show("Error loading sales chart: " & ex.Message)
@@ -163,11 +188,7 @@ Public Class DashboardControl
         End Try
     End Sub
 
-
-
-
-
-
-
-
+    Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
+        LoadDashboardItems()
+    End Sub
 End Class

@@ -87,7 +87,7 @@ Public Class BookVehicleDialog
     Private Sub BtnBook_Click(sender As Object, e As EventArgs) Handles btnBook.Click
 
         'Setting status for update.
-        Dim nextStatus = "Picked Up"
+        Dim nextStatus = "Picked up"
 
         If currentStatus.ToLower = "picked up" Or currentStatus.ToLower = "overdue" Then ' TODO Update current status
             nextStatus = "Returned"
