@@ -32,7 +32,7 @@ Public Class BookVehicleDialog
     End Sub
 
     Private Sub PopulateCombobox()
-        vehicles = db.ExecuteQuery($"SELECT id, name, model, rental_price FROM vehicles WHERE state = 'Available' OR id={vehicleId};")
+        vehicles = db.ExecuteQuery($"SELECT id, name, model, rental_price FROM vehicles WHERE (state = 'Available' OR id={vehicleId}) AND state != 'Deleted';")
 
         customers = db.ExecuteQuery("SELECT customer_id, fName, lName FROM customers;")
 

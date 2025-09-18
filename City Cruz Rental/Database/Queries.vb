@@ -47,7 +47,9 @@ Public Class Queries
             JOIN 
                 brands b ON v.brand_id = b.id
             JOIN 
-                categories c ON v.category_id = c.id"
+                categories c ON v.category_id = c.id
+            WHERE state != 'Deleted'
+"
 
         Dim result As DataTable = db.ExecuteQuery(query)
 
