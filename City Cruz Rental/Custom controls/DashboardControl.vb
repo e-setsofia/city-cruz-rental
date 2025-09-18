@@ -8,13 +8,38 @@ Public Class DashboardControl
 
     Private Sub DashboardControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadSalesChart()
-        ' LoadDashboardItems()
+        LoadDashboardItems()
     End Sub
 
     Private Sub LoadDashboardItems()
-        ' lblUsers.Text = Queries.CountUsers()
-        '   lblTotalVehicles.Text = Queries.CountVehicles
-        '  lblVehiclesRented.Text = Queries.CountVehiclesRented
+        Using conn As New MySqlConnection(My.Resources.conn)
+            Try
+                conn.Open()
+                Dim customersCount As Double = 0.0
+                Dim countTotalCustomers As String = "SELECT COUNT(*) FROM customers c WHERE c.status != 'Deleted' ;"
+                Using cmd As New MySqlCommand(countTotalCustomers, conn)
+                    customersCount = Convert.ToDouble(cmd.ExecuteScalar())
+                    lblCustomers.Text = customersCount.ToString()
+                End Using
+
+                Dim countTotalFemales As String = "SELECT COUNT(*) FROM customers c WHERE c.status != 'Deleted' AND gender = 'Female' ;"
+                Using cmd As New MySqlCommand(countTotalFemales, conn)
+                    Dim femaleCount As Integer = Convert.ToDouble(cmd.ExecuteScalar())
+                    lblFemalePercentage.Text = ((femaleCount / customersCount) * 100).ToString + "%"
+                    lblMalePercentage.Text = ((customersCount - femaleCount) / customersCount * 100).ToString + "%"
+                End Using
+
+                Dim countTotalVehicles As String = "SELECT COUNT(*) FROM vehicles v WHERE v.state != 'Deleted'"
+                Using cmd As New MySqlCommand(countTotalVehicles, conn)
+                    Dim deletedCount As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                    lblTotalVehicles.Text = deletedCount.ToString()
+                End Using
+
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+        End Using
+
 
     End Sub
 
