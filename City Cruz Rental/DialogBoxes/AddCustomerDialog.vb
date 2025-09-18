@@ -33,6 +33,15 @@ Public Class AddCustomerDialog
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Validation()
 
+        If validator.ValidateAll() Then
+            AddCustomer()
+        End If
+
+    End Sub
+
+
+    Private Sub AddCustomer()
+
         Try
             Dim query As String
 
