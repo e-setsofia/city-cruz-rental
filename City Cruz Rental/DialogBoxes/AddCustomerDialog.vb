@@ -24,8 +24,9 @@ Public Class AddCustomerDialog
         validator.AddEntry(txtFirstName, Label1, FieldValidator.FieldType.NAME)
         validator.AddEntry(txtLastName, Label7, FieldValidator.FieldType.NAME)
         validator.AddEntry(txtLicenseNumber, Label1, FieldValidator.FieldType.NAME)
-        validator.AddEntry(txtEmail, Label10, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtEmail, Label10, FieldValidator.FieldType.EMAIL)
         validator.AddEntry(txtPostalCode, Label11, FieldValidator.FieldType.NAME)
+        validator.AddEntry(txtPhone, Label11, FieldValidator.FieldType.PHONE)
         validator.AddEntry(txtAddress, Label3, FieldValidator.FieldType.NAME)
     End Sub
 
