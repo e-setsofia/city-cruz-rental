@@ -30,8 +30,8 @@ Public Class Login
                 'cmd.Parameters.AddWithValue("@username", username) ' TODO Update evans and admin1234 to username and password respectively
                 'cmd.Parameters.AddWithValue("@password", password)
 
-                cmd.Parameters.AddWithValue("@username", "asafo") ' TODO Update evans and admin1234 to username and password respectively
-                cmd.Parameters.AddWithValue("@password", "wor1234")
+                cmd.Parameters.AddWithValue("@username", "evans") ' TODO Update evans and admin1234 to username and password respectively
+                cmd.Parameters.AddWithValue("@password", "admin1234")
 
                 Dim adapter As New MySqlDataAdapter(cmd)
                 adapter.Fill(result)
